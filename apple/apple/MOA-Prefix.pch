@@ -1,0 +1,49 @@
+//
+// Prefix header for all source files of the 'MOA' target in the 'MOA' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#ifndef __OPTIMIZE__
+
+#else
+#define NS_BLOCK_ASSERTIONS	// release 模式关闭断言
+#define assert(condition)	do {} while (0)
+#endif
+
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
+
+//下面是兼容xcode7以下版本的
+#ifndef NS_ASSUME_NONNULL_BEGIN
+#define NS_ASSUME_NONNULL_BEGIN _Pragma("clang assume_nonnull begin")
+#endif
+
+#ifndef NS_ASSUME_NONNULL_END
+#define NS_ASSUME_NONNULL_END   _Pragma("clang assume_nonnull end")
+#endif
+
+#ifndef TARGET_OS_IOS
+#define TARGET_OS_IOS 1
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "LeRGlobalDefinition.h"
+#import "LeRColor_Define.h"
+#import "UIView+Frame.h"
+#import "UIColor+CustomColor.h"
+#import "LeRHeadView.h"
+#import "NSString+ContentSize.h"
+
+#endif
+
+
+
