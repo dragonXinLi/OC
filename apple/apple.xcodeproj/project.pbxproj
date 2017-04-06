@@ -26,6 +26,7 @@
 		2DBE61281E961AF3007B1B33 /* LeRTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE61271E961AF3007B1B33 /* LeRTitleButton.m */; };
 		2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */; };
 		2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612D1E96459C007B1B33 /* LeRTableAide.m */; };
+		2DCD7DFA1E9662C2007947A6 /* UIViewController+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7DF91E9662C2007947A6 /* UIViewController+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,9 @@
 		2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ContentSize.m"; sourceTree = "<group>"; };
 		2DBE612C1E96459C007B1B33 /* LeRTableAide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRTableAide.h; sourceTree = "<group>"; };
 		2DBE612D1E96459C007B1B33 /* LeRTableAide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRTableAide.m; sourceTree = "<group>"; };
+		2DCD7DF81E9662C2007947A6 /* UIViewController+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AutoLayout.h"; sourceTree = "<group>"; };
+		2DCD7DF91E9662C2007947A6 /* UIViewController+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AutoLayout.m"; sourceTree = "<group>"; };
+		2DCD7DFB1E9663BF007947A6 /* VCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDefine.h; sourceTree = "<group>"; };
 		2DE830321E8609E000362A75 /* MOA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MOA-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +199,8 @@
 				2D5A9CCE1E8FA9710097DAC7 /* UIView+Frame.m */,
 				2DBE61291E961DD1007B1B33 /* NSString+ContentSize.h */,
 				2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */,
+				2DCD7DF81E9662C2007947A6 /* UIViewController+AutoLayout.h */,
+				2DCD7DF91E9662C2007947A6 /* UIViewController+AutoLayout.m */,
 			);
 			path = Classification;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				2D5A9CC91E8FA4720097DAC7 /* Classification */,
 				2D5A9CBF1E8F98B20097DAC7 /* LeRGlobalDefinition.h */,
 				2D40952C1E95EF8E008E3BDE /* LeRColor_Define.h */,
+				2DCD7DFB1E9663BF007947A6 /* VCDefine.h */,
 				2D5A9CBC1E8F966C0097DAC7 /* LeRViewController.h */,
 				2D5A9CBD1E8F966C0097DAC7 /* LeRViewController.m */,
 				2D5A9CC01E8FA07B0097DAC7 /* LeRTableViewController.h */,
@@ -364,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D098BF51E7FF0DD00715510 /* apple.xcdatamodeld in Sources */,
+				2DCD7DFA1E9662C2007947A6 /* UIViewController+AutoLayout.m in Sources */,
 				2D098BEF1E7FF0DD00715510 /* ViewController.m in Sources */,
 				2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */,
 				2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */,

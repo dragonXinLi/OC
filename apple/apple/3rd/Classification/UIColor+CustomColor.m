@@ -9,7 +9,7 @@
 #import "UIColor+CustomColor.h"
 
 NSString * const TableBackgroundColor = @"#FFFFFF";
-NSString * const SetTableBckgroundColor = kTableBackgroundColorPublic;
+NSString * const SetTableBackgroundColor = kTableBackgroundColorPublic;
 
 @implementation UIColor (CustomColor)
 

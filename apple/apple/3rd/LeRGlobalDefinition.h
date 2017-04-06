@@ -10,6 +10,7 @@
 #define LeRGlobalDefinition_h
 
 #define STATUSBAR_SHIFT ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 1 : 0)
+#define HEADVIEW_HEIGT (44 + STATUSBAR_SHIFT)
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)

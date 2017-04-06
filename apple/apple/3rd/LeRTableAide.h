@@ -11,6 +11,7 @@
 @interface LeRTableAide : NSObject
 
 + (UILabel *)generateEmptyLabel:(NSString *)text;
++ (UIView *)generateEmptyViewWithText:(NSString *)text frame:(CGRect)frame;
 + (UILabel *)generateSubTipsLabel:(NSString *)text andEmptyLabel:(UILabel *)label;
 
 @end

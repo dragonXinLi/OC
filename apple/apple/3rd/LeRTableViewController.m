@@ -8,10 +8,10 @@
 
 #import "LeRTableViewController.h"
 
-@interface LeRTableViewController ()
+@interface LeRTableViewController ()<LeRBlankRefreshViewDelegate>
 {
     UILabel *emptyLabel;
-    UILabel *sunTipsLabel;
+    UILabel *subTipsLabel;
     LeRBlankRefreshView *blankRefreshView;
 }
 
@@ -46,10 +46,50 @@
     
     if(self.emptyTips)
     {
-        emptyLabel = []
+        emptyLabel = [LeRTableAide generateEmptyLabel:self.emptyTips];
+        emptyLabel.tag = 1000;
+        [self.tableView addSubview:emptyLabel];
     }
     
+    if(self.subTips)
+    {
+        [emptyLabel setOriginY:187 + (SCREEN_WIDTH - 320) / 2];
+        subTipsLabel = [LeRTableAide generateSubTipsLabel:self.subTips andEmptyLabel:emptyLabel];
+        subTipsLabel.tag = 10001;
+        [self.tableView addSubview:subTipsLabel];
+    }
 }
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if(self.view.constraints.count == 0 && !self.notNeedAutoLayout)
+    {
+        [self addAutoLayoutConstrainWithView:self.tableView];
+    }
+}
+
+- (void)setRefreshState:(RefreshState)refreshState
+{
+    _refreshState = refreshState;
+    
+    if(!blankRefreshView)
+    {
+        blankRefreshView = [[LeRBlankRefreshView alloc] initWithFrame:CGRectZero];
+        blankRefreshView.delegate = self;
+        blankRefreshView.tag = 20001;
+        [self.view addSubview:blankRefreshView];
+    }
+    [blankRefreshView setRefreshState:refreshState];
+}
+
+
+- (void)tryToReloadFailedDate
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
