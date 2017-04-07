@@ -45,6 +45,7 @@
 #import "NSString+ContentSize.h"
 #import "LeRTableAide.h"
 #import "UIViewController+AutoLayout.h"
+#import "EntrysOperateHelper.h"
 
 #endif
 

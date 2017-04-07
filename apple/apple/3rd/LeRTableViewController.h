@@ -27,7 +27,7 @@
 
 
 - (void)shouldShowTips:(BOOL)show;
-- (void)asjustEmptyTipsFrame;
+- (void)adjustEmptyTipsFrame;
 
 - (void)setRefreshViewBackColor:(UIColor *)color;
 

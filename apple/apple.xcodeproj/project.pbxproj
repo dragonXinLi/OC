@@ -27,6 +27,10 @@
 		2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */; };
 		2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612D1E96459C007B1B33 /* LeRTableAide.m */; };
 		2DCD7DFA1E9662C2007947A6 /* UIViewController+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7DF91E9662C2007947A6 /* UIViewController+AutoLayout.m */; };
+		2DCD7DFE1E97347F007947A6 /* LeRRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7DFD1E97347F007947A6 /* LeRRefreshTableViewController.m */; };
+		2DCD7E011E97368D007947A6 /* LeRRefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */; };
+		2DCD7E041E974405007947A6 /* EntrysOperateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E031E974405007947A6 /* EntrysOperateHelper.m */; };
+		2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,14 @@
 		2DCD7DF81E9662C2007947A6 /* UIViewController+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AutoLayout.h"; sourceTree = "<group>"; };
 		2DCD7DF91E9662C2007947A6 /* UIViewController+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AutoLayout.m"; sourceTree = "<group>"; };
 		2DCD7DFB1E9663BF007947A6 /* VCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDefine.h; sourceTree = "<group>"; };
+		2DCD7DFC1E97347F007947A6 /* LeRRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTableViewController.h; sourceTree = "<group>"; };
+		2DCD7DFD1E97347F007947A6 /* LeRRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTableViewController.m; sourceTree = "<group>"; };
+		2DCD7DFF1E97368D007947A6 /* LeRRefreshTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTableFooterView.h; sourceTree = "<group>"; };
+		2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTableFooterView.m; sourceTree = "<group>"; };
+		2DCD7E021E974405007947A6 /* EntrysOperateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntrysOperateHelper.h; sourceTree = "<group>"; };
+		2DCD7E031E974405007947A6 /* EntrysOperateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntrysOperateHelper.m; sourceTree = "<group>"; };
+		2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRrefreshControl.h; sourceTree = "<group>"; };
+		2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRrefreshControl.m; sourceTree = "<group>"; };
 		2DE830321E8609E000362A75 /* MOA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MOA-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,16 +234,24 @@
 				2D5A9CBF1E8F98B20097DAC7 /* LeRGlobalDefinition.h */,
 				2D40952C1E95EF8E008E3BDE /* LeRColor_Define.h */,
 				2DCD7DFB1E9663BF007947A6 /* VCDefine.h */,
+				2DCD7E021E974405007947A6 /* EntrysOperateHelper.h */,
+				2DCD7E031E974405007947A6 /* EntrysOperateHelper.m */,
 				2D5A9CBC1E8F966C0097DAC7 /* LeRViewController.h */,
 				2D5A9CBD1E8F966C0097DAC7 /* LeRViewController.m */,
 				2D5A9CC01E8FA07B0097DAC7 /* LeRTableViewController.h */,
 				2D5A9CC11E8FA07B0097DAC7 /* LeRTableViewController.m */,
+				2DCD7DFC1E97347F007947A6 /* LeRRefreshTableViewController.h */,
+				2DCD7DFD1E97347F007947A6 /* LeRRefreshTableViewController.m */,
 				2DBE612C1E96459C007B1B33 /* LeRTableAide.h */,
 				2DBE612D1E96459C007B1B33 /* LeRTableAide.m */,
 				2D5A9CC31E8FA0E00097DAC7 /* LeRBlankRefreshView.h */,
 				2D5A9CC41E8FA0E00097DAC7 /* LeRBlankRefreshView.m */,
 				2D4095291E95E3EF008E3BDE /* LeRHeadView.h */,
 				2D40952A1E95E3EF008E3BDE /* LeRHeadView.m */,
+				2DCD7DFF1E97368D007947A6 /* LeRRefreshTableFooterView.h */,
+				2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */,
+				2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */,
+				2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -372,13 +392,17 @@
 			files = (
 				2D098BF51E7FF0DD00715510 /* apple.xcdatamodeld in Sources */,
 				2DCD7DFA1E9662C2007947A6 /* UIViewController+AutoLayout.m in Sources */,
+				2DCD7DFE1E97347F007947A6 /* LeRRefreshTableViewController.m in Sources */,
 				2D098BEF1E7FF0DD00715510 /* ViewController.m in Sources */,
 				2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */,
+				2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */,
 				2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */,
 				2D5A9CCC1E8FA5210097DAC7 /* UIColor+CustomColor.m in Sources */,
 				2D5A9CCF1E8FA9710097DAC7 /* UIView+Frame.m in Sources */,
+				2DCD7E041E974405007947A6 /* EntrysOperateHelper.m in Sources */,
 				2DBE61281E961AF3007B1B33 /* LeRTitleButton.m in Sources */,
 				2D098BEC1E7FF0DD00715510 /* AppDelegate.m in Sources */,
+				2DCD7E011E97368D007947A6 /* LeRRefreshTableFooterView.m in Sources */,
 				2D5A9CC21E8FA07B0097DAC7 /* LeRTableViewController.m in Sources */,
 				2D40952B1E95E3EF008E3BDE /* LeRHeadView.m in Sources */,
 				2D098BE91E7FF0DD00715510 /* main.m in Sources */,

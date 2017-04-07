@@ -66,6 +66,7 @@
     [super viewWillAppear:animated];
     if(self.view.constraints.count == 0 && !self.notNeedAutoLayout)
     {
+        //为tableView添加父视图约束
         [self addAutoLayoutConstrainWithView:self.tableView];
     }
 }
@@ -91,11 +92,42 @@
 }
 
 
+- (void)shouldShowTips:(BOOL)show
+{
+    emptyLabel.hidden = !show;
+}
+
+
+- (void)adjustEmptyTipsFrame
+{
+    [emptyLabel setOriginY:(self.tableView.height - emptyLabel.height)/2];
+}
+
+
+- (void)setRefreshViewBackColor:(UIColor *)color
+{
+    blankRefreshView.backgroundColor = color;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)refreshConstraints
+{
+    [self addAutoLayoutConstrainWithView:self.tableView];
+    [self.view layoutIfNeeded];
+}
+
+
+- (void)dealloc
+{
+    self.tableView.delegate = nil;
+    self.tableView.dataSource = nil;
+}
 /*
 #pragma mark - Navigation
 
