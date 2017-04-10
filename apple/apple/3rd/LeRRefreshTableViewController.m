@@ -8,30 +8,79 @@
 
 #import "LeRRefreshTableViewController.h"
 
-@interface LeRRefreshTableViewController ()
+@interface LeRRefreshTableViewController ()<LeRRefreshTableViewDelegate>
+{
+    UIActivityIndicatorView *activityView;
+    NSMutableArray *triggerEventArray;
+    
+    BOOL hasEverPullSucess;
+    LeRRefreshType firstRefreshType;
+}
+
+@property (nonatomic , strong) NSNumber *fetchingIndex;
 
 @end
 
 @implementation LeRRefreshTableViewController
 
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self)
+    {
+        triggerEventArray = [[NSMutableArray alloc] init];
+        self.pullDownReloadDelay = 0;
+        self.autoShowTableViewWhenSucess = YES;
+        self.autoPullUpFirstTime = YES;
+        self.updateTimeSpaceOn3G = -1;
+        self.updateTimeSpaceOnWIFI = -1;
+        
+        self.autoFetchFirstTime = YES;
+        self.lastFetchIndex = @(-1);
+        self.fetchingIndex = @0;
+        self.localFetchTouchCount = 0;
+        
+        self.isBlankRefresh = YES;
+    }
+    return self;
+}
+
+
+- (Class)tableViewClass
+{
+    return [LeRRefreshTableView class];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if([self.tableView isMemberOfClass:[UITableView class]])
+    {
+        UILabel *emptyLabel = (UILabel *)[self.tableView viewWithTag:10000];
+        UILabel *subTipsLabel = (UILabel *)[self.tableView viewWithTag:10001];
+        [self.tableView removeFromSuperview];
+        self.tableView = [[[self tableViewClass] alloc] initWithFrame:self.tableView.frame style:self.tableViewStyle];
+        ((LeRRefreshTableView *)self.tableView).rowDelegate = self;
+        ((LeRRefreshTableView *)self.tableView).refreshViewStyle = self.refreshViewStyle;
+        [self.tableView addSubview:emptyLabel];
+        [self.tableView addSubview:subTipsLabel];
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [self.view addSubview:self.tableView];
+    }
+    
+    if(self.lerRefreshType & LeRRefreshTypePullDown)
+    {
+        refreshControl = (LeRrefreshControl *)[self.tableView refreshControl];
+        weak(self);
+        [refreshControl setRefreshRequest:^BOOL(LeRrefreshControl *sender) {
+            return [weakself refresh]
+        }];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+- (BOOL)
 
 @end

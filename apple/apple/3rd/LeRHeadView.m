@@ -24,7 +24,7 @@ const NSInteger MiddleButtonTag = 1112;
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:CGRectMake(0, 0, SCREEN_FIXED_WIDTH, 44)];
+    self = [super initWithFrame:CGRectMake(0, 0, SCREEN_FIXED_WIDTH, 44 + STATUSBAR_SHIFT)];
     if(self)
     {
         self.backgroundColor = [UIColor colorWithHexString:HeadViewBackgroundColor];

@@ -9,7 +9,7 @@
 #ifndef LeRGlobalDefinition_h
 #define LeRGlobalDefinition_h
 
-#define STATUSBAR_SHIFT ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 1 : 0)
+#define STATUSBAR_SHIFT (20 * ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 1 : 0))
 #define HEADVIEW_HEIGT (44 + STATUSBAR_SHIFT)
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
@@ -23,5 +23,8 @@
 
 #define ISIOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 
+
+#define weak(obj)  __weak typeof(obj) weak##obj = obj
+#define strong(obj)   __strong typeof(obj) strong##obj = obj
 
 #endif /* LeRGlobalDefinition_h */

@@ -162,11 +162,11 @@
         BOOL _loading = NO;
         _loading = [_delegate LeRRefreshTableDataSourceIsLoading:self];
         
-        if(_state == LeRPullRefreshStatePulling && (scrollView.contentOffset.y + scrollView.frame.size.height) < scrollView.contentSize.height + regionHeight && scrollView.contentOffset.y > 0.0f && !_loading)
+        if(_state == LeRPullRefreshStatePulling && (scrollView.contentOffset.y + scrollView.height) < scrollView.contentSize.height + regionHeight && scrollView.contentOffset.y > 0.0f && !_loading)
         {
             [self setState:LeRPullRefreshStateNormal];
         }else if(_state == LeRPullRefreshStateNormal &&
-                 scrollView.contentOffset.y + (scrollView.frame.size.height) > scrollView.contentSize.height + regionHeight &&
+                 scrollView.contentOffset.y + (scrollView.height) > scrollView.contentSize.height + regionHeight &&
                  ! _loading)
         {
             [self setState:LeRPullRefreshStatePulling];
@@ -193,12 +193,12 @@
     {
         _lastUpdatedLabel.hidden = NO;
         _activityView.frame = CGRectMake(25.0f, 15.0f, 20.0f, 20.0f);
-        _statusLabel.frame = CGRectMake(0.0f, 0.0f, self.frame.size.width, 20.0f);
+        _statusLabel.frame = CGRectMake(0.0f, 0.0f, self.width, 20.0f);
     }else if(type == LeRPullUpRefreshTypeAutomatic)
     {
         _lastUpdatedLabel.hidden = YES;
         _activityView.frame = CGRectMake(105.f, 10.0f, 20.0f, 20.0f);
-        _statusLabel.frame = CGRectMake(0.0f, 10.0f, self.frame.size.width, 20.0f);
+        _statusLabel.frame = CGRectMake(0.0f, 10.0f, self.width, 20.0f);
     }
 }
 
@@ -226,7 +226,7 @@
     CGFloat regionHeight = self.refreshRegionHeight*(1-self.type);
     
     BOOL _loading = [_delegate LeRRefreshTableDataSourceIsLoading:self];
-    if(scrollView.contentOffset.y + (scrollView.frame.size.height) >= scrollView.contentSize.height + regionHeight &&
+    if(scrollView.contentOffset.y + (scrollView.height) >= scrollView.contentSize.height + regionHeight &&
        ! _loading)
     {
         [_delegate LeRRefreshTableDidTriggerRefresh];

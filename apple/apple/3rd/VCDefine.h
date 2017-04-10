@@ -23,5 +23,10 @@
 #define NSLog(fmt, ...) do{}while(0)
 #endif
 
+#undef NSAssert
+#define NSAssert(condition, desc, ...)  if(desc) {NSCAssert(condition, desc, ##__VA_ARGS__);} else{NSCAssert(condition, @"%s:%d", __func__, __LINE__);}   //debug模式下使用系统的NSAssert会在block中引起循环引用
+
+
+
 
 #endif /* VCDefine_h */

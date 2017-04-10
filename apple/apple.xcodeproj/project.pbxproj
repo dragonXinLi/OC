@@ -23,6 +23,7 @@
 		2D5A9CC81E8FA3600097DAC7 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D5A9CC71E8FA3600097DAC7 /* Common.strings */; };
 		2D5A9CCC1E8FA5210097DAC7 /* UIColor+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CCB1E8FA5210097DAC7 /* UIColor+CustomColor.m */; };
 		2D5A9CCF1E8FA9710097DAC7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CCE1E8FA9710097DAC7 /* UIView+Frame.m */; };
+		2D7A83481E9BA6A50042897C /* LeRRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */; };
 		2DBE61281E961AF3007B1B33 /* LeRTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE61271E961AF3007B1B33 /* LeRTitleButton.m */; };
 		2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */; };
 		2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612D1E96459C007B1B33 /* LeRTableAide.m */; };
@@ -83,6 +84,8 @@
 		2D5A9CCB1E8FA5210097DAC7 /* UIColor+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColor.m"; sourceTree = "<group>"; };
 		2D5A9CCD1E8FA9710097DAC7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2D5A9CCE1E8FA9710097DAC7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		2D7A83461E9BA6A50042897C /* LeRRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTableView.h; sourceTree = "<group>"; };
+		2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTableView.m; sourceTree = "<group>"; };
 		2DBE61261E961AF3007B1B33 /* LeRTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRTitleButton.h; sourceTree = "<group>"; };
 		2DBE61271E961AF3007B1B33 /* LeRTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRTitleButton.m; sourceTree = "<group>"; };
 		2DBE61291E961DD1007B1B33 /* NSString+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContentSize.h"; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 		2D098BE71E7FF0DD00715510 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D7A83451E9B68D60042897C /* image */,
 				2D5A9CC61E8FA2E10097DAC7 /* Common */,
 				2DE830321E8609E000362A75 /* MOA-Prefix.pch */,
 				2D098BE81E7FF0DD00715510 /* main.m */,
@@ -217,6 +221,13 @@
 			path = Classification;
 			sourceTree = "<group>";
 		};
+		2D7A83451E9B68D60042897C /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		2DBE61251E961A9E007B1B33 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +263,8 @@
 				2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */,
 				2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */,
 				2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */,
+				2D7A83461E9BA6A50042897C /* LeRRefreshTableView.h */,
+				2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -408,6 +421,7 @@
 				2D098BE91E7FF0DD00715510 /* main.m in Sources */,
 				2D5A9CC51E8FA0E00097DAC7 /* LeRBlankRefreshView.m in Sources */,
 				2D5A9CBE1E8F966C0097DAC7 /* LeRViewController.m in Sources */,
+				2D7A83481E9BA6A50042897C /* LeRRefreshTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

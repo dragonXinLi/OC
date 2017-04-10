@@ -10,8 +10,12 @@
 
 "Cancle" = "取消";
 
-"Pull down to refresh" = "下拉刷新"
+"Pull down to refresh" = "下拉刷新";
 
-"Loosen to refresh" = "释放更新"
+"Loosen to refresh" = "释放更新";
 
-"Refreshing..." = "正在刷新"
+"Refreshing..." = "正在刷新";
+
+"Refresh done" = "刷新完成";
+
+"Refresh failed" = "刷新失败";
