@@ -124,4 +124,9 @@ const NSInteger MiddleButtonTag = 1112;
     return btn;
 }
 
+
+- (UILabel *)returnTitleLabel
+{
+    return titleLabel;
+}
 @end

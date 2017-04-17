@@ -27,4 +27,7 @@ typedef enum
 
 - (UILabel *)addTitle:(NSString *)title;
 - (UIButton *)addbackButtonForDisappearingWay:(DisappearingWay)way;
+
+- (UILabel *)returnTitleLabel;
+
 @end

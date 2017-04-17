@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Reachability.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,6 +18,8 @@
 
 - (void)saveContext;
 
++ (BOOL)isConnectedToInternet;
++ (BOOL)isConnectedWithWifi;
 
 @end
 

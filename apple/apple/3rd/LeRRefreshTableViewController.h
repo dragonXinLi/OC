@@ -62,7 +62,7 @@ typedef NS_OPTIONS(NSInteger, LeRRefreshType)
 @property (nonatomic , strong) NSNumber *lastFetchIndex;
 @property (nonatomic , assign) NSInteger localFetchTouchCount;
 @property (nonatomic , assign) BOOL autoFetchFirstTime;
-@property (nonatomic , strong) LeRBlankRefreshView *blankRefreshFailedView;
+@property (nonatomic , strong) LeRBlankRefreshView *blankRefreshView;
 
 - (void)setFooterView;
 

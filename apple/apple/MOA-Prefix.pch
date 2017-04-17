@@ -46,7 +46,10 @@
 #import "LeRTableAide.h"
 #import "UIViewController+AutoLayout.h"
 #import "EntrysOperateHelper.h"
-
+#import "LeRFont_Define.h"
+#import "AppDelegate.h"
+#import "LeRAlert.h"
+#import "NetChecker.h"
 #endif
 
 

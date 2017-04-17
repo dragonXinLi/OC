@@ -10,13 +10,19 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic , strong) Reachability *reachabilityHost;
+
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    self.reachabilityHost = [Reachability reachabilityForInternetConnection];
+    [self.reachabilityHost startNotifier];
+    
     return YES;
 }
 
@@ -95,4 +101,20 @@
     }
 }
 
+
++ (BOOL)isConnectedToInternet
+{
+    return ([self reachabilityStatus] != NotReachable);
+}
+
+
++ (BOOL)isConnectedWithWifi
+{
+    return ([self reachabilityStatus] == ReachableViaWiFi);
+}
+
++ (NetworkStatus)reachabilityStatus
+{
+    return [((AppDelegate* )[UIApplication sharedApplication].delegate).reachabilityHost currentReachabilityStatus];
+}
 @end
