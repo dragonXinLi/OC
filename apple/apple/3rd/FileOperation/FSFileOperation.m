@@ -192,6 +192,23 @@ const int kDecimalPlaces = 2 ;//保留小数点位数
         return NO;
     }
     
+    NSURL *directoryURL = [NSURL fileURLWithPath:[path stringByDeletingLastPathComponent]];
+    
+    NSURL *fileURL = [NSURL fileURLWithPath:path];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if(![fileManager fileExistsAtPath:[directoryURL path]])
+    {
+        BOOL sucess = [fileManager createDirectoryAtPath:<#(nonnull NSString *)#> withIntermediateDirectories:<#(BOOL)#> attributes:<#(nullable NSDictionary<NSString *,id> *)#> error:<#(NSError * _Nullable __autoreleasing * _Nullable)#>]
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
