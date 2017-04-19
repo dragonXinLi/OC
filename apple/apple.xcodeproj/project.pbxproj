@@ -42,6 +42,7 @@
 		2DCD7E011E97368D007947A6 /* LeRRefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */; };
 		2DCD7E041E974405007947A6 /* EntrysOperateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E031E974405007947A6 /* EntrysOperateHelper.m */; };
 		2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */; };
+		6AA5F1811EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRrefreshControl.h; sourceTree = "<group>"; };
 		2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRrefreshControl.m; sourceTree = "<group>"; };
 		2DE830321E8609E000362A75 /* MOA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MOA-Prefix.pch"; sourceTree = "<group>"; };
+		6AA5F17F1EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTimeHandler.h; sourceTree = "<group>"; };
+		6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTimeHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +332,8 @@
 				2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */,
 				2D7A83461E9BA6A50042897C /* LeRRefreshTableView.h */,
 				2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */,
+				6AA5F17F1EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.h */,
+				6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7A835D1E9CAE9F0042897C /* NetChecker.m in Sources */,
+				6AA5F1811EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m in Sources */,
 				2D098BF51E7FF0DD00715510 /* apple.xcdatamodeld in Sources */,
 				2DCD7DFA1E9662C2007947A6 /* UIViewController+AutoLayout.m in Sources */,
 				2DCD7DFE1E97347F007947A6 /* LeRRefreshTableViewController.m in Sources */,

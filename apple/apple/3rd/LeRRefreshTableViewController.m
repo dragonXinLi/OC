@@ -207,4 +207,15 @@
     return NO;
 }
 
+
+- (BOOL)shouldUpdateFor3G
+{
+    if (self.updateTimeSpaceOn3G < 0 || [NetChecker isWifi]) {
+        return NO;
+    }
+    
+    id object = self.pageName ? self.pageName : self;
+//    NSDate *refreshDate = [lerrefreshT]
+}
+
 @end

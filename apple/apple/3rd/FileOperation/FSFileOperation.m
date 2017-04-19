@@ -199,16 +199,35 @@ const int kDecimalPlaces = 2 ;//保留小数点位数
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if(![fileManager fileExistsAtPath:[directoryURL path]])
     {
-        BOOL sucess = [fileManager createDirectoryAtPath:@"" withIntermediateDirectories:NO attributes:nil error:nil];
+        BOOL sucess = [fileManager createDirectoryAtPath:directoryURL.path withIntermediateDirectories:YES attributes:nil error:nil];
+        if(sucess)
+        {
+            NSLog(@"Warn: *********** create global stroage directory fail");
+        }
     }
     
+    if(![fileManager fileExistsAtPath:[fileURL path]])
+    {
+        [fileManager createFileAtPath:[fileURL path] contents:nil attributes:nil];
+    }
     
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:0];
+    [dic setDictionary:[[NSDictionary alloc] initWithContentsOfFile:[fileURL path]]];
+    if(obj)
+    {
+        dic[key] = obj;
+    }
+    else
+    {
+        [dic removeObjectForKey:key];
+    }
     
-    
-    return YES;
-    
-    
-    
+    BOOL sucess = [dic writeToFile:[fileURL path] atomically:YES];
+    if(sucess)
+    {
+        NSLog(@"FSFileOpration saveObject %@ fail with key %@",obj,key);
+    }
+    return sucess;
 }
 
 
