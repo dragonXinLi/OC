@@ -24,7 +24,27 @@
         keyString = [NSString stringWithUTF8String:class_getName([object class])];
     }
     
-    NSDate *date = [FSFileOperation objectForKey:keyString andPath:table]
+    NSDate *date = [FSFileOperation objectForKey:keyString andPath:TABLE_REFRESH_TIME];
+    
+    if(![date isKindOfClass:[NSDate class]])
+    {
+        return nil;
+    }
+    return date;
+}
+
+
++ (void)saveTableRefreshTime:(id)object
+{
+    NSString *keyString;
+    if([object isKindOfClass:[NSString class]])
+    {
+        keyString = object;
+    }else
+    {
+        keyString = [NSString stringWithUTF8String:class_getName([object class])];
+    }
+    [FSFileOperation saveObject:[NSDate date] forKey:keyString andPath:TABLE_REFRESH_TIME];
 }
 
 @end

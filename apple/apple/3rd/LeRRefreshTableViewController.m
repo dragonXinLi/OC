@@ -7,6 +7,8 @@
 //
 
 #import "LeRRefreshTableViewController.h"
+#import "LeRRefreshTimeHandler.h"
+#import "LeRUITableViewWithRefreshControl.h"
 
 @interface LeRRefreshTableViewController ()<LeRRefreshTableViewDelegate,LeRBlankRefreshViewDelegate,LeRRefreshTableDelegate>
 {
@@ -142,7 +144,24 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-//    if([self shou])
+    if([self shouldUpdateFor3G] || [self shouldUpdateForWIFI])
+    {
+        for (NSDictionary *dict in triggerEventArray) {
+            id target = [dict[@"target"] isEqual:[NSNull null]] ? self : dict[@"target"];
+            SEL selector = NSSelectorFromString(dict[@"selector"]);
+            TriggerEventType type = [dict[@"eventType"] intValue];
+            if(type == TriggerEventTypeTimeRules)
+            {
+                [target performSelector:selector withObject:nil afterDelay:0];
+            }
+        }
+    }
+}
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 
@@ -215,7 +234,170 @@
     }
     
     id object = self.pageName ? self.pageName : self;
-//    NSDate *refreshDate = [lerrefreshT]
+    NSDate *refreshDate = [LeRRefreshTimeHandler getTableRefreshTime:object];
+    NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:refreshDate];
+    return interval > self.updateTimeSpaceOn3G;
 }
+
+
+- (BOOL)shouldUpdateForWIFI
+{
+    if(self.updateTimeSpaceOnWIFI < 0 || ![NetChecker isWifi])
+    {
+        return NO;
+    }
+    id object = self.pageName ? self.pageName : self;
+    NSDate *refreshDate = [LeRRefreshTimeHandler getTableRefreshTime:object];
+    NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:refreshDate];
+    return interval > self.updateTimeSpaceOnWIFI;
+}
+
+
+- (void)pullDownRefreshData
+{
+
+}
+
+
+- (void)pullDownRefreshSucess:(BOOL)sucess
+{
+    [self pullDownRefreshSucess:sucess andMore:YES];
+}
+
+
+- (void)pullDownRefreshSucess:(BOOL)sucess andMore:(BOOL)more
+{
+    weak(self);
+    weak(refreshCallBack);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * (1-sucess) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        weakself.tableView.scrollEnabled = YES;
+        [activityView stopAnimating];
+        weakself.pullDownSucess = sucess;
+        __weak LeRUITableViewWithRefreshControl *weakMainScroll = (LeRUITableViewWithRefreshControl *)weakself.tableView;
+        if(sucess)
+        {
+            [weakself setCanLoadMore:more];
+            id object = weakself.pageName?weakself.pageName : weakself;
+            if(object)
+            {
+                [LeRRefreshTimeHandler saveTableRefreshTime:object];
+            }
+            if(weakself.pullDownReloadDelay == 0)
+            {
+                [weakMainScroll reloadData];
+            }
+            else
+            {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(weakself.pullDownReloadDelay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [weakMainScroll reloadData];
+                });
+            }
+            [weakself setFooterView];
+        }
+        
+        if(!hasEverPullSucess)
+        {
+            if(sucess)
+            {
+                weakself.blankRefreshView.refreshState = RefreshStateNormal;
+            }else if([weakself isEmptyTable])
+            {
+                weakself.blankRefreshView.refreshState = RefreshStateFailed;
+            }
+            
+            if(sucess && weakself.emptyTips && [weakself isEmptyTable])
+            {
+                [weakself shouldShowTips:YES];
+            }
+        }
+        
+        hasEverPullSucess = sucess || hasEverPullSucess;
+        if(firstRefreshType == 0)
+        {
+            firstRefreshType = LeRRefreshTypePullDown;
+        }
+        
+        if(sucess && weakself.tableView.hidden && self.autoShowTableViewWhenSucess)
+        {
+            weakself.tableView.hidden = NO;
+        }
+        
+        if(weakrefreshCallBack)
+        {
+            weakrefreshCallBack();
+        }
+    });
+}
+
+
+- (void)pullUpRefreshData
+{
+
+}
+
+
+- (void)downLoadingTableViewDataAndMore:(BOOL)more
+{
+    [self handDownLodingAndMore:more];
+}
+
+
+- (void)handDownLodingAndMore:(BOOL)more
+{
+    if(firstRefreshType == 0)
+    {
+        firstRefreshType = LeRRefreshTypePullUp;
+    }
+    hasEverPullSucess = YES;
+    self.tableView.scrollEnabled = YES;
+    if(self.autoShowTableViewWhenSucess)
+    {
+        self.tableView.hidden = NO;
+    }
+    [activityView stopAnimating];
+    [self.tableView reloadData];
+    _reloading = NO;
+    refreshTableFooterView.canLoadMore = more;
+    [refreshTableFooterView LeRRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
+    [self setFooterView];
+    
+    
+    self.blankRefreshView.refreshState = RefreshStateNormal;
+    [self shouldShowTips:[self isEmptyTable]];
+}
+
+
+- (void)downLoadingDataFailed
+{
+    if(firstRefreshType == 0)
+    {
+        firstRefreshType = LeRRefreshTypePullUp;
+    }
+    
+    weak(self);
+    weak(activityView);
+    weak(refreshTableFooterView);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        weakself.tableView.scrollEnabled = YES;
+        [weakactivityView stopAnimating];
+        [weakself faildTableViewDataSource];
+        weakrefreshTableFooterView.canLoadMore = YES;
+        [weakrefreshTableFooterView LeRRefreshScrollViewDataSourceDidFinishedLoading:weakself.tableView];
+        [weakself setFooterView];
+        
+        if([weakself isEmptyTable])
+        {
+            weakself.blankRefreshView.refreshState = RefreshStateFailed;
+        }
+    });
+}
+
+
+- (void)faildTableViewDataSource
+{
+    _reloading = NO;
+}
+
+
 
 @end

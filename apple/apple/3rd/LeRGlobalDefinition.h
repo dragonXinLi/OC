@@ -27,4 +27,8 @@
 #define weak(obj)  __weak typeof(obj) weak##obj = obj
 #define strong(obj)   __strong typeof(obj) strong##obj = obj
 
+
+#define TABLE_REFRESH_TIME [[FSFileOperation getDocumentDirectory] stringByAppendingPathComponent:@"five-TableRefreshTime.plist"]
+
+
 #endif /* LeRGlobalDefinition_h */

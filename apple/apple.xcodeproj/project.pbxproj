@@ -23,6 +23,7 @@
 		2D5A9CC81E8FA3600097DAC7 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D5A9CC71E8FA3600097DAC7 /* Common.strings */; };
 		2D5A9CCC1E8FA5210097DAC7 /* UIColor+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CCB1E8FA5210097DAC7 /* UIColor+CustomColor.m */; };
 		2D5A9CCF1E8FA9710097DAC7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CCE1E8FA9710097DAC7 /* UIView+Frame.m */; };
+		2D6FB2E01EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FB2DF1EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m */; };
 		2D7A83481E9BA6A50042897C /* LeRRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */; };
 		2D7A834C1E9C755D0042897C /* LeRAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A834B1E9C755D0042897C /* LeRAlert.m */; };
 		2D7A83521E9C8ADD0042897C /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A834E1E9C8ADD0042897C /* loading@2x.png */; };
@@ -95,6 +96,8 @@
 		2D5A9CCB1E8FA5210097DAC7 /* UIColor+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColor.m"; sourceTree = "<group>"; };
 		2D5A9CCD1E8FA9710097DAC7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2D5A9CCE1E8FA9710097DAC7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		2D6FB2DE1EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRUITableViewWithRefreshControl.h; sourceTree = "<group>"; };
+		2D6FB2DF1EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRUITableViewWithRefreshControl.m; sourceTree = "<group>"; };
 		2D7A83461E9BA6A50042897C /* LeRRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTableView.h; sourceTree = "<group>"; };
 		2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTableView.m; sourceTree = "<group>"; };
 		2D7A834A1E9C755D0042897C /* LeRAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRAlert.h; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 				2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */,
 				6AA5F17F1EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.h */,
 				6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */,
+				2D6FB2DE1EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.h */,
+				2D6FB2DF1EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				2D098BEF1E7FF0DD00715510 /* ViewController.m in Sources */,
 				2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */,
 				2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */,
+				2D6FB2E01EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m in Sources */,
 				2D7A83641E9CCF530042897C /* FSFileOperation.m in Sources */,
 				2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */,
 				2D5A9CCC1E8FA5210097DAC7 /* UIColor+CustomColor.m in Sources */,
