@@ -16,6 +16,7 @@
 		2D098BFA1E7FF0DD00715510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D098BF81E7FF0DD00715510 /* LaunchScreen.storyboard */; };
 		2D098C051E7FF0DD00715510 /* appleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D098C041E7FF0DD00715510 /* appleTests.m */; };
 		2D098C101E7FF0DD00715510 /* appleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D098C0F1E7FF0DD00715510 /* appleUITests.m */; };
+		2D28765F1EC1B1D8009B4BD7 /* AsyncTcpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D28765E1EC1B1D8009B4BD7 /* AsyncTcpSocket.m */; };
 		2D40952B1E95E3EF008E3BDE /* LeRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D40952A1E95E3EF008E3BDE /* LeRHeadView.m */; };
 		2D5A9CBE1E8F966C0097DAC7 /* LeRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CBD1E8F966C0097DAC7 /* LeRViewController.m */; };
 		2D5A9CC21E8FA07B0097DAC7 /* LeRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A9CC11E8FA07B0097DAC7 /* LeRTableViewController.m */; };
@@ -35,6 +36,7 @@
 		2D7A835D1E9CAE9F0042897C /* NetChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A835C1E9CAE9F0042897C /* NetChecker.m */; };
 		2D7A83601E9CAF2C0042897C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A835F1E9CAF2C0042897C /* Reachability.m */; };
 		2D7A83641E9CCF530042897C /* FSFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A83631E9CCF530042897C /* FSFileOperation.m */; };
+		2D9B9B151EC0642B005F5691 /* LRDealThead.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B9B141EC0642A005F5691 /* LRDealThead.m */; };
 		2DBE61281E961AF3007B1B33 /* LeRTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE61271E961AF3007B1B33 /* LeRTitleButton.m */; };
 		2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612A1E961DD1007B1B33 /* NSString+ContentSize.m */; };
 		2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBE612D1E96459C007B1B33 /* LeRTableAide.m */; };
@@ -81,6 +83,8 @@
 		2D098C0B1E7FF0DD00715510 /* appleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D098C0F1E7FF0DD00715510 /* appleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appleUITests.m; sourceTree = "<group>"; };
 		2D098C111E7FF0DD00715510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D28765D1EC1B1D8009B4BD7 /* AsyncTcpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTcpSocket.h; sourceTree = "<group>"; };
+		2D28765E1EC1B1D8009B4BD7 /* AsyncTcpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncTcpSocket.m; sourceTree = "<group>"; };
 		2D4095291E95E3EF008E3BDE /* LeRHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRHeadView.h; sourceTree = "<group>"; };
 		2D40952A1E95E3EF008E3BDE /* LeRHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRHeadView.m; sourceTree = "<group>"; };
 		2D40952C1E95EF8E008E3BDE /* LeRColor_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeRColor_Define.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		2D7A835F1E9CAF2C0042897C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2D7A83621E9CCF530042897C /* FSFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFileOperation.h; sourceTree = "<group>"; };
 		2D7A83631E9CCF530042897C /* FSFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFileOperation.m; sourceTree = "<group>"; };
+		2D9B9B131EC0642A005F5691 /* LRDealThead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRDealThead.h; sourceTree = "<group>"; };
+		2D9B9B141EC0642A005F5691 /* LRDealThead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRDealThead.m; sourceTree = "<group>"; };
 		2DBE61261E961AF3007B1B33 /* LeRTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRTitleButton.h; sourceTree = "<group>"; };
 		2DBE61271E961AF3007B1B33 /* LeRTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRTitleButton.m; sourceTree = "<group>"; };
 		2DBE61291E961DD1007B1B33 /* NSString+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContentSize.h"; sourceTree = "<group>"; };
@@ -281,6 +287,8 @@
 				2D7A835C1E9CAE9F0042897C /* NetChecker.m */,
 				2D7A835E1E9CAF2C0042897C /* Reachability.h */,
 				2D7A835F1E9CAF2C0042897C /* Reachability.m */,
+				2D28765D1EC1B1D8009B4BD7 /* AsyncTcpSocket.h */,
+				2D28765E1EC1B1D8009B4BD7 /* AsyncTcpSocket.m */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -292,6 +300,15 @@
 				2D7A83631E9CCF530042897C /* FSFileOperation.m */,
 			);
 			path = FileOperation;
+			sourceTree = "<group>";
+		};
+		2D9B9B121EC063DB005F5691 /* DealThread */ = {
+			isa = PBXGroup;
+			children = (
+				2D9B9B131EC0642A005F5691 /* LRDealThead.h */,
+				2D9B9B141EC0642A005F5691 /* LRDealThead.m */,
+			);
+			path = DealThread;
 			sourceTree = "<group>";
 		};
 		2DBE61251E961A9E007B1B33 /* UIButton */ = {
@@ -306,6 +323,7 @@
 		2DE8301A1E8607CC00362A75 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				2D9B9B121EC063DB005F5691 /* DealThread */,
 				2D7A83611E9CCF2F0042897C /* FileOperation */,
 				2D7A835A1E9CAE6C0042897C /* Net */,
 				2D7A83491E9C75330042897C /* UIAlert */,
@@ -483,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9B9B151EC0642B005F5691 /* LRDealThead.m in Sources */,
 				2D7A835D1E9CAE9F0042897C /* NetChecker.m in Sources */,
 				6AA5F1811EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m in Sources */,
 				2D098BF51E7FF0DD00715510 /* apple.xcdatamodeld in Sources */,
@@ -492,6 +511,7 @@
 				2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */,
 				2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */,
 				2D6FB2E01EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m in Sources */,
+				2D28765F1EC1B1D8009B4BD7 /* AsyncTcpSocket.m in Sources */,
 				2D7A83641E9CCF530042897C /* FSFileOperation.m in Sources */,
 				2DBE612B1E961DD1007B1B33 /* NSString+ContentSize.m in Sources */,
 				2D5A9CCC1E8FA5210097DAC7 /* UIColor+CustomColor.m in Sources */,
