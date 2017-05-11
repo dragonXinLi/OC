@@ -73,5 +73,100 @@ static NSString *const kConnectTimerName = @"ConnectTimerName";
 }
 
 
+-(void)dealloc
+{
+    NSAssert(self.socketDealThread != nil, nil);
+    dispatch_block_t block = ^{
+        [self.inputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+        [self.outputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+        
+        [self.inputStream setDelegate:nil];
+        [self.outputStream setDelegate:nil];
+        [self.inputStream close];
+        [self.outputStream close];
+    };
+    
+    [self.socketDealThread trySyncPerformBlock:block];
+    if(self.needReleaseDealThread)
+    {
+        [self.socketDealThread exit];
+    }
+}
+
+
++ (BOOL)isip:(NSString *)ip
+{
+    NSArray *components = [ip componentsSeparatedByString:@"."];
+    if(components.count != 4)
+    {
+        return NO;
+    }
+    
+    for (NSString *obj in components) {
+        unsigned int value = obj.intValue;
+        if(value >= 256 || obj.length > 3 || [@(value).stringValue isEqualToString:obj] == NO)
+        {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+
++ (BOOL)maybeV6
+{
+    return NO;
+}
+
+
++ (BOOL)allowV4
+{
+    if([AsyncTcpSocket maybeV6] == NO)
+        return YES;
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    if(version.floatValue >= 9.2 || [version hasPrefix:@"9.2"])
+    {
+        return YES;
+    }
+    return NO;
+}
+
+
++ (NSString *)v42v6:(NSString *)v4 flag:(BOOL)flag
+{
+    NSString *result = nil;
+    if([AsyncTcpSocket isip:v4] == NO || [AsyncTcpSocket allowV4])
+    {
+        struct addrinfo  hints = {0}, *ai = NULL;
+        hints.ai_family =AF_UNSPEC;
+        hints.ai_socktype = SOCK_STREAM;
+        
+        int ret = getaddrinfo(v4.UTF8String, NULL, &hints, &ai);
+        NSAssertRet(nil, ret == 0 && ai->ai_addr, nil);
+        
+        char buf[INET6_ADDRSTRLEN] = {0};
+        void *addr = NULL;
+        if(ai->ai_family == AF_INET6)
+        {
+            struct sockaddr_in6 *v6 = (struct sockaddr_in6 *)ai->ai_addr;
+            addr = &v6->sin6_addr;
+        }else
+        {
+            struct sockaddr_in *v4 = (struct sockaddr_in *)ai->ai_addr;
+            addr = &v4->sin_addr;
+        }
+        
+        const char *s = inet_ntop(ai->ai_family, addr, buf, sizeof(buf));
+        NSAssertRet(nil, s, nil);
+        
+        freeaddrinfo(ai);
+        
+        result = [NSString stringWithFormat:@"[%s]",s];
+        
+    }else
+    {
+        
+    }
+}
 
 @end
