@@ -14,7 +14,7 @@
 #import <arpa/inet.h>
 #import <ifaddrs.h>
 #import <netdb.h>
-
+#import "AsyncTcpSocket.h"
 
 NSString *kReachabilityChangedNotification = @"kNetworkReachabilityChangedNotification";
 

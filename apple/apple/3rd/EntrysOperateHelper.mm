@@ -68,4 +68,35 @@
     return [formatter stringFromDate:date];
 }
 
+
++ (id)dictFromJsonString:(NSString *)jsonString
+{
+    if (! [jsonString isKindOfClass:[NSString class]])
+    {
+        return nil;
+    }
+    
+    return [self dictFromJson:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
+
++ (id)dictFromJson:(NSData *)jsonData
+{
+    if(! jsonData)
+    {
+        return nil;
+    }
+    
+    NSError *error = nil;
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
+    if (jsonObject != nil && error == nil)
+    {
+    }else if(error != nil)
+    {
+        NSLogToFile(@"Warn: happend while deserializing the JSON data:%@ \n from :%@",error , [NSString stringWithUTF8String:(const char *)[jsonData bytes]]);
+        return nil;
+    }
+    return jsonObject;
+}
+
 @end

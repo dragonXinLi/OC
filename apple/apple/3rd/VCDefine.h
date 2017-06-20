@@ -34,9 +34,14 @@ if(!(condition)) { \
 }
 
 
-# define NSLogToFile(fmt, ...) {\
-NSString *retainString = [NSString stringWithFormat:(@"[%@:%d]" fmt), [[[NSString stringWithUTF8String:__FILE__] pathComponents] lastObject], __LINE__, ##__VA_ARGS__];\
+#define NSLogToFile(fmt, ...) {\
+                NSString *retainString = [NSString stringWithFormat:(@"[%@:%d]" fmt), [[[NSString stringWithUTF8String:__FILE__] pathComponents] lastObject], __LINE__, ##__VA_ARGS__];}
     //[LogServer logToFileWithFormat:@"%@", retainString];\ //存到本地的日志
     //[LogServer logWithFormat:@"%@", retainString];}发送给服务器的日志
+
+
+#define MOAErrorMake(reason, num) [NSError errorWithDomain:@"customError" code:num userInfo:@{@"info":(reason), @"ext":[NSString stringWithFormat:@"[%@:%d] %@", [[[NSString stringWithUTF8String:__FILE__] pathComponents] lastObject], __LINE__, [EntrysOperateHelper stringFromDate:nil andFormat:nil]]}]
+#define MOAErrorMakeOther(reason, other, num) [NSError errorWithDomain:@"customError" code:num userInfo:@{@"info":(reason), @"other":(other?other:[NSNull null]), @"ext":[NSString stringWithFormat:@"[%@:%d] %@", [[[NSString stringWithUTF8String:__FILE__] pathComponents] lastObject], __LINE__, [EntrysOperateHelper stringFromDate:nil andFormat:nil]]}]
+
 
 #endif /* VCDefine_h */

@@ -31,4 +31,21 @@
 #define TABLE_REFRESH_TIME [[FSFileOperation getDocumentDirectory] stringByAppendingPathComponent:@"five-TableRefreshTime.plist"]
 
 
+//请求服务器是返回错误信息
+#define kResultException	@"Unexpected result"
+#define kResultInvalidArgs	@"Invalid Args"
+#define kResultNetFailed	@"Net Failed"
+#define kResultServerReject	@"Server Reject"
+#define kResultUserDefine	@"User Define"
+#define kResultServerError	@"Server Error"
+#define kResultEncodeFailed	@"Encode Error"
+#define kResultDecodeFailed	@"Decode Error"
+#define kLoginFailed		kResultServerReject
+#define kModelError			@"Model Error"
+#define kUnknownError		@"Unknown Error"
+#define kFileSystemError	@"File System Error"
+#define kResultObjRegenFail	@"ResultObjRegenFail"
+#define kResultServerVersionErr	@"kResultServerVersionErr"
+#define kResultUserCancel   @"User Cancel"
+
 #endif /* LeRGlobalDefinition_h */

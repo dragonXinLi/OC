@@ -338,11 +338,11 @@
 
 - (void)downLoadingTableViewDataAndMore:(BOOL)more
 {
-    [self handDownLodingAndMore:more];
+    [self handDownLoadingAndMore:more];
 }
 
 
-- (void)handDownLodingAndMore:(BOOL)more
+- (void)handDownLoadingAndMore:(BOOL)more
 {
     if(firstRefreshType == 0)
     {

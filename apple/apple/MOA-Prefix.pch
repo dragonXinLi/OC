@@ -50,6 +50,7 @@
 #import "AppDelegate.h"
 #import "LeRAlert.h"
 #import "NetChecker.h"
+#import "NSString+MOA.h"
 #endif
 
 
