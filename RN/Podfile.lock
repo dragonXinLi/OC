@@ -1,0 +1,76 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - React/ART (0.41.2):
+    - React/Core
+  - React/Core (0.41.2):
+    - React/cxxreact
+    - React/yoga
+  - React/cxxreact (0.41.2):
+    - React/jschelpers
+  - React/jschelpers (0.41.2)
+  - React/RCTActionSheet (0.41.2):
+    - React/Core
+  - React/RCTAdSupport (0.41.2):
+    - React/Core
+  - React/RCTGeolocation (0.41.2):
+    - React/Core
+  - React/RCTImage (0.41.2):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.41.2):
+    - React/Core
+  - React/RCTNetwork (0.41.2):
+    - React/Core
+  - React/RCTPushNotification (0.41.2):
+    - React/Core
+  - React/RCTSettings (0.41.2):
+    - React/Core
+  - React/RCTText (0.41.2):
+    - React/Core
+  - React/RCTVibration (0.41.2):
+    - React/Core
+  - React/RCTWebSocket (0.41.2):
+    - React/Core
+  - React/yoga (0.41.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - React/ART (from `./react/node_modules/react-native`)
+  - React/Core (from `./react/node_modules/react-native`)
+  - React/RCTActionSheet (from `./react/node_modules/react-native`)
+  - React/RCTAdSupport (from `./react/node_modules/react-native`)
+  - React/RCTGeolocation (from `./react/node_modules/react-native`)
+  - React/RCTImage (from `./react/node_modules/react-native`)
+  - React/RCTLinkingIOS (from `./react/node_modules/react-native`)
+  - React/RCTNetwork (from `./react/node_modules/react-native`)
+  - React/RCTPushNotification (from `./react/node_modules/react-native`)
+  - React/RCTSettings (from `./react/node_modules/react-native`)
+  - React/RCTText (from `./react/node_modules/react-native`)
+  - React/RCTVibration (from `./react/node_modules/react-native`)
+  - React/RCTWebSocket (from `./react/node_modules/react-native`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ./react/node_modules/react-native
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  React: 2b10c07d947dea71c144a33764e9162ed81e3825
+
+PODFILE CHECKSUM: fb4cde3bd7975a875173c56b0adeb3fbc4b11b52
+
+COCOAPODS: 1.2.1
