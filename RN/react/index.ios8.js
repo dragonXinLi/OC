@@ -10,3 +10,21 @@ import {
     FlatList,
 } from 'react-native';
 
+var styles = StyleSheet.create({
+	container:{
+		flex:1,
+		paddingTop:22,
+	},
+});
+
+export default class RN extends Component{
+	render(){
+		return(
+			<View style = {[styles.container]}>
+				
+			</View>
+		);
+	}
+}
+
+AppRegistry.registerComponent('RN' , ()=>RN);

@@ -39,6 +39,7 @@ export default class RN extends Component { //创建一个入口类
   }
 }
 
+
 const styles = StyleSheet.create({//提供视图的样式
   container: {
     flex: 1,

@@ -15,6 +15,7 @@
 #import "StateViewController.h"
 #import "InputTextViewController.h"
 #import "ScrollViewController.h"
+#import "FlatListViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -35,6 +36,7 @@
                       @"StateViewController",
                       @"InputTextViewController",
                       @"ScrollViewController",
+                      @"FlatListViewController",
                       ];
 
 }
