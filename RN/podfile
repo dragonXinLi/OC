@@ -1,9 +1,8 @@
 platform:ios,'8.0'
 
 target "RN" do
-	pod 'AFNetworking'
 
-
+pod "Yoga", :path => ‘./react/node_modules/react-native/ReactCommon/yoga'
 pod 'React', :path => ‘./react/node_modules/react-native', :subspecs => [
 'Core',
 'ART',

@@ -16,6 +16,8 @@
 #import "InputTextViewController.h"
 #import "ScrollViewController.h"
 #import "FlatListViewController.h"
+#import "FetchViewController.h"
+#import "MeiViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -31,14 +33,32 @@
     [self.tableView setDelegate:self];
     [self.view addSubview:self.tableView];
     
-    self.dataList = @[@"FirstViewController",@"ImageViewController",@"CSSViewController",@"FlexViewController",
+    self.dataList = @[@"FirstViewController",
+                      @"ImageViewController",
+                      @"CSSViewController",
+                      @"FlexViewController",
                       @"ProjectOneViewController",
                       @"StateViewController",
                       @"InputTextViewController",
                       @"ScrollViewController",
                       @"FlatListViewController",
+                      @"FetchViewController",
+                      @"MeiViewController",
                       ];
-
+/*
+ {
+ "name": "RN",
+ "version": "0.0.1",
+ "private": true,
+ "scripts": {
+ "start": "node node_modules/react-native/local-cli/cli.js start"
+ },
+ "dependencies": {
+ "react": "15.4.2",
+ "react-native": "0.41.2"
+ }
+ }
+ */
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
