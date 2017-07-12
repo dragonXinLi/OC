@@ -14,7 +14,7 @@ import {
 
 //flex Direction
 
-export default class Index extends Component {
+class Index extends Component {
     render() {
         // return (
         //     <View style={[styles.height160, styles.row]}>
@@ -168,4 +168,4 @@ var styles = StyleSheet.create({
     },
 });
 
-// AppRegistry.registerComponent('Index', () => Index);
+export default Index;

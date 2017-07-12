@@ -12,5 +12,6 @@
 @interface BaseViewController : UIViewController
 
 @property (nonatomic , assign) NSInteger index;
+- (void)loadNRJS:(NSInteger)index;
 
 @end

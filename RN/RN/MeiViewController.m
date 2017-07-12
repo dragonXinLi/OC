@@ -19,6 +19,15 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)loadNRJS:(NSInteger)index
+{
+    NSString * strUrl = [NSString stringWithFormat:@"http://localhost:8081/index.ios%zd.bundle?platform=ios&dev=true",index];
+    NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
+    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"RN" initialProperties:nil launchOptions:nil];
+    [self.view addSubview:rootView];
+    rootView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
