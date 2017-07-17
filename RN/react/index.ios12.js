@@ -45,7 +45,7 @@ class Row extends PureComponent{
     }
 }
 
-class RefreshControlXY extends PureComponent
+class RN extends PureComponent
 {
     constructor(props)
     {
@@ -69,7 +69,7 @@ class RefreshControlXY extends PureComponent
                         // refreshing  bool  决定加载进去指示器是否为活跃状态，也表明当前是否在刷新中
                         refreshing={this.state.isRefreshing}
                         // onRefresh  function方法 当视图开始刷新的时候调用
-                        onRefresh={this._onRefresh}
+                        onRefresh={this._onRefresh.bind(this)}
                         // progressBackgroundColor ColorPropType  设置加载进度指示器的背景颜色
                         progressBackgroundColor="#ffffff"
                     />

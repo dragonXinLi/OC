@@ -33,7 +33,7 @@ class Index extends Component {
                     <View style={[styles.height160 , styles.part_1_left]}>
                         <Text style={[styles.font14,styles.marTop18 , styles.marLeft10 , styles.green]}>我们约吧</Text>
                         <Text style={[styles.font10,styles.marTop14 , styles.marLeft10]}>恋爱家人好朋友 </Text>
-                        <Image style={[styles.yue]} source={{url:''}}/>
+                        <Image style={[styles.yue , {width:60,height:60 , marginTop:20 , marginLeft:20}]} source={require('../scene/Img/03.png')}/>
                     </View>
 
                     <View style={[styles.height160 , styles.part_1_right]}>
@@ -43,14 +43,14 @@ class Index extends Component {
                                 <Text style={[styles.font14 , {fontSize : 12 , marginTop : 14 , marginLeft : 30 , color : 'red'}]}>十元惠生活</Text>
                             </View>
                             <View style={{flex : 1 ,marginTop : -13}}>
-                                <Image style={[styles.hanbao]} source={{url:''}}/>
+                                <Image style={[styles.hanbao]} source={require('../scene/Img/04.png')}/>
                             </View>
                         </View>
                         <View style={{flex:1, flexDirection:'row' , borderTopWidth:0.5 , borderColor:'#DDD8CE'}}>
                             <View style={{flex:1,borderRightWidth:1,borderColor:'#DDD8CE'}}>
                                 <Text style={{color:'#F742AB' , marginLeft:5 , fontWeight : 'bold' , fontSize:15 , marginTop : 8}}>聚餐宴请</Text>
                                 <Text style={{color:'red' , fontSize:12,marginTop: 14 , marginLeft: 5}}>朋友家人聚餐</Text>
-                                <Image style={{height:25,width:25,alignSelf:'center' }} source={{url:''}}/>
+                                <Image style={{height:20,width:20,alignSelf:'center' }} source={require('../scene/Img/05.png')}/>
                             </View>
                             <View style={{flex:1}}>
                                 <Text style={[{color:'#F742AB' , marginTop:8 , marginLeft:5 ,} , styles.font14]}>名店抢购</Text>
@@ -66,7 +66,7 @@ class Index extends Component {
                         <Text style={[{marginLeft:7 , fontSize:12 , marginTop:3 ,}]}>新用户专享</Text>
                     </View>
                     <View style={[{flex:1}]}>
-                        <Image style={[{height:50 , width:120 ,}]} source={{url:''}}/>
+                        <Image style={[{height:50 , width:120 ,}]} source={require('../scene/Img/06.png')}/>
                     </View>
                 </View>
                 <View >
@@ -78,7 +78,7 @@ class Index extends Component {
                                 <Text style={[{fontSize:12 , color:'#97979A' , marginTop:3 , marginLeft:7}]}>烧烤6.6元起</Text>
                             </View>
                             <View style={[{flex:1 ,}]}>
-                                <Image style={[{width:60 , height:55}]} source={{url:''}}/>
+                                <Image style={[{width:60 , height:55}]} source={require('../scene/Img/07.png')}/>
                             </View>
                         </View>
                         <View style={[{flex:1} , styles.row]}>
@@ -87,7 +87,7 @@ class Index extends Component {
                                 <Text style={[{fontSize:12 , color:'#97979A' , marginTop:3 , marginLeft:7}]}>选好酒店才安心</Text>
                             </View>
                             <View style={{flex:1}}>
-                                <Image style={{width:60 , height:55}} source={{url:''}}/>
+                                <Image style={{width:60 , height:55}} source={require('../scene/Img/08.png')}/>
                             </View>
                         </View>
                     </View>
@@ -98,7 +98,7 @@ class Index extends Component {
                                 <Text style={[{fontSize:12 , color:'#97979A' , marginTop:3 , marginLeft:7}]}>免费吃喝玩乐购</Text>
                             </View>
                             <View style={[{flex:1 ,}]}>
-                                <Image style={[{width:60 , height:55}]} source={{url:''}}/>
+                                <Image style={[{width:60 , height:55}]} source={require('../scene/Img/09.png')}/>
                             </View>
                         </View>
                         <View style={[{flex:1} , styles.row]}>
@@ -107,7 +107,7 @@ class Index extends Component {
                                 <Text style={[{fontSize:12 , color:'#97979A' , marginTop:3 , marginLeft:7}]}>大家都在买什么</Text>
                             </View>
                             <View style={{flex:1}}>
-                                <Image style={{width:60 , height:55}} source={{url:''}}/>
+                                <Image style={{width:60 , height:55}} source={require('../scene/Img/10.png')}/>
                             </View>
                         </View>
                     </View>

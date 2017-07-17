@@ -1,22 +1,22 @@
 //
-//  ImageViewController.m
+//  RefreshControlViewController.m
 //  RN
 //
-//  Created by LL on 2017/7/9.
+//  Created by sangfor on 2017/7/13.
 //  Copyright © 2017年 LL. All rights reserved.
 //
 
-#import "ImageViewController.h"
+#import "RefreshControlViewController.h"
 
-@interface ImageViewController ()
+@interface RefreshControlViewController ()
 
 @end
 
-@implementation ImageViewController
+@implementation RefreshControlViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

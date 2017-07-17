@@ -1,5 +1,5 @@
 //
-//  ProjectOneViewController.h
+//  ImageViewController.h
 //  RN
 //
 //  Created by LL on 2017/7/9.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ProjectOneViewController : BaseViewController
+@interface CustomUIController : BaseViewController
 
 @end

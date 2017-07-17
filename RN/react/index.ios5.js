@@ -35,8 +35,9 @@ class RN extends Component{
     render(){
         return(
             <View>
-                <Blink />
-                <Blink />
+                <Blink time='ss'/>
+                <Blink time='2000'/>
+                <Blink time='3000'/>
             </View>
         );
     }

@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MeiViewController : BaseViewController
+@interface PushViewController : BaseViewController
 
 @end

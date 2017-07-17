@@ -8,16 +8,19 @@
 
 #import "ViewController.h"
 #import "CSSViewController.h"
-#import "FirstViewController.h"
-#import "ImageViewController.h"
+#import "TextImageViewController.h"
+#import "CustomUIController.h"
 #import "FlexViewController.h"
-#import "ProjectOneViewController.h"
+#import "PickerViewController.h"
 #import "StateViewController.h"
 #import "InputTextViewController.h"
 #import "ScrollViewController.h"
 #import "FlatListViewController.h"
 #import "FetchViewController.h"
-#import "MeiViewController.h"
+#import "PushViewController.h"
+#import "TouchableViewController.h"
+#import "RefreshControlViewController.h"
+#import "ShareViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -33,17 +36,20 @@
     [self.tableView setDelegate:self];
     [self.view addSubview:self.tableView];
     
-    self.dataList = @[@"FirstViewController",
-                      @"ImageViewController",
+    self.dataList = @[@"TextImageViewController",
+                      @"CustomUIController",
+                      @"InputTextViewController",
                       @"CSSViewController",
                       @"FlexViewController",
-                      @"ProjectOneViewController",
                       @"StateViewController",
-                      @"InputTextViewController",
+                      @"PickerViewController",
                       @"ScrollViewController",
                       @"FlatListViewController",
                       @"FetchViewController",
-                      @"MeiViewController",
+                      @"PushViewController",
+                      @"TouchableViewController",
+                      @"RefreshControlViewController",
+                      @"ShareViewController",
                       ];
 /*
  {

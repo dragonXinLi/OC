@@ -1,31 +1,22 @@
 //
-//  MeiViewController.m
+//  ProjectOneViewController.m
 //  RN
 //
-//  Created by sangfor on 2017/7/11.
+//  Created by LL on 2017/7/9.
 //  Copyright © 2017年 LL. All rights reserved.
 //
 
-#import "MeiViewController.h"
+#import "PickerViewController.h"
 
-@interface MeiViewController ()
+@interface PickerViewController ()
 
 @end
 
-@implementation MeiViewController
+@implementation PickerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)loadNRJS:(NSInteger)index
-{
-    NSString * strUrl = [NSString stringWithFormat:@"http://localhost:8081/index.ios%zd.bundle?platform=ios&dev=true",index];
-    NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
-    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"RN" initialProperties:nil launchOptions:nil];
-    [self.view addSubview:rootView];
-    rootView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
 }
 
 - (void)didReceiveMemoryWarning {

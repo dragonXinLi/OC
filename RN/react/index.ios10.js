@@ -183,24 +183,24 @@ export default class RN extends PureComponent{
         return (
             <View style = {{flex:1}}>
 
-                {/*<Navigator*/}
-                    {/*style={styles.container}*/}
-                    {/*initialRoute={{ message: '初始页面', }}*/}
-                    {/*// Navaigator根据指定的路由进行渲染指定的界面*/}
-                    {/*renderScene={ (route, navigator) => <NavMenu*/}
-                        {/*message={route.message}*/}
-                        {/*navigator={navigator}*/}
-                    {/*/>}*/}
-                    {/*// 改变页面切换的动画或者页面的手势*/}
-                    {/*configureScene={(route) => {*/}
-                        {/*if (route.sceneConfig) {*/}
-                            {/*return route.sceneConfig;*/}
-                        {/*}*/}
-                        {/*return Navigator.SceneConfigs.FloatFromBottom;*/}
-                    {/*}}*/}
-                {/*/>*/}
+                <Navigator
+                    style={styles.container}
+                    initialRoute={{ message: '初始页面', }}
+                    // Navaigator根据指定的路由进行渲染指定的界面
+                    renderScene={ (route, navigator) => <NavMenu
+                        message={route.message}
+                        navigator={navigator}
+                    />}
+                    // 改变页面切换的动画或者页面的手势
+                    configureScene={(route) => {
+                        if (route.sceneConfig) {
+                            return route.sceneConfig;
+                        }
+                        return Navigator.SceneConfigs.FloatFromBottom;
+                    }}
+                />
 
-            <TabBar/>
+            {/*<TabBar/>*/}
 
             </View>
         );

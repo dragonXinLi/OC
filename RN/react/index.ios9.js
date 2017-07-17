@@ -28,6 +28,7 @@ class NetUitl extends React.Component{
         fetch(url,{
             method:'GET',
         }).then((response)=>{
+            // console.log(response);
             callback(response);
         }).done();
     }
@@ -51,7 +52,8 @@ class CustomUI extends Component {
     constructor(props){
         super(props);
         this.state = {
-            text:null
+            text:null,
+            rs:null
         }
     }
     render(){
@@ -72,24 +74,25 @@ export default class RN extends Component{
         return(
             <View style={{flex:1}}>
                 <TouchableOpacity onPress={this.ssss}>
-                    <CustomUI text="访问" style={{}}></CustomUI>
+                    <CustomUI text="访问网络" style={{}}></CustomUI>
                 </TouchableOpacity>
             </View>
         );
     }
-    ssss(){
-        // let params = {'start':'0',limit:'20','isNeedCategory': true, 'lastRefreshTime': '2016-09-25 09:45:12'};
-        // NetUitl.post('http://www.pintasty.cn/home/homedynamic',params,'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJVLTliZGJhNjBjMjZiMDQwZGJiMTMwYWRhYWVlN2FkYTg2IiwiZXhwaXJhdGlvblRpbWUiOjE0NzUxMTg4ODU4NTd9.ImbjXRFYDNYFPtK2_Q2jffb2rc5DhTZSZopHG_DAuNU',function (set) {
-        //     //下面的就是请求来的数据
-        //     console.log(set)
-        // })
-        //get请求,以百度为例,没有参数,没有header
-        NetUitl.get('https://www.baidu.com','',function (set) {
-            //下面是请求下来的数据
-            console.log(set)
-
-        })
-
+    ssss() {
+        var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
+        // // //get请求,
+        // NetUitl.get(REQUEST_URL, '', function (set) {
+        //
+        //     //下面是请求下来的数据
+        //     console.log(set);
+        // });
+        fetch(REQUEST_URL)
+            .then((response) => response.json())// 把response转为json对象
+            .then((responseData) => { //上面的转好的json
+                 console.log(responseData.movies)
+            })
+            .done();
     }
 }
 

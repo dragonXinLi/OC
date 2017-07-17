@@ -16,20 +16,20 @@ var COURSE_ITEMS=['C++','Java','Android','iOS','React Native','Swift','.Net'];
 class RN extends Component{
     constructor(props){
         super(props);
-        this.state = {language: ''};
+        this.state = {language: ' '};
     }
 
     render() {
         return (
             <View style={styles.container}>
                 <Text >
-                    Picker选择器实例
+                    Picker
                 </Text>
                 <Picker
                     style={{width:200}}
                     // 选择器选中的item所对应的值，该可以是一个字符串或者一个数字
                     selectedValue={this.state.language}
-                    onValueChange={(value) => this.setState({language: value})}>
+                    onValueChange={(value) => this.setState({language: value })}>
                     <Picker.Item label="React" value='React' />
                     <Picker.Item label="React Native" value='React Native'/>
                     <Picker.Item label="React Native2" value='React Native'/>
@@ -41,13 +41,13 @@ class RN extends Component{
                 </Picker>
                 <Text>当前选择的是:{this.state.language}</Text>
 
-                <PickerIOS/>
+                <PickerIOSXY/>
             </View>
         );
     }
 }
 
-class PickerIOS extends Component
+class PickerIOSXY extends Component
 {
     constructor(props){
         super(props);
@@ -55,6 +55,13 @@ class PickerIOS extends Component
             selectedCourse:'Java',
             selectedIndex:1,
         };
+        var  data = [];
+
+        // console.log('fhdsjfklds');
+        for (i = 0 ; i<3 ; i++)
+        {
+            console.log(i);
+        }
     }
     render() {
         return (
@@ -69,42 +76,39 @@ class PickerIOS extends Component
                     selectedValue={this.state.selectedCourse}
                     // onValueChange    function 方法  当值发生变化的时候进行回调
                     onValueChange={(selectedCourse,selectedIndex)=> this.setState({selectedCourse,selectedIndex})}>
+
+
                     <PickerItemIOS
-                        key='0'
                         value='C++'
                         label='C++'
                     />
                     <PickerItemIOS
-                        key='1'
                         value='Java'
                         label='Java'
                     />
                     <PickerItemIOS
-                        key='2'
                         value='Android'
                         label='Android'
                     />
                     <PickerItemIOS
-                        key='3'
                         value='iOS'
                         label='iOS'
                     />
                     <PickerItemIOS
-                        key='4'
                         value='React Native'
                         label='React Native'
                     />
                     <PickerItemIOS
-                        key='5'
                         value='Swift'
                         label='Swift'
                     />
                     <PickerItemIOS
-                        key='5'
                         value='.Net'
                         label='.Net'
                     />
                 </PickerIOS>
+
+                <Text>当前选择的是:{this.state.selectedCourse} , 索引:{this.state.selectedIndex}</Text>
             </View>
         );
     }

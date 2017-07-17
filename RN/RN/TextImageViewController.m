@@ -1,22 +1,21 @@
 //
-//  ProjectOneViewController.m
+//  FirstViewController.m
 //  RN
 //
 //  Created by LL on 2017/7/9.
 //  Copyright © 2017年 LL. All rights reserved.
 //
 
-#import "ProjectOneViewController.h"
+#import "TextImageViewController.h"
 
-@interface ProjectOneViewController ()
+@interface TextImageViewController ()
 
 @end
 
-@implementation ProjectOneViewController
+@implementation TextImageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

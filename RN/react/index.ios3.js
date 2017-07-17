@@ -22,7 +22,7 @@ export default class RN extends Component {
                    <Text>1/4高</Text>
                    <Text>1/4高</Text>
                </View>
-                <View style={[styles.style_1 , {flexDirection:'column'}]}>
+                <View style={[styles.style_2 , {flexDirection:'column'}]}>
                     <Text>1/4高</Text>
                     <Text>1/4高</Text>
                 </View>
@@ -39,7 +39,14 @@ var styles = StyleSheet.create({
         borderColor:'red',
     },
     style_1:{
-        flex:5,
+        flex:2,
+        height:40,
+        flexDirection : 'row',
+        borderWidth:1,
+        borderColor:'red',
+    },
+    style_2:{
+        flex:4,
         height:40,
         flexDirection : 'row',
         borderWidth:1,

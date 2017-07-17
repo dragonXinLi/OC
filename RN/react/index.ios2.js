@@ -11,7 +11,7 @@ import {
   View, TextInput,
 } from 'react-native';
 
-//fontsize
+//fontsize,TextInput
 export default class RN extends Component {
     constructor(props){
         super(props);
@@ -20,14 +20,14 @@ export default class RN extends Component {
 
   render() { 
     return (
-      <View style={styles.container}>
+      <View >
           <Text style={{fontSize:24}}>
               !!!!!!!!!!!!!!!
           </Text>
-          <TextInput style={{height:40,borderColor:'red',borderWidth:1}}
-                         multiline={true}
-                     // defaultValue  string 给文本输入设置一个默认初始值。
-                         defaultValue='默认信息1'
+          <TextInput id = '2' style={{height:40,borderColor:'red',borderWidth:1}}
+          multiline={true}
+          // defaultValue  string 给文本输入设置一个默认初始值。
+          defaultValue='默认信息1'
           />
           <TextInput
               style={{marginLeft:0,marginRight:10 , height:40,}}

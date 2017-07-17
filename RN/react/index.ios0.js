@@ -5,12 +5,12 @@
  */
 /*
 
-    Node.js基础
-    JSX语法基础
-    Flexbox布局
+    Node.js
+    JSX
+    Flexbox
 
 */
-import React, { Component } from 'react'; //可以引入其他模块
+import React, { Component } from 'react'; //引入其他模块
 import {
   AppRegistry,
   StyleSheet,
@@ -34,7 +34,7 @@ export default class RN extends Component { //创建一个入口类
                 <View style={{width:70}}>
                   <Image source={require('./scene/Img/01.png')} style={{alignSelf:'center',width:45,height:45}} />
                   {/*//内联样式不会报类型错*/}
-                  <Text style={{marginTop:5,textAlign:'center',fontSize:11,color:'#555555'}}>美食</Text>
+                  <Text style={[{marginTop:5,textAlign:'center',color:'#555555'} , styles.fontss]}>美食</Text>
                 </View>
                 <View style={{width:70}}>
                   <Image source={require('./scene/Img/02.png')} style={{alignSelf:'center',width:45,height:45}} />
@@ -71,7 +71,7 @@ export default class RN extends Component { //创建一个入口类
                   <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>今日新单</Text>
                 </View>
                 <View style={{width:70}}>
-                  <Image source={{uri:'https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%9B%BE%E7%89%87&hs=0&pn=14&spn=0&di=109011412950&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=3833588836%2C3989680093&os=4149304536%2C633876065&simid=4197033769%2C652137767&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimg.bimg.126.net%2Fphoto%2FDcOmS0_st0Zir5pMiMIVYA%3D%3D%2F3975552571061908277.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fks52_z%26e3B8mn_z%26e3Bv54AzdH3Fyq8n89cd8AzdH3Fks52AzdH3FfpwptvAzdH3Fda0d98dn0da88dddddnnncbbAzdH3F&gsm=0'}} style={{alignSelf:'center',width:45,height:45}} />
+                  <Image source={{uri:'https://facebook.github.io/react/img/logo_og.png'}} style={{alignSelf:'center',width:45,height:45 }} />
                   <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>丽人</Text>
                 </View>
               </View>
@@ -99,6 +99,9 @@ const styles = StyleSheet.create({//提供视图的样式
     color: '#333333',
     marginBottom: 5,
   },
+    fontss:{
+      fontSize : 12,
+    }
 });
 
 AppRegistry.registerComponent('RN', () => RN); //注册应用入口，这个一定不能少，否则模拟器会提示报错：

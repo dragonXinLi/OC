@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5A2D8C1F1706D70022660B /* TouchableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A2D8B1F1706D70022660B /* TouchableViewController.m */; };
+		2D5A2D8F1F17070B0022660B /* RefreshControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A2D8E1F17070B0022660B /* RefreshControlViewController.m */; };
+		2D5A2D921F1717970022660B /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A2D911F1717970022660B /* ShareViewController.m */; };
 		2D800E491F13AA49008CE0F1 /* FlatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D800E481F13AA49008CE0F1 /* FlatListViewController.m */; };
 		2D800E4C1F14B359008CE0F1 /* FetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D800E4B1F14B359008CE0F1 /* FetchViewController.m */; };
-		2D800E5B1F14F5EB008CE0F1 /* MeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D800E5A1F14F5EB008CE0F1 /* MeiViewController.m */; };
+		2D800E5B1F14F5EB008CE0F1 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D800E5A1F14F5EB008CE0F1 /* PushViewController.m */; };
 		6A0933BA1F11E17D00FB131C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933B91F11E17D00FB131C /* main.m */; };
 		6A0933BD1F11E17E00FB131C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933BC1F11E17E00FB131C /* AppDelegate.m */; };
 		6A0933C01F11E17E00FB131C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933BF1F11E17E00FB131C /* ViewController.m */; };
@@ -20,11 +23,11 @@
 		6A0933D61F11E17E00FB131C /* RNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933D51F11E17E00FB131C /* RNTests.m */; };
 		6A0933E11F11E17E00FB131C /* RNUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933E01F11E17E00FB131C /* RNUITests.m */; };
 		6A0933FB1F11FB2900FB131C /* CSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933FA1F11FB2900FB131C /* CSSViewController.m */; };
-		6A6B5CFF1F120487004D3AB5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5CFE1F120487004D3AB5 /* FirstViewController.m */; };
+		6A6B5CFF1F120487004D3AB5 /* TextImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5CFE1F120487004D3AB5 /* TextImageViewController.m */; };
 		6A6B5D021F1204C0004D3AB5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D011F1204C0004D3AB5 /* BaseViewController.m */; };
-		6A6B5D051F1208AC004D3AB5 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D041F1208AC004D3AB5 /* ImageViewController.m */; };
+		6A6B5D051F1208AC004D3AB5 /* CustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D041F1208AC004D3AB5 /* CustomUIController.m */; };
 		6A6B5D081F121075004D3AB5 /* FlexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D071F121075004D3AB5 /* FlexViewController.m */; };
-		6A6B5D0B1F122560004D3AB5 /* ProjectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D0A1F122560004D3AB5 /* ProjectOneViewController.m */; };
+		6A6B5D0B1F122560004D3AB5 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D0A1F122560004D3AB5 /* PickerViewController.m */; };
 		6A6B5D0E1F1294EC004D3AB5 /* StateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D0D1F1294EC004D3AB5 /* StateViewController.m */; };
 		6A6B5D111F129CAB004D3AB5 /* InputTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D101F129CAB004D3AB5 /* InputTextViewController.m */; };
 		6A6B5D141F129FA6004D3AB5 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B5D131F129FA6004D3AB5 /* ScrollViewController.m */; };
@@ -50,12 +53,18 @@
 
 /* Begin PBXFileReference section */
 		14A4241C1622EA65E62398F6 /* Pods-RN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RN/Pods-RN.debug.xcconfig"; sourceTree = "<group>"; };
+		2D5A2D8A1F1706D70022660B /* TouchableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchableViewController.h; sourceTree = "<group>"; };
+		2D5A2D8B1F1706D70022660B /* TouchableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchableViewController.m; sourceTree = "<group>"; };
+		2D5A2D8D1F17070B0022660B /* RefreshControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshControlViewController.h; sourceTree = "<group>"; };
+		2D5A2D8E1F17070B0022660B /* RefreshControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshControlViewController.m; sourceTree = "<group>"; };
+		2D5A2D901F1717970022660B /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		2D5A2D911F1717970022660B /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		2D800E471F13AA49008CE0F1 /* FlatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatListViewController.h; sourceTree = "<group>"; };
 		2D800E481F13AA49008CE0F1 /* FlatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatListViewController.m; sourceTree = "<group>"; };
 		2D800E4A1F14B359008CE0F1 /* FetchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchViewController.h; sourceTree = "<group>"; };
 		2D800E4B1F14B359008CE0F1 /* FetchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchViewController.m; sourceTree = "<group>"; };
-		2D800E591F14F5EB008CE0F1 /* MeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeiViewController.h; sourceTree = "<group>"; };
-		2D800E5A1F14F5EB008CE0F1 /* MeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeiViewController.m; sourceTree = "<group>"; };
+		2D800E591F14F5EB008CE0F1 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		2D800E5A1F14F5EB008CE0F1 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		6A0933B51F11E17D00FB131C /* RN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0933B91F11E17D00FB131C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A0933BB1F11E17D00FB131C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,16 +84,16 @@
 		6A0933E21F11E17E00FB131C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A0933F91F11FB2900FB131C /* CSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSViewController.h; sourceTree = "<group>"; };
 		6A0933FA1F11FB2900FB131C /* CSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSViewController.m; sourceTree = "<group>"; };
-		6A6B5CFD1F120487004D3AB5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		6A6B5CFE1F120487004D3AB5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6A6B5CFD1F120487004D3AB5 /* TextImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextImageViewController.h; sourceTree = "<group>"; };
+		6A6B5CFE1F120487004D3AB5 /* TextImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextImageViewController.m; sourceTree = "<group>"; };
 		6A6B5D001F1204C0004D3AB5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		6A6B5D011F1204C0004D3AB5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		6A6B5D031F1208AC004D3AB5 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		6A6B5D041F1208AC004D3AB5 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		6A6B5D031F1208AC004D3AB5 /* CustomUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIController.h; sourceTree = "<group>"; };
+		6A6B5D041F1208AC004D3AB5 /* CustomUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIController.m; sourceTree = "<group>"; };
 		6A6B5D061F121075004D3AB5 /* FlexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexViewController.h; sourceTree = "<group>"; };
 		6A6B5D071F121075004D3AB5 /* FlexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexViewController.m; sourceTree = "<group>"; };
-		6A6B5D091F122560004D3AB5 /* ProjectOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectOneViewController.h; sourceTree = "<group>"; };
-		6A6B5D0A1F122560004D3AB5 /* ProjectOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectOneViewController.m; sourceTree = "<group>"; };
+		6A6B5D091F122560004D3AB5 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		6A6B5D0A1F122560004D3AB5 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		6A6B5D0C1F1294EC004D3AB5 /* StateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateViewController.h; sourceTree = "<group>"; };
 		6A6B5D0D1F1294EC004D3AB5 /* StateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateViewController.m; sourceTree = "<group>"; };
 		6A6B5D0F1F129CAB004D3AB5 /* InputTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextViewController.h; sourceTree = "<group>"; };
@@ -152,28 +161,34 @@
 				6A0933BF1F11E17E00FB131C /* ViewController.m */,
 				6A6B5D001F1204C0004D3AB5 /* BaseViewController.h */,
 				6A6B5D011F1204C0004D3AB5 /* BaseViewController.m */,
-				6A6B5CFD1F120487004D3AB5 /* FirstViewController.h */,
-				6A6B5CFE1F120487004D3AB5 /* FirstViewController.m */,
-				6A6B5D031F1208AC004D3AB5 /* ImageViewController.h */,
-				6A6B5D041F1208AC004D3AB5 /* ImageViewController.m */,
+				6A6B5CFD1F120487004D3AB5 /* TextImageViewController.h */,
+				6A6B5CFE1F120487004D3AB5 /* TextImageViewController.m */,
+				6A6B5D031F1208AC004D3AB5 /* CustomUIController.h */,
+				6A6B5D041F1208AC004D3AB5 /* CustomUIController.m */,
+				6A6B5D0F1F129CAB004D3AB5 /* InputTextViewController.h */,
+				6A6B5D101F129CAB004D3AB5 /* InputTextViewController.m */,
 				6A0933F91F11FB2900FB131C /* CSSViewController.h */,
 				6A0933FA1F11FB2900FB131C /* CSSViewController.m */,
 				6A6B5D061F121075004D3AB5 /* FlexViewController.h */,
 				6A6B5D071F121075004D3AB5 /* FlexViewController.m */,
-				6A6B5D091F122560004D3AB5 /* ProjectOneViewController.h */,
-				6A6B5D0A1F122560004D3AB5 /* ProjectOneViewController.m */,
 				6A6B5D0C1F1294EC004D3AB5 /* StateViewController.h */,
 				6A6B5D0D1F1294EC004D3AB5 /* StateViewController.m */,
-				6A6B5D0F1F129CAB004D3AB5 /* InputTextViewController.h */,
-				6A6B5D101F129CAB004D3AB5 /* InputTextViewController.m */,
+				6A6B5D091F122560004D3AB5 /* PickerViewController.h */,
+				6A6B5D0A1F122560004D3AB5 /* PickerViewController.m */,
 				6A6B5D121F129FA6004D3AB5 /* ScrollViewController.h */,
 				6A6B5D131F129FA6004D3AB5 /* ScrollViewController.m */,
 				2D800E471F13AA49008CE0F1 /* FlatListViewController.h */,
 				2D800E481F13AA49008CE0F1 /* FlatListViewController.m */,
 				2D800E4A1F14B359008CE0F1 /* FetchViewController.h */,
 				2D800E4B1F14B359008CE0F1 /* FetchViewController.m */,
-				2D800E591F14F5EB008CE0F1 /* MeiViewController.h */,
-				2D800E5A1F14F5EB008CE0F1 /* MeiViewController.m */,
+				2D800E591F14F5EB008CE0F1 /* PushViewController.h */,
+				2D800E5A1F14F5EB008CE0F1 /* PushViewController.m */,
+				2D5A2D8A1F1706D70022660B /* TouchableViewController.h */,
+				2D5A2D8B1F1706D70022660B /* TouchableViewController.m */,
+				2D5A2D8D1F17070B0022660B /* RefreshControlViewController.h */,
+				2D5A2D8E1F17070B0022660B /* RefreshControlViewController.m */,
+				2D5A2D901F1717970022660B /* ShareViewController.h */,
+				2D5A2D911F1717970022660B /* ShareViewController.m */,
 				6A0933C11F11E17E00FB131C /* Main.storyboard */,
 				6A0933C71F11E17E00FB131C /* Assets.xcassets */,
 				6A0933C91F11E17E00FB131C /* LaunchScreen.storyboard */,
@@ -411,19 +426,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5A2D8C1F1706D70022660B /* TouchableViewController.m in Sources */,
 				6A0933FB1F11FB2900FB131C /* CSSViewController.m in Sources */,
 				6A6B5D141F129FA6004D3AB5 /* ScrollViewController.m in Sources */,
 				6A6B5D081F121075004D3AB5 /* FlexViewController.m in Sources */,
 				2D800E4C1F14B359008CE0F1 /* FetchViewController.m in Sources */,
 				6A6B5D0E1F1294EC004D3AB5 /* StateViewController.m in Sources */,
-				6A6B5CFF1F120487004D3AB5 /* FirstViewController.m in Sources */,
-				6A6B5D051F1208AC004D3AB5 /* ImageViewController.m in Sources */,
+				6A6B5CFF1F120487004D3AB5 /* TextImageViewController.m in Sources */,
+				6A6B5D051F1208AC004D3AB5 /* CustomUIController.m in Sources */,
 				6A0933C01F11E17E00FB131C /* ViewController.m in Sources */,
-				2D800E5B1F14F5EB008CE0F1 /* MeiViewController.m in Sources */,
+				2D800E5B1F14F5EB008CE0F1 /* PushViewController.m in Sources */,
+				2D5A2D921F1717970022660B /* ShareViewController.m in Sources */,
+				2D5A2D8F1F17070B0022660B /* RefreshControlViewController.m in Sources */,
 				6A0933BD1F11E17E00FB131C /* AppDelegate.m in Sources */,
 				6A0933BA1F11E17D00FB131C /* main.m in Sources */,
 				6A6B5D111F129CAB004D3AB5 /* InputTextViewController.m in Sources */,
-				6A6B5D0B1F122560004D3AB5 /* ProjectOneViewController.m in Sources */,
+				6A6B5D0B1F122560004D3AB5 /* PickerViewController.m in Sources */,
 				6A6B5D021F1204C0004D3AB5 /* BaseViewController.m in Sources */,
 				6A0933C61F11E17E00FB131C /* RN.xcdatamodeld in Sources */,
 				2D800E491F13AA49008CE0F1 /* FlatListViewController.m in Sources */,

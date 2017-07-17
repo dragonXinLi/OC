@@ -17,35 +17,42 @@ var styles = StyleSheet.create({
 	},
 });
 
+
 class ListViewBasics extends Component{
-	constructor(props){
-		super(props);
-		const ds = new ListView.DataSource({rowHasChanged:(r1,r2)=>r1 !== r2});
-		this.state = {
-			dataSource:ds.cloneWithRows([
-				'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-                'John' , 'Joel' , 'James' , 'Jimmy' , 'Jackson' , 'Jillian' , 'Julie',
-			])
-		};
-	}
+	constructor(props) {
+        super(props);
+        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        this.state = {
+            dataSource: ds.cloneWithRows([
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+                'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie',
+            ]),
+
+            kes: (<View style={{flex: 1, paddingTop: 0, borderWidth: 1, borderColor: 'red'}}>
+				<ListView style={{flex: 1}}
+						  dataSource={this.state.dataSource}
+						  renderRow={(rowData) => <Text>{rowData}</Text>}
+				/>
+			</View>)
+        };
+    }
+
+
 	render(){
 		return(
-			<View style={{flex:1 , paddingTop:0 , borderWidth:1 , borderColor:'red'}}>
-				<ListView style = {{flex:1}}
-					dataSource = {this.state.dataSource}
-					renderRow = {(rowData)=><Text>{rowData}</Text>}
-				/>
-			</View>
+			// this.state.kes
+			<View></View>
 		);
+
 	}
 }
 

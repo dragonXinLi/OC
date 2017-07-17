@@ -1,21 +1,22 @@
 //
-//  FirstViewController.m
+//  ShareViewController.m
 //  RN
 //
-//  Created by LL on 2017/7/9.
+//  Created by sangfor on 2017/7/13.
 //  Copyright © 2017年 LL. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ShareViewController.h"
 
-@interface FirstViewController ()
+@interface ShareViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ShareViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

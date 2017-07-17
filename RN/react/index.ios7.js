@@ -23,8 +23,8 @@ class RN extends Component{
             <ScrollView showsVerticalScrollIndicator={true}
                         contentContainerStyle={styles.contentContainer}
                 // horizontal = {false}
-                        keyboardDismissMode = 'on-drag'
-            >
+                        keyboardDismissMode = 'none'
+                >
                 <Text style={{fontSize:50}}>Scroll me</Text>
                 <Text style={{fontSize:50}}>Scroll me</Text>
                 <Text style={{fontSize:50}}>Scroll me</Text>
