@@ -10,7 +10,6 @@
 		2D098BE91E7FF0DD00715510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D098BE81E7FF0DD00715510 /* main.m */; };
 		2D098BEC1E7FF0DD00715510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D098BEB1E7FF0DD00715510 /* AppDelegate.m */; };
 		2D098BEF1E7FF0DD00715510 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D098BEE1E7FF0DD00715510 /* ViewController.m */; };
-		2D098BF21E7FF0DD00715510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D098BF01E7FF0DD00715510 /* Main.storyboard */; };
 		2D098BF51E7FF0DD00715510 /* apple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D098BF31E7FF0DD00715510 /* apple.xcdatamodeld */; };
 		2D098BF71E7FF0DD00715510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D098BF61E7FF0DD00715510 /* Assets.xcassets */; };
 		2D098BFA1E7FF0DD00715510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D098BF81E7FF0DD00715510 /* LaunchScreen.storyboard */; };
@@ -46,7 +45,7 @@
 		2DCD7DFE1E97347F007947A6 /* LeRRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7DFD1E97347F007947A6 /* LeRRefreshTableViewController.m */; };
 		2DCD7E011E97368D007947A6 /* LeRRefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */; };
 		2DCD7E041E974405007947A6 /* EntrysOperateHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E031E974405007947A6 /* EntrysOperateHelper.mm */; };
-		2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */; };
+		2DCD7E071E978E74007947A6 /* LeRRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD7E061E978E74007947A6 /* LeRRefreshControl.m */; };
 		369A2F76E712D0CCBD63BEC8 /* libPods-apple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BD5D273AC43C39190C3092 /* libPods-apple.a */; };
 		6AA5F1811EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */; };
 /* End PBXBuildFile section */
@@ -75,7 +74,6 @@
 		2D098BEB1E7FF0DD00715510 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D098BED1E7FF0DD00715510 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D098BEE1E7FF0DD00715510 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2D098BF11E7FF0DD00715510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D098BF41E7FF0DD00715510 /* apple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = apple.xcdatamodel; sourceTree = "<group>"; };
 		2D098BF61E7FF0DD00715510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D098BF91E7FF0DD00715510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,8 +141,8 @@
 		2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTableFooterView.m; sourceTree = "<group>"; };
 		2DCD7E021E974405007947A6 /* EntrysOperateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntrysOperateHelper.h; sourceTree = "<group>"; };
 		2DCD7E031E974405007947A6 /* EntrysOperateHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EntrysOperateHelper.mm; sourceTree = "<group>"; };
-		2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRrefreshControl.h; sourceTree = "<group>"; };
-		2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRrefreshControl.m; sourceTree = "<group>"; };
+		2DCD7E051E978E74007947A6 /* LeRRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshControl.h; sourceTree = "<group>"; };
+		2DCD7E061E978E74007947A6 /* LeRRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshControl.m; sourceTree = "<group>"; };
 		2DE830321E8609E000362A75 /* MOA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MOA-Prefix.pch"; sourceTree = "<group>"; };
 		6AA5F17F1EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeRRefreshTimeHandler.h; sourceTree = "<group>"; };
 		6AA5F1801EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeRRefreshTimeHandler.m; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 				2D098BEB1E7FF0DD00715510 /* AppDelegate.m */,
 				2D098BED1E7FF0DD00715510 /* ViewController.h */,
 				2D098BEE1E7FF0DD00715510 /* ViewController.m */,
-				2D098BF01E7FF0DD00715510 /* Main.storyboard */,
 				2D098BF61E7FF0DD00715510 /* Assets.xcassets */,
 				2D098BF81E7FF0DD00715510 /* LaunchScreen.storyboard */,
 				2D098BFB1E7FF0DD00715510 /* Info.plist */,
@@ -366,8 +363,8 @@
 				2D40952A1E95E3EF008E3BDE /* LeRHeadView.m */,
 				2DCD7DFF1E97368D007947A6 /* LeRRefreshTableFooterView.h */,
 				2DCD7E001E97368D007947A6 /* LeRRefreshTableFooterView.m */,
-				2DCD7E051E978E74007947A6 /* LeRrefreshControl.h */,
-				2DCD7E061E978E74007947A6 /* LeRrefreshControl.m */,
+				2DCD7E051E978E74007947A6 /* LeRRefreshControl.h */,
+				2DCD7E061E978E74007947A6 /* LeRRefreshControl.m */,
 				2D7A83461E9BA6A50042897C /* LeRRefreshTableView.h */,
 				2D7A83471E9BA6A50042897C /* LeRRefreshTableView.m */,
 				6AA5F17F1EA7A8CF0027BBB8 /* LeRRefreshTimeHandler.h */,
@@ -507,7 +504,6 @@
 				2D098BFA1E7FF0DD00715510 /* LaunchScreen.storyboard in Resources */,
 				2D7A83571E9C8AE70042897C /* AlertTip_I@2x.png in Resources */,
 				2D098BF71E7FF0DD00715510 /* Assets.xcassets in Resources */,
-				2D098BF21E7FF0DD00715510 /* Main.storyboard in Resources */,
 				2D7A83541E9C8ADD0042897C /* TBBackBlack@2x.png in Resources */,
 				2D7A83551E9C8ADD0042897C /* TBBackBlack@3x.png in Resources */,
 				2D7A83521E9C8ADD0042897C /* loading@2x.png in Resources */,
@@ -595,7 +591,7 @@
 				2DCD7DFE1E97347F007947A6 /* LeRRefreshTableViewController.m in Sources */,
 				2D098BEF1E7FF0DD00715510 /* ViewController.m in Sources */,
 				2DBE612E1E96459C007B1B33 /* LeRTableAide.m in Sources */,
-				2DCD7E071E978E74007947A6 /* LeRrefreshControl.m in Sources */,
+				2DCD7E071E978E74007947A6 /* LeRRefreshControl.m in Sources */,
 				2D6FB2E01EBDC5EA0052A266 /* LeRUITableViewWithRefreshControl.m in Sources */,
 				2D28765F1EC1B1D8009B4BD7 /* AsyncTcpSocket.m in Sources */,
 				2D7A83641E9CCF530042897C /* FSFileOperation.m in Sources */,
@@ -650,14 +646,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2D098BF01E7FF0DD00715510 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D098BF11E7FF0DD00715510 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D098BF81E7FF0DD00715510 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

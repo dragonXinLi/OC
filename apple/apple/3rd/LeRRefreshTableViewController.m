@@ -75,9 +75,9 @@
     
     if(self.lerRefreshType & LeRRefreshTypePullDown)
     {
-        refreshControl = (LeRrefreshControl *)[self.tableView refreshControl];
+        refreshControl = (LeRRefreshControl *)[self.tableView refreshControl];
         weak(self);
-        [refreshControl setRefreshRequest:^BOOL(LeRrefreshControl *sender) {
+        [refreshControl setRefreshRequest:^BOOL(LeRRefreshControl *sender) {
             return [weakself refreshWithCallBack:^{
                 [sender endRefreshing:weakself.pullDownSucess];
             }];
@@ -399,6 +399,102 @@
 }
 
 
-- setcan
+- (void)setCanLoadMore:(BOOL)more
+{
+    refreshTableFooterView.canLoadMore = more;
+}
+
+
+- (void)setEverPullSucess:(BOOL)sucess
+{
+    hasEverPullSucess = sucess;
+}
+
+
+- (void)reloadTableViewDataSource
+{
+    _reloading = YES;
+}
+
+
+-(void)setFooterView
+{
+    CGFloat height = MAX(self.tableView.contentSize.height, self.tableView.frame.size.height);
+    if(refreshTableFooterView.refreshRegionHeight == 0)
+    {
+        height = height - 40;
+    }
+    
+    refreshTableFooterView.frame = CGRectMake(0.0f, height, self.tableView.width, self.view.bounds.size.height);
+    
+    if(refreshTableFooterView)
+    {
+        [refreshTableFooterView refreshLastUpdateDate];
+    }
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [refreshTableFooterView LeRRefreshScrollViewDidScroll:scrollView];
+}
+
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [refreshTableFooterView LeRRefreshScrollViewDidEndDragging:scrollView];
+}
+
+#pragma mark LeRRefreshTableDelegate Methods
+
+- (void)LeRRefreshTableDidTriggerRefresh
+{
+    [self reloadTableViewDataSource];
+    [self pullUpRefreshData];
+}
+
+
+- (BOOL)LeRRefreshTableDataSourceIsLoading:(UIView *)view
+{
+    return _reloading;
+}
+
+
+-(NSDate *)LeRRefreshTableDataSourceLastUpdated:(UIView *)view
+{
+    return [NSDate date];
+}
+
+
+- (void)tryToReloadFailedData
+{
+    if(self.fetchLabel){
+        [self fetch];
+        return;
+    }
+    
+    if(firstRefreshType == LeRRefreshTypePullUp)
+    {
+        [self pullUpRefreshData];
+    }else if(firstRefreshType ==LeRRefreshTypePullDown)
+    {
+        [self pullDownRefreshData];
+    }    
+}
+
+
+#pragma mark -Trigger Event-
+//添加需要回调触发的事件
+- (void)addTarget:(id)target action:(SEL)selector forTriggerEvent:(TriggerEventType)eventType
+{
+    if (!target||!selector) {
+        return;
+    }
+    
+    NSDictionary *dict = @{@"target": [target isEqual:self]?[NSNull null]:target,
+                           @"selector":NSStringFromSelector(selector),
+                           @"eventType":@(eventType)};
+    [triggerEventArray addObject:dict];
+}
 
 @end

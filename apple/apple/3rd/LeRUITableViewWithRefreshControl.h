@@ -11,6 +11,6 @@
 
 @interface LeRUITableViewWithRefreshControl : UITableView
 
-@property (nonatomic , readonly ,strong) LeRrefreshControl *refreshControl;
+@property (nonatomic , readonly ,strong) LeRRefreshControl *refreshControl;
 
 @end

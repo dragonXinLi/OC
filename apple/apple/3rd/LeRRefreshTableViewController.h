@@ -23,10 +23,10 @@ typedef NS_OPTIONS(NSInteger, LeRRefreshType)
     LeRRefreshTypePullUp   = 1 << 1
 };
 
-@interface LeRRefreshTableViewController : LeRTableViewController<LeRRefreshTableDelegate,LeRBlankRefreshViewDelegate>
+@interface LeRRefreshTableViewController : LeRTableViewController<LeRRefreshTableDelegate,LeRBlankRefreshViewDelegate,LeRRefreshTableViewDelegate>
 {
     LeRRefreshTableFooterView *refreshTableFooterView;
-    LeRrefreshControl *refreshControl;
+    LeRRefreshControl *refreshControl;
     void (^refreshCallBack)(void);
     
     void(^fetchCallBack)(bool result);

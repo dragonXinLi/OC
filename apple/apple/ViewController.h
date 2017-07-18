@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LeRTableViewController.h"
+#import "LeRRefreshTableViewController.h"
 
-@interface ViewController : LeRTableViewController
+@interface ViewController : LeRRefreshTableViewController
 
 
 @end

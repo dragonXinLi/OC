@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeRrefreshControl : UIView
+@interface LeRRefreshControl : UIView
 
 @property (nonatomic , readonly) BOOL refresh;
 
 @property (nonatomic , strong) NSDate *lastRefreshDate;
 
-@property (nonatomic , copy) BOOL (^refreshRequest)(LeRrefreshControl *sender);
+@property (nonatomic , copy) BOOL (^refreshRequest)(LeRRefreshControl *sender);
 
 - (void)beginRefreshing;
 - (void)endRefreshing:(BOOL)success;

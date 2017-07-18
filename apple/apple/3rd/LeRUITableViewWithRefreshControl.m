@@ -18,11 +18,11 @@
 }
 
 
-- (LeRrefreshControl *)refreshControl
+- (LeRRefreshControl *)refreshControl
 {
     if(refreshControl == nil)
     {
-        refreshControl = [[LeRrefreshControl alloc] init];
+        refreshControl = [[LeRRefreshControl alloc] init];
         [self addSubview:refreshControl];
     }
     return refreshControl;

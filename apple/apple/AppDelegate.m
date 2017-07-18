@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +20,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
     self.reachabilityHost = [Reachability reachabilityForInternetConnection];
     [self.reachabilityHost startNotifier];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *viewcontroller = [[ViewController alloc] init];;
+    [viewcontroller setTitle:@"首页"];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:viewcontroller];
+    self.window.rootViewController=nvc;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -15,36 +15,30 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    self.lerRefreshType = LeRRefreshTypePullDown;
+    self.autoPullUpFirstTime = NO;
+    self.emptyTips = @"空白";
+    self.isBlankRefresh = NO;
     [super viewDidLoad];
-    
-    
-//    
-//    UIView *viwe = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-//    [viwe setBackgroundColor:[UIColor orangeColor]];
-//    
-//    UIEdgeInsets inset = UIEdgeInsetsMake(10, 20, 30, 40);
-//    [viwe setTouchExtendInset:inset];
-//    
-//    CGRect hitFrame = UIEdgeInsetsInsetRect(viwe.bounds, viwe.touchExtendInset);
-//    hitFrame.size.width = MAX(hitFrame.size.width, 0);
-//    hitFrame.size.height = MAX(hitFrame.size.height, 0);
-//    
-//    UIView *subView = [[UIView alloc] initWithFrame:hitFrame];
-//    [subView setBackgroundColor:[UIColor redColor]];
-//    [viwe addSubview:subView];
-//    
-//    
-//    
-//    [self.view addSubview:viwe];
-    
     [self.headView addTitle:@"珍贵"];
-    
     
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     
 }
 
+
+-(void)pullDownRefreshData
+{
+
+}
+
+
+-(void)pullUpRefreshData
+{
+    
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

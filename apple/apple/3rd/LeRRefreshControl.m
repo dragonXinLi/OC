@@ -13,7 +13,7 @@ static NSString *const kRefreshControlPulling = @"kRefreshControlPulling";
 static NSString *const kRefreshControlRefreshing = @"kRefreshControlRefreshing";
 static NSString *const kRefreshControlRefreshDone = @"kRefreshControlRefreshDone";
 
-@interface LeRrefreshControl ()
+@interface LeRRefreshControl ()
 {
     UIActivityIndicatorView *activityView;
     UIImageView *arrowView;
@@ -26,7 +26,7 @@ static NSString *const kRefreshControlRefreshDone = @"kRefreshControlRefreshDone
 
 @end
 
-@implementation LeRrefreshControl
+@implementation LeRRefreshControl
 
 - (void)dealloc
 {
@@ -107,7 +107,7 @@ static NSString *const kRefreshControlRefreshDone = @"kRefreshControlRefreshDone
 - (void)didMoveToSuperview
 {
     //添加到superView时，观察上层UITableView的contentOffset
-    [self.superTableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    [self.superview addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 
@@ -275,7 +275,7 @@ static NSString *const kRefreshControlRefreshDone = @"kRefreshControlRefreshDone
 
 - (UITableView *)superTableView
 {
-    NSAssert([self.superTableView isKindOfClass:[UITableView class]] || self.superTableView == nil, @"%@'s superView should be a UITableView, but now is %@", self.class, self.superTableView.class);
+    NSAssert([self.superview isKindOfClass:[UITableView class]] || self.superview == nil, @"%@'s superView should be a UITableView, but now is %@", self.class, self.superview.class);
 
     return (UITableView *)self.superview;
 }
