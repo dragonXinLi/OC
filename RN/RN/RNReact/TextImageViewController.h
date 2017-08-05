@@ -1,5 +1,5 @@
 //
-//  CSSViewController.h
+//  FirstViewController.h
 //  RN
 //
 //  Created by LL on 2017/7/9.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
-@interface CSSViewController : BaseViewController
+#import "RNBaseViewController.h"
+@interface TextImageViewController : RNBaseViewController
 
 @end

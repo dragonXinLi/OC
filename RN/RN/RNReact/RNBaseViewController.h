@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RCTRootView.h"
 
-@interface BaseViewController : UIViewController
+@interface RNBaseViewController : UIViewController
 
 @property (nonatomic , assign) NSInteger index;
 - (void)loadNRJS:(NSInteger)index;

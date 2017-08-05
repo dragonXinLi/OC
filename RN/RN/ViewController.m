@@ -7,24 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "CSSViewController.h"
-#import "TextImageViewController.h"
-#import "CustomUIController.h"
-#import "FlexViewController.h"
-#import "PickerViewController.h"
-#import "StateViewController.h"
-#import "InputTextViewController.h"
-#import "ScrollViewController.h"
-#import "FlatListViewController.h"
-#import "FetchViewController.h"
-#import "PushViewController.h"
-#import "TouchableViewController.h"
-#import "RefreshControlViewController.h"
-#import "ShareViewController.h"
+#import "RNViewController.h"
+#import "RACViewController.h"
+#import "RunTimeViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
-@property (nonatomic , strong) NSArray *dataList;
+
 @end
 
 @implementation ViewController
@@ -36,20 +25,9 @@
     [self.tableView setDelegate:self];
     [self.view addSubview:self.tableView];
     
-    self.dataList = @[@"TextImageViewController",
-                      @"CustomUIController",
-                      @"InputTextViewController",
-                      @"CSSViewController",
-                      @"FlexViewController",
-                      @"StateViewController",
-                      @"PickerViewController",
-                      @"ScrollViewController",
-                      @"FlatListViewController",
-                      @"FetchViewController",
-                      @"PushViewController",
-                      @"TouchableViewController",
-                      @"RefreshControlViewController",
-                      @"ShareViewController",
+    self.dataList = @[@"RNViewController",
+                      @"RACViewController",
+                      @"RunTimeViewController"
                       ];
 /*
  {
@@ -68,9 +46,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-    {
-        return self.dataList.count;
-    }
+{
+    return self.dataList.count;
+}
     
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -87,9 +65,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     Class class = NSClassFromString(self.dataList[indexPath.row]);
-    BaseViewController *viewContrllor = [[class alloc] init];
-    [viewContrllor setTitle:self.dataList[indexPath.row]];
-    [viewContrllor setIndex:indexPath.row];
+    UIViewController *viewContrllor = [[class alloc] init];
     [self.navigationController pushViewController:viewContrllor animated:YES];
 }
 
