@@ -10,6 +10,9 @@
 #import "RNViewController.h"
 #import "RACViewController.h"
 #import "RunTimeViewController.h"
+#import "AVPlayerViewController.h"
+#import "TestViewController.h"
+#import "GestureRecognizerViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -27,7 +30,10 @@
     
     self.dataList = @[@"RNViewController",
                       @"RACViewController",
-                      @"RunTimeViewController"
+                      @"RunTimeViewController",
+                      @"AVPlayerViewController",
+                      @"TestViewController",
+                      @"GestureRecognizerViewController",
                       ];
 /*
  {

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2D0B27381F25978700E664F8 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B27371F25978700E664F8 /* AlertViewController.m */; };
 		2D0B273B1F25979C00E664F8 /* RACBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B273A1F25979C00E664F8 /* RACBaseViewController.m */; };
+		2D664E512022B4E100A080B6 /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D664E502022B4E100A080B6 /* GestureRecognizerViewController.m */; };
+		2D664E542022B5EE00A080B6 /* GestureRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D664E532022B5EE00A080B6 /* GestureRecognizerView.m */; };
+		2D664E5B2022EE2700A080B6 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D664E5A2022EE2700A080B6 /* UIView+Frame.m */; };
+		2D8084241FE7988300C3FED8 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8084231FE7988300C3FED8 /* AVPlayerViewController.m */; };
 		2D8CF0191F20D32200E985D1 /* CSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CEFFE1F20D32200E985D1 /* CSSViewController.m */; };
 		2D8CF01A1F20D32200E985D1 /* CustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CF0001F20D32200E985D1 /* CustomUIController.m */; };
 		2D8CF01B1F20D32200E985D1 /* FetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CF0021F20D32200E985D1 /* FetchViewController.m */; };
@@ -28,6 +32,8 @@
 		2D8CF0301F20D62A00E985D1 /* RNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CF02F1F20D62A00E985D1 /* RNBaseViewController.m */; };
 		2D8CF0331F20DB0500E985D1 /* RACOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CF0321F20DB0500E985D1 /* RACOneController.m */; };
 		2D8CF0361F20DBDC00E985D1 /* ResultOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8CF0351F20DBDC00E985D1 /* ResultOne.m */; };
+		2D992B72200312FC00919681 /* UILabel+TextAlignmentAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D992B71200312FC00919681 /* UILabel+TextAlignmentAdditions.m */; };
+		2DA63BB8207CB3C600620154 /* blockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA63BB7207CB3C600620154 /* blockTest.m */; };
 		2DC16E621F305E5E00A5EC76 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16E611F305E5E00A5EC76 /* RunTimeViewController.m */; };
 		2DC16E661F305F1000A5EC76 /* RTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16E651F305F1000A5EC76 /* RTPerson.m */; };
 		2DC16E691F305F4C00A5EC76 /* RTSendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16E681F305F4C00A5EC76 /* RTSendMessageViewController.m */; };
@@ -36,6 +42,8 @@
 		2DC16E751F30747F00A5EC76 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16E741F30747F00A5EC76 /* NSObject+Model.m */; };
 		2DC16E771F30763300A5EC76 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DC16E761F30763300A5EC76 /* status.plist */; };
 		2DC16E7A1F307C3A00A5EC76 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC16E791F307C3A00A5EC76 /* NSObject+Log.m */; };
+		2DE8029B20204CA700CDB254 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8029A20204CA700CDB254 /* TestViewController.m */; };
+		2DE8029E202051EA00CDB254 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE8029D202051D500CDB254 /* WebKit.framework */; };
 		6A0933BA1F11E17D00FB131C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933B91F11E17D00FB131C /* main.m */; };
 		6A0933BD1F11E17E00FB131C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933BC1F11E17E00FB131C /* AppDelegate.m */; };
 		6A0933C01F11E17E00FB131C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0933BF1F11E17E00FB131C /* ViewController.m */; };
@@ -71,6 +79,14 @@
 		2D0B27371F25978700E664F8 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		2D0B27391F25979C00E664F8 /* RACBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACBaseViewController.h; sourceTree = "<group>"; };
 		2D0B273A1F25979C00E664F8 /* RACBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACBaseViewController.m; sourceTree = "<group>"; };
+		2D664E4F2022B4E100A080B6 /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		2D664E502022B4E100A080B6 /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		2D664E522022B5EE00A080B6 /* GestureRecognizerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerView.h; sourceTree = "<group>"; };
+		2D664E532022B5EE00A080B6 /* GestureRecognizerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerView.m; sourceTree = "<group>"; };
+		2D664E592022EE2700A080B6 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		2D664E5A2022EE2700A080B6 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		2D8084221FE7988300C3FED8 /* AVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		2D8084231FE7988300C3FED8 /* AVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		2D8CEFFD1F20D32200E985D1 /* CSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSViewController.h; sourceTree = "<group>"; };
 		2D8CEFFE1F20D32200E985D1 /* CSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSViewController.m; sourceTree = "<group>"; };
 		2D8CEFFF1F20D32200E985D1 /* CustomUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIController.h; sourceTree = "<group>"; };
@@ -109,6 +125,10 @@
 		2D8CF0321F20DB0500E985D1 /* RACOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACOneController.m; sourceTree = "<group>"; };
 		2D8CF0341F20DBDC00E985D1 /* ResultOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultOne.h; sourceTree = "<group>"; };
 		2D8CF0351F20DBDC00E985D1 /* ResultOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultOne.m; sourceTree = "<group>"; };
+		2D992B70200312FC00919681 /* UILabel+TextAlignmentAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlignmentAdditions.h"; sourceTree = "<group>"; };
+		2D992B71200312FC00919681 /* UILabel+TextAlignmentAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlignmentAdditions.m"; sourceTree = "<group>"; };
+		2DA63BB6207CB3C600620154 /* blockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
+		2DA63BB7207CB3C600620154 /* blockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockTest.m; sourceTree = "<group>"; };
 		2DC16E601F305E5E00A5EC76 /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
 		2DC16E611F305E5E00A5EC76 /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		2DC16E641F305F1000A5EC76 /* RTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPerson.h; sourceTree = "<group>"; };
@@ -124,6 +144,9 @@
 		2DC16E761F30763300A5EC76 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
 		2DC16E781F307C3A00A5EC76 /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
 		2DC16E791F307C3A00A5EC76 /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		2DE8029920204CA700CDB254 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2DE8029A20204CA700CDB254 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2DE8029D202051D500CDB254 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6A0933B51F11E17D00FB131C /* RN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0933B91F11E17D00FB131C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A0933BB1F11E17D00FB131C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE8029E202051EA00CDB254 /* WebKit.framework in Frameworks */,
 				A8EAD7CD610A3D32E986502B /* libPods-RN.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,9 +195,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D664E4E2022B48500A080B6 /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				2D664E4F2022B4E100A080B6 /* GestureRecognizerViewController.h */,
+				2D664E502022B4E100A080B6 /* GestureRecognizerViewController.m */,
+				2D664E522022B5EE00A080B6 /* GestureRecognizerView.h */,
+				2D664E532022B5EE00A080B6 /* GestureRecognizerView.m */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		2D664E552022EDB500A080B6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2D664E592022EE2700A080B6 /* UIView+Frame.h */,
+				2D664E5A2022EE2700A080B6 /* UIView+Frame.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		2D8084211FE797FD00C3FED8 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2D8084221FE7988300C3FED8 /* AVPlayerViewController.h */,
+				2D8084231FE7988300C3FED8 /* AVPlayerViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		2D8CEFFC1F20D23B00E985D1 /* RNReact */ = {
 			isa = PBXGroup;
 			children = (
+				2D8CF0271F20D3B300E985D1 /* RNViewController.h */,
+				2D8CF0281F20D3B300E985D1 /* RNViewController.m */,
 				2D8CF02E1F20D62A00E985D1 /* RNBaseViewController.h */,
 				2D8CF02F1F20D62A00E985D1 /* RNBaseViewController.m */,
 				2D8CEFFD1F20D32200E985D1 /* CSSViewController.h */,
@@ -211,6 +266,8 @@
 		2D8CF02D1F20D5D900E985D1 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				2D8CF02A1F20D45100E985D1 /* RACViewController.h */,
+				2D8CF02B1F20D45100E985D1 /* RACViewController.m */,
 				2D0B27391F25979C00E664F8 /* RACBaseViewController.h */,
 				2D0B273A1F25979C00E664F8 /* RACBaseViewController.m */,
 				2D8CF0311F20DB0500E985D1 /* RACOneController.h */,
@@ -226,6 +283,10 @@
 		2DC16E631F305E7E00A5EC76 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				2DC16E601F305E5E00A5EC76 /* RunTimeViewController.h */,
+				2DC16E611F305E5E00A5EC76 /* RunTimeViewController.m */,
+				2D992B70200312FC00919681 /* UILabel+TextAlignmentAdditions.h */,
+				2D992B71200312FC00919681 /* UILabel+TextAlignmentAdditions.m */,
 				2DC16E641F305F1000A5EC76 /* RTPerson.h */,
 				2DC16E651F305F1000A5EC76 /* RTPerson.m */,
 				2DC16E6D1F30648100A5EC76 /* UIImage+Image.h */,
@@ -240,6 +301,17 @@
 				2DC16E681F305F4C00A5EC76 /* RTSendMessageViewController.m */,
 			);
 			path = RunTime;
+			sourceTree = "<group>";
+		};
+		2DE8029C20204D5200CDB254 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8029920204CA700CDB254 /* TestViewController.h */,
+				2DE8029A20204CA700CDB254 /* TestViewController.m */,
+				2DA63BB6207CB3C600620154 /* blockTest.h */,
+				2DA63BB7207CB3C600620154 /* blockTest.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		6A0933AC1F11E17D00FB131C = {
@@ -267,19 +339,17 @@
 		6A0933B71F11E17D00FB131C /* RN */ = {
 			isa = PBXGroup;
 			children = (
+				2D664E552022EDB500A080B6 /* common */,
+				2D664E4E2022B48500A080B6 /* GestureRecognizer */,
 				6A0933BB1F11E17D00FB131C /* AppDelegate.h */,
 				6A0933BC1F11E17E00FB131C /* AppDelegate.m */,
 				6A0933BE1F11E17E00FB131C /* ViewController.h */,
 				6A0933BF1F11E17E00FB131C /* ViewController.m */,
-				2D8CF0271F20D3B300E985D1 /* RNViewController.h */,
-				2D8CF0281F20D3B300E985D1 /* RNViewController.m */,
-				2D8CF02A1F20D45100E985D1 /* RACViewController.h */,
-				2D8CF02B1F20D45100E985D1 /* RACViewController.m */,
-				2DC16E601F305E5E00A5EC76 /* RunTimeViewController.h */,
-				2DC16E611F305E5E00A5EC76 /* RunTimeViewController.m */,
 				2D8CEFFC1F20D23B00E985D1 /* RNReact */,
 				2D8CF02D1F20D5D900E985D1 /* RAC */,
 				2DC16E631F305E7E00A5EC76 /* RunTime */,
+				2D8084211FE797FD00C3FED8 /* AVPlayer */,
+				2DE8029C20204D5200CDB254 /* Test */,
 				6A0933C11F11E17E00FB131C /* Main.storyboard */,
 				6A0933C71F11E17E00FB131C /* Assets.xcassets */,
 				6A0933C91F11E17E00FB131C /* LaunchScreen.storyboard */,
@@ -320,6 +390,7 @@
 		C382DD02A38EC4CCC4D68083 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DE8029D202051D500CDB254 /* WebKit.framework */,
 				C61190C0147D1EDCC6B0D015 /* libPods-RN.a */,
 			);
 			name = Frameworks;
@@ -528,16 +599,23 @@
 				2D8CF0261F20D32200E985D1 /* TouchableViewController.m in Sources */,
 				2D8CF01B1F20D32200E985D1 /* FetchViewController.m in Sources */,
 				2DC16E691F305F4C00A5EC76 /* RTSendMessageViewController.m in Sources */,
+				2DE8029B20204CA700CDB254 /* TestViewController.m in Sources */,
+				2D664E5B2022EE2700A080B6 /* UIView+Frame.m in Sources */,
+				2D992B72200312FC00919681 /* UILabel+TextAlignmentAdditions.m in Sources */,
 				2DC16E661F305F1000A5EC76 /* RTPerson.m in Sources */,
 				6A0933C01F11E17E00FB131C /* ViewController.m in Sources */,
 				2D8CF01E1F20D32200E985D1 /* InputTextViewController.m in Sources */,
+				2DA63BB8207CB3C600620154 /* blockTest.m in Sources */,
 				2D0B273B1F25979C00E664F8 /* RACBaseViewController.m in Sources */,
 				2D8CF02C1F20D45100E985D1 /* RACViewController.m in Sources */,
+				2D8084241FE7988300C3FED8 /* AVPlayerViewController.m in Sources */,
 				2DC16E7A1F307C3A00A5EC76 /* NSObject+Log.m in Sources */,
+				2D664E512022B4E100A080B6 /* GestureRecognizerViewController.m in Sources */,
 				2D8CF01D1F20D32200E985D1 /* FlexViewController.m in Sources */,
 				6A0933BD1F11E17E00FB131C /* AppDelegate.m in Sources */,
 				2D8CF0331F20DB0500E985D1 /* RACOneController.m in Sources */,
 				2DC16E621F305E5E00A5EC76 /* RunTimeViewController.m in Sources */,
+				2D664E542022B5EE00A080B6 /* GestureRecognizerView.m in Sources */,
 				6A0933BA1F11E17D00FB131C /* main.m in Sources */,
 				2D8CF0201F20D32200E985D1 /* PushViewController.m in Sources */,
 				2D8CF01A1F20D32200E985D1 /* CustomUIController.m in Sources */,
