@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */; };
+		FD65A60520EC732100B4067E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60420EC732100B4067E /* AppDelegate.m */; };
+		FD65A60820EC732100B4067E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60720EC732100B4067E /* ViewController.m */; };
+		FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */; };
+		FD65A61020EC732400B4067E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD65A60F20EC732400B4067E /* Assets.xcassets */; };
+		FD65A61320EC732400B4067E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD65A61120EC732400B4067E /* LaunchScreen.storyboard */; };
+		FD65A61620EC732400B4067E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A61520EC732400B4067E /* main.m */; };
+		FD65A62020EC732400B4067E /* iOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A61F20EC732400B4067E /* iOSTestTests.m */; };
+		FD65A62B20EC732400B4067E /* iOSTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A62A20EC732400B4067E /* iOSTestUITests.m */; };
+		FD65A6B320EC747000B4067E /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A66D20EC746E00B4067E /* NSArrayViewController.m */; };
+		FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67020EC746E00B4067E /* CSSViewController.m */; };
+		FD65A6B520EC747000B4067E /* CustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67220EC746E00B4067E /* CustomUIController.m */; };
+		FD65A6B620EC747000B4067E /* FetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67420EC746E00B4067E /* FetchViewController.m */; };
+		FD65A6B720EC747000B4067E /* FlatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67620EC746E00B4067E /* FlatListViewController.m */; };
+		FD65A6B820EC747000B4067E /* FlexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67820EC746E00B4067E /* FlexViewController.m */; };
+		FD65A6B920EC747000B4067E /* InputTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67A20EC746E00B4067E /* InputTextViewController.m */; };
+		FD65A6BA20EC747000B4067E /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67C20EC746E00B4067E /* PickerViewController.m */; };
+		FD65A6BB20EC747000B4067E /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A67E20EC746E00B4067E /* PushViewController.m */; };
+		FD65A6BC20EC747000B4067E /* RefreshControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68020EC746E00B4067E /* RefreshControlViewController.m */; };
+		FD65A6BD20EC747000B4067E /* RNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68220EC746E00B4067E /* RNBaseViewController.m */; };
+		FD65A6BE20EC747000B4067E /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68420EC746E00B4067E /* RNViewController.m */; };
+		FD65A6BF20EC747000B4067E /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68620EC746E00B4067E /* ScrollViewController.m */; };
+		FD65A6C020EC747000B4067E /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68820EC746E00B4067E /* ShareViewController.m */; };
+		FD65A6C120EC747000B4067E /* StateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68A20EC746E00B4067E /* StateViewController.m */; };
+		FD65A6C220EC747000B4067E /* TextImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68C20EC746E00B4067E /* TextImageViewController.m */; };
+		FD65A6C320EC747000B4067E /* TouchableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A68E20EC746E00B4067E /* TouchableViewController.m */; };
+		FD65A6C420EC747000B4067E /* blockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69120EC746E00B4067E /* blockTest.m */; };
+		FD65A6C520EC747000B4067E /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69320EC746E00B4067E /* TestViewController.m */; };
+		FD65A6C620EC747000B4067E /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69620EC746F00B4067E /* AlertViewController.m */; };
+		FD65A6C720EC747000B4067E /* RACBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69820EC746F00B4067E /* RACBaseViewController.m */; };
+		FD65A6C820EC747000B4067E /* RACOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69A20EC746F00B4067E /* RACOneController.m */; };
+		FD65A6C920EC747000B4067E /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69C20EC746F00B4067E /* RACViewController.m */; };
+		FD65A6CA20EC747000B4067E /* ResultOne.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69E20EC746F00B4067E /* ResultOne.m */; };
+		FD65A6CB20EC747000B4067E /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A120EC746F00B4067E /* NSObject+Log.m */; };
+		FD65A6CC20EC747000B4067E /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A320EC746F00B4067E /* NSObject+Model.m */; };
+		FD65A6CD20EC747000B4067E /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A520EC746F00B4067E /* NSObject+Property.m */; };
+		FD65A6CE20EC747000B4067E /* RTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A720EC746F00B4067E /* RTPerson.m */; };
+		FD65A6CF20EC747000B4067E /* RTSendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */; };
+		FD65A6D020EC747000B4067E /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */; };
+		FD65A6D120EC747000B4067E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AD20EC746F00B4067E /* UIImage+Image.m */; };
+		FD65A6D220EC747000B4067E /* UILabel+TextAlignmentAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */; };
+		FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6B220EC746F00B4067E /* TableViewControllerTestCarsh.m */; };
+		FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6D620EC747D00B4067E /* BitOperationViewController.m */; };
+		FD65A6E420EC747E00B4067E /* GestureRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6D920EC747D00B4067E /* GestureRecognizerView.m */; };
+		FD65A6E520EC747E00B4067E /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6DB20EC747D00B4067E /* GestureRecognizerViewController.m */; };
+		FD65A6E620EC747E00B4067E /* BCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6DE20EC747D00B4067E /* BCMath.m */; };
+		FD65A6E720EC747E00B4067E /* FloatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6E020EC747D00B4067E /* FloatViewController.m */; };
+		FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6E220EC747D00B4067E /* NSString+BCMath.m */; };
+		FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */; };
+		FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD65A61C20EC732400B4067E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD65A5F820EC732100B4067E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD65A5FF20EC732100B4067E;
+			remoteInfo = iOSTest;
+		};
+		FD65A62720EC732400B4067E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD65A5F820EC732100B4067E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD65A5FF20EC732100B4067E;
+			remoteInfo = iOSTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
+		B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		FD65A60020EC732100B4067E /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65A60320EC732100B4067E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD65A60420EC732100B4067E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD65A60620EC732100B4067E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD65A60720EC732100B4067E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD65A60D20EC732100B4067E /* iOSTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSTest.xcdatamodel; sourceTree = "<group>"; };
+		FD65A60F20EC732400B4067E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD65A61220EC732400B4067E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD65A61420EC732400B4067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD65A61520EC732400B4067E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD65A61B20EC732400B4067E /* iOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65A61F20EC732400B4067E /* iOSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestTests.m; sourceTree = "<group>"; };
+		FD65A62120EC732400B4067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD65A62620EC732400B4067E /* iOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65A62A20EC732400B4067E /* iOSTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestUITests.m; sourceTree = "<group>"; };
+		FD65A62C20EC732400B4067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD65A66C20EC746E00B4067E /* NSArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayViewController.h; sourceTree = "<group>"; };
+		FD65A66D20EC746E00B4067E /* NSArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayViewController.m; sourceTree = "<group>"; };
+		FD65A66F20EC746E00B4067E /* CSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSViewController.h; sourceTree = "<group>"; };
+		FD65A67020EC746E00B4067E /* CSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSViewController.m; sourceTree = "<group>"; };
+		FD65A67120EC746E00B4067E /* CustomUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIController.h; sourceTree = "<group>"; };
+		FD65A67220EC746E00B4067E /* CustomUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIController.m; sourceTree = "<group>"; };
+		FD65A67320EC746E00B4067E /* FetchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchViewController.h; sourceTree = "<group>"; };
+		FD65A67420EC746E00B4067E /* FetchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchViewController.m; sourceTree = "<group>"; };
+		FD65A67520EC746E00B4067E /* FlatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatListViewController.h; sourceTree = "<group>"; };
+		FD65A67620EC746E00B4067E /* FlatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatListViewController.m; sourceTree = "<group>"; };
+		FD65A67720EC746E00B4067E /* FlexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexViewController.h; sourceTree = "<group>"; };
+		FD65A67820EC746E00B4067E /* FlexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexViewController.m; sourceTree = "<group>"; };
+		FD65A67920EC746E00B4067E /* InputTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextViewController.h; sourceTree = "<group>"; };
+		FD65A67A20EC746E00B4067E /* InputTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextViewController.m; sourceTree = "<group>"; };
+		FD65A67B20EC746E00B4067E /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		FD65A67C20EC746E00B4067E /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		FD65A67D20EC746E00B4067E /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		FD65A67E20EC746E00B4067E /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		FD65A67F20EC746E00B4067E /* RefreshControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshControlViewController.h; sourceTree = "<group>"; };
+		FD65A68020EC746E00B4067E /* RefreshControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshControlViewController.m; sourceTree = "<group>"; };
+		FD65A68120EC746E00B4067E /* RNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBaseViewController.h; sourceTree = "<group>"; };
+		FD65A68220EC746E00B4067E /* RNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBaseViewController.m; sourceTree = "<group>"; };
+		FD65A68320EC746E00B4067E /* RNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		FD65A68420EC746E00B4067E /* RNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		FD65A68520EC746E00B4067E /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		FD65A68620EC746E00B4067E /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		FD65A68720EC746E00B4067E /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		FD65A68820EC746E00B4067E /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		FD65A68920EC746E00B4067E /* StateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateViewController.h; sourceTree = "<group>"; };
+		FD65A68A20EC746E00B4067E /* StateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateViewController.m; sourceTree = "<group>"; };
+		FD65A68B20EC746E00B4067E /* TextImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextImageViewController.h; sourceTree = "<group>"; };
+		FD65A68C20EC746E00B4067E /* TextImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextImageViewController.m; sourceTree = "<group>"; };
+		FD65A68D20EC746E00B4067E /* TouchableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchableViewController.h; sourceTree = "<group>"; };
+		FD65A68E20EC746E00B4067E /* TouchableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchableViewController.m; sourceTree = "<group>"; };
+		FD65A69020EC746E00B4067E /* blockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockTest.h; sourceTree = "<group>"; };
+		FD65A69120EC746E00B4067E /* blockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockTest.m; sourceTree = "<group>"; };
+		FD65A69220EC746E00B4067E /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FD65A69320EC746E00B4067E /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FD65A69520EC746F00B4067E /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		FD65A69620EC746F00B4067E /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		FD65A69720EC746F00B4067E /* RACBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACBaseViewController.h; sourceTree = "<group>"; };
+		FD65A69820EC746F00B4067E /* RACBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACBaseViewController.m; sourceTree = "<group>"; };
+		FD65A69920EC746F00B4067E /* RACOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACOneController.h; sourceTree = "<group>"; };
+		FD65A69A20EC746F00B4067E /* RACOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACOneController.m; sourceTree = "<group>"; };
+		FD65A69B20EC746F00B4067E /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		FD65A69C20EC746F00B4067E /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		FD65A69D20EC746F00B4067E /* ResultOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultOne.h; sourceTree = "<group>"; };
+		FD65A69E20EC746F00B4067E /* ResultOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultOne.m; sourceTree = "<group>"; };
+		FD65A6A020EC746F00B4067E /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		FD65A6A120EC746F00B4067E /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		FD65A6A220EC746F00B4067E /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		FD65A6A320EC746F00B4067E /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		FD65A6A420EC746F00B4067E /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		FD65A6A520EC746F00B4067E /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		FD65A6A620EC746F00B4067E /* RTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPerson.h; sourceTree = "<group>"; };
+		FD65A6A720EC746F00B4067E /* RTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPerson.m; sourceTree = "<group>"; };
+		FD65A6A820EC746F00B4067E /* RTSendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSendMessageViewController.h; sourceTree = "<group>"; };
+		FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSendMessageViewController.m; sourceTree = "<group>"; };
+		FD65A6AA20EC746F00B4067E /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		FD65A6AC20EC746F00B4067E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		FD65A6AD20EC746F00B4067E /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		FD65A6AE20EC746F00B4067E /* UILabel+TextAlignmentAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlignmentAdditions.h"; sourceTree = "<group>"; };
+		FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlignmentAdditions.m"; sourceTree = "<group>"; };
+		FD65A6B120EC746F00B4067E /* TableViewControllerTestCarsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerTestCarsh.h; sourceTree = "<group>"; };
+		FD65A6B220EC746F00B4067E /* TableViewControllerTestCarsh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerTestCarsh.m; sourceTree = "<group>"; };
+		FD65A6D520EC747D00B4067E /* BitOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitOperationViewController.h; sourceTree = "<group>"; };
+		FD65A6D620EC747D00B4067E /* BitOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitOperationViewController.m; sourceTree = "<group>"; };
+		FD65A6D820EC747D00B4067E /* GestureRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerView.h; sourceTree = "<group>"; };
+		FD65A6D920EC747D00B4067E /* GestureRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerView.m; sourceTree = "<group>"; };
+		FD65A6DA20EC747D00B4067E /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		FD65A6DB20EC747D00B4067E /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		FD65A6DD20EC747D00B4067E /* BCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMath.h; sourceTree = "<group>"; };
+		FD65A6DE20EC747D00B4067E /* BCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMath.m; sourceTree = "<group>"; };
+		FD65A6DF20EC747D00B4067E /* FloatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatViewController.h; sourceTree = "<group>"; };
+		FD65A6E020EC747D00B4067E /* FloatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatViewController.m; sourceTree = "<group>"; };
+		FD65A6E120EC747D00B4067E /* NSString+BCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BCMath.h"; sourceTree = "<group>"; };
+		FD65A6E220EC747D00B4067E /* NSString+BCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BCMath.m"; sourceTree = "<group>"; };
+		FD65A6EA20EC748300B4067E /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
+		FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD65A5FD20EC732100B4067E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A61820EC732400B4067E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A62320EC732400B4067E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F14E1054F6A356351776AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F28706AAFE62EC108E704503 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */,
+				A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD65A5F720EC732100B4067E = {
+			isa = PBXGroup;
+			children = (
+				FD65A60220EC732100B4067E /* iOSTest */,
+				FD65A61E20EC732400B4067E /* iOSTestTests */,
+				FD65A62920EC732400B4067E /* iOSTestUITests */,
+				FD65A60120EC732100B4067E /* Products */,
+				F28706AAFE62EC108E704503 /* Pods */,
+				33F14E1054F6A356351776AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD65A60120EC732100B4067E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A60020EC732100B4067E /* iOSTest.app */,
+				FD65A61B20EC732400B4067E /* iOSTestTests.xctest */,
+				FD65A62620EC732400B4067E /* iOSTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD65A60220EC732100B4067E /* iOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A60320EC732100B4067E /* AppDelegate.h */,
+				FD65A60420EC732100B4067E /* AppDelegate.m */,
+				FD65A60620EC732100B4067E /* ViewController.h */,
+				FD65A60720EC732100B4067E /* ViewController.m */,
+				FD65A6ED20EC74AD00B4067E /* common */,
+				FD65A69420EC746F00B4067E /* RAC */,
+				FD65A66B20EC746E00B4067E /* NSArrayTest */,
+				FD65A66E20EC746E00B4067E /* RNReact */,
+				FD65A69F20EC746F00B4067E /* RunTime */,
+				FD65A68F20EC746E00B4067E /* Test */,
+				FD65A6B020EC746F00B4067E /* UITableViewTest */,
+				FD65A6D420EC747D00B4067E /* BitOperation */,
+				FD65A6DC20EC747D00B4067E /* float */,
+				FD65A6D720EC747D00B4067E /* GestureRecognizer */,
+				FD65A6E920EC748300B4067E /* AVPlayer */,
+				FD65A60F20EC732400B4067E /* Assets.xcassets */,
+				FD65A61120EC732400B4067E /* LaunchScreen.storyboard */,
+				FD65A61420EC732400B4067E /* Info.plist */,
+				FD65A61520EC732400B4067E /* main.m */,
+				FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */,
+			);
+			path = iOSTest;
+			sourceTree = "<group>";
+		};
+		FD65A61E20EC732400B4067E /* iOSTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A61F20EC732400B4067E /* iOSTestTests.m */,
+				FD65A62120EC732400B4067E /* Info.plist */,
+			);
+			path = iOSTestTests;
+			sourceTree = "<group>";
+		};
+		FD65A62920EC732400B4067E /* iOSTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A62A20EC732400B4067E /* iOSTestUITests.m */,
+				FD65A62C20EC732400B4067E /* Info.plist */,
+			);
+			path = iOSTestUITests;
+			sourceTree = "<group>";
+		};
+		FD65A66B20EC746E00B4067E /* NSArrayTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A66C20EC746E00B4067E /* NSArrayViewController.h */,
+				FD65A66D20EC746E00B4067E /* NSArrayViewController.m */,
+			);
+			path = NSArrayTest;
+			sourceTree = "<group>";
+		};
+		FD65A66E20EC746E00B4067E /* RNReact */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A66F20EC746E00B4067E /* CSSViewController.h */,
+				FD65A67020EC746E00B4067E /* CSSViewController.m */,
+				FD65A67120EC746E00B4067E /* CustomUIController.h */,
+				FD65A67220EC746E00B4067E /* CustomUIController.m */,
+				FD65A67320EC746E00B4067E /* FetchViewController.h */,
+				FD65A67420EC746E00B4067E /* FetchViewController.m */,
+				FD65A67520EC746E00B4067E /* FlatListViewController.h */,
+				FD65A67620EC746E00B4067E /* FlatListViewController.m */,
+				FD65A67720EC746E00B4067E /* FlexViewController.h */,
+				FD65A67820EC746E00B4067E /* FlexViewController.m */,
+				FD65A67920EC746E00B4067E /* InputTextViewController.h */,
+				FD65A67A20EC746E00B4067E /* InputTextViewController.m */,
+				FD65A67B20EC746E00B4067E /* PickerViewController.h */,
+				FD65A67C20EC746E00B4067E /* PickerViewController.m */,
+				FD65A67D20EC746E00B4067E /* PushViewController.h */,
+				FD65A67E20EC746E00B4067E /* PushViewController.m */,
+				FD65A67F20EC746E00B4067E /* RefreshControlViewController.h */,
+				FD65A68020EC746E00B4067E /* RefreshControlViewController.m */,
+				FD65A68120EC746E00B4067E /* RNBaseViewController.h */,
+				FD65A68220EC746E00B4067E /* RNBaseViewController.m */,
+				FD65A68320EC746E00B4067E /* RNViewController.h */,
+				FD65A68420EC746E00B4067E /* RNViewController.m */,
+				FD65A68520EC746E00B4067E /* ScrollViewController.h */,
+				FD65A68620EC746E00B4067E /* ScrollViewController.m */,
+				FD65A68720EC746E00B4067E /* ShareViewController.h */,
+				FD65A68820EC746E00B4067E /* ShareViewController.m */,
+				FD65A68920EC746E00B4067E /* StateViewController.h */,
+				FD65A68A20EC746E00B4067E /* StateViewController.m */,
+				FD65A68B20EC746E00B4067E /* TextImageViewController.h */,
+				FD65A68C20EC746E00B4067E /* TextImageViewController.m */,
+				FD65A68D20EC746E00B4067E /* TouchableViewController.h */,
+				FD65A68E20EC746E00B4067E /* TouchableViewController.m */,
+			);
+			path = RNReact;
+			sourceTree = "<group>";
+		};
+		FD65A68F20EC746E00B4067E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A69020EC746E00B4067E /* blockTest.h */,
+				FD65A69120EC746E00B4067E /* blockTest.m */,
+				FD65A69220EC746E00B4067E /* TestViewController.h */,
+				FD65A69320EC746E00B4067E /* TestViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FD65A69420EC746F00B4067E /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A69520EC746F00B4067E /* AlertViewController.h */,
+				FD65A69620EC746F00B4067E /* AlertViewController.m */,
+				FD65A69720EC746F00B4067E /* RACBaseViewController.h */,
+				FD65A69820EC746F00B4067E /* RACBaseViewController.m */,
+				FD65A69920EC746F00B4067E /* RACOneController.h */,
+				FD65A69A20EC746F00B4067E /* RACOneController.m */,
+				FD65A69B20EC746F00B4067E /* RACViewController.h */,
+				FD65A69C20EC746F00B4067E /* RACViewController.m */,
+				FD65A69D20EC746F00B4067E /* ResultOne.h */,
+				FD65A69E20EC746F00B4067E /* ResultOne.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		FD65A69F20EC746F00B4067E /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6A020EC746F00B4067E /* NSObject+Log.h */,
+				FD65A6A120EC746F00B4067E /* NSObject+Log.m */,
+				FD65A6A220EC746F00B4067E /* NSObject+Model.h */,
+				FD65A6A320EC746F00B4067E /* NSObject+Model.m */,
+				FD65A6A420EC746F00B4067E /* NSObject+Property.h */,
+				FD65A6A520EC746F00B4067E /* NSObject+Property.m */,
+				FD65A6A620EC746F00B4067E /* RTPerson.h */,
+				FD65A6A720EC746F00B4067E /* RTPerson.m */,
+				FD65A6A820EC746F00B4067E /* RTSendMessageViewController.h */,
+				FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */,
+				FD65A6AA20EC746F00B4067E /* RunTimeViewController.h */,
+				FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */,
+				FD65A6AC20EC746F00B4067E /* UIImage+Image.h */,
+				FD65A6AD20EC746F00B4067E /* UIImage+Image.m */,
+				FD65A6AE20EC746F00B4067E /* UILabel+TextAlignmentAdditions.h */,
+				FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		FD65A6B020EC746F00B4067E /* UITableViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6B120EC746F00B4067E /* TableViewControllerTestCarsh.h */,
+				FD65A6B220EC746F00B4067E /* TableViewControllerTestCarsh.m */,
+			);
+			path = UITableViewTest;
+			sourceTree = "<group>";
+		};
+		FD65A6D420EC747D00B4067E /* BitOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6D520EC747D00B4067E /* BitOperationViewController.h */,
+				FD65A6D620EC747D00B4067E /* BitOperationViewController.m */,
+			);
+			path = BitOperation;
+			sourceTree = "<group>";
+		};
+		FD65A6D720EC747D00B4067E /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6D820EC747D00B4067E /* GestureRecognizerView.h */,
+				FD65A6D920EC747D00B4067E /* GestureRecognizerView.m */,
+				FD65A6DA20EC747D00B4067E /* GestureRecognizerViewController.h */,
+				FD65A6DB20EC747D00B4067E /* GestureRecognizerViewController.m */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		FD65A6DC20EC747D00B4067E /* float */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6DD20EC747D00B4067E /* BCMath.h */,
+				FD65A6DE20EC747D00B4067E /* BCMath.m */,
+				FD65A6DF20EC747D00B4067E /* FloatViewController.h */,
+				FD65A6E020EC747D00B4067E /* FloatViewController.m */,
+				FD65A6E120EC747D00B4067E /* NSString+BCMath.h */,
+				FD65A6E220EC747D00B4067E /* NSString+BCMath.m */,
+			);
+			path = float;
+			sourceTree = "<group>";
+		};
+		FD65A6E920EC748300B4067E /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6EA20EC748300B4067E /* AVPlayerViewController.h */,
+				FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		FD65A6ED20EC74AD00B4067E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */,
+				FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */,
+			);
+			name = common;
+			path = ../../RN/iOSTest/common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD65A5FF20EC732100B4067E /* iOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65A62F20EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTest" */;
+			buildPhases = (
+				7D9FE0A46BB29C3EA779F923 /* [CP] Check Pods Manifest.lock */,
+				FD65A5FC20EC732100B4067E /* Sources */,
+				FD65A5FD20EC732100B4067E /* Frameworks */,
+				FD65A5FE20EC732100B4067E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSTest;
+			productName = iOSTest;
+			productReference = FD65A60020EC732100B4067E /* iOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD65A61A20EC732400B4067E /* iOSTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65A63220EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTestTests" */;
+			buildPhases = (
+				FD65A61720EC732400B4067E /* Sources */,
+				FD65A61820EC732400B4067E /* Frameworks */,
+				FD65A61920EC732400B4067E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD65A61D20EC732400B4067E /* PBXTargetDependency */,
+			);
+			name = iOSTestTests;
+			productName = iOSTestTests;
+			productReference = FD65A61B20EC732400B4067E /* iOSTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD65A62520EC732400B4067E /* iOSTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65A63520EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTestUITests" */;
+			buildPhases = (
+				FD65A62220EC732400B4067E /* Sources */,
+				FD65A62320EC732400B4067E /* Frameworks */,
+				FD65A62420EC732400B4067E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD65A62820EC732400B4067E /* PBXTargetDependency */,
+			);
+			name = iOSTestUITests;
+			productName = iOSTestUITests;
+			productReference = FD65A62620EC732400B4067E /* iOSTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD65A5F820EC732100B4067E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = lilong;
+				TargetAttributes = {
+					FD65A5FF20EC732100B4067E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FD65A61A20EC732400B4067E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD65A5FF20EC732100B4067E;
+					};
+					FD65A62520EC732400B4067E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD65A5FF20EC732100B4067E;
+					};
+				};
+			};
+			buildConfigurationList = FD65A5FB20EC732100B4067E /* Build configuration list for PBXProject "iOSTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD65A5F720EC732100B4067E;
+			productRefGroup = FD65A60120EC732100B4067E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD65A5FF20EC732100B4067E /* iOSTest */,
+				FD65A61A20EC732400B4067E /* iOSTestTests */,
+				FD65A62520EC732400B4067E /* iOSTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD65A5FE20EC732100B4067E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65A61320EC732400B4067E /* LaunchScreen.storyboard in Resources */,
+				FD65A61020EC732400B4067E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A61920EC732400B4067E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A62420EC732400B4067E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D9FE0A46BB29C3EA779F923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD65A5FC20EC732100B4067E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65A6B320EC747000B4067E /* NSArrayViewController.m in Sources */,
+				FD65A6CE20EC747000B4067E /* RTPerson.m in Sources */,
+				FD65A6B520EC747000B4067E /* CustomUIController.m in Sources */,
+				FD65A6CA20EC747000B4067E /* ResultOne.m in Sources */,
+				FD65A60820EC732100B4067E /* ViewController.m in Sources */,
+				FD65A6B720EC747000B4067E /* FlatListViewController.m in Sources */,
+				FD65A6C320EC747000B4067E /* TouchableViewController.m in Sources */,
+				FD65A6C420EC747000B4067E /* blockTest.m in Sources */,
+				FD65A6BC20EC747000B4067E /* RefreshControlViewController.m in Sources */,
+				FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */,
+				FD65A6B620EC747000B4067E /* FetchViewController.m in Sources */,
+				FD65A6BE20EC747000B4067E /* RNViewController.m in Sources */,
+				FD65A6E620EC747E00B4067E /* BCMath.m in Sources */,
+				FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */,
+				FD65A60520EC732100B4067E /* AppDelegate.m in Sources */,
+				FD65A6C220EC747000B4067E /* TextImageViewController.m in Sources */,
+				FD65A6BF20EC747000B4067E /* ScrollViewController.m in Sources */,
+				FD65A6B820EC747000B4067E /* FlexViewController.m in Sources */,
+				FD65A6E420EC747E00B4067E /* GestureRecognizerView.m in Sources */,
+				FD65A6D220EC747000B4067E /* UILabel+TextAlignmentAdditions.m in Sources */,
+				FD65A6C720EC747000B4067E /* RACBaseViewController.m in Sources */,
+				FD65A6E720EC747E00B4067E /* FloatViewController.m in Sources */,
+				FD65A61620EC732400B4067E /* main.m in Sources */,
+				FD65A6CF20EC747000B4067E /* RTSendMessageViewController.m in Sources */,
+				FD65A6B920EC747000B4067E /* InputTextViewController.m in Sources */,
+				FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */,
+				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
+				FD65A6CD20EC747000B4067E /* NSObject+Property.m in Sources */,
+				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
+				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
+				FD65A6CB20EC747000B4067E /* NSObject+Log.m in Sources */,
+				FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */,
+				FD65A6D020EC747000B4067E /* RunTimeViewController.m in Sources */,
+				FD65A6BD20EC747000B4067E /* RNBaseViewController.m in Sources */,
+				FD65A6BB20EC747000B4067E /* PushViewController.m in Sources */,
+				FD65A6C620EC747000B4067E /* AlertViewController.m in Sources */,
+				FD65A6D120EC747000B4067E /* UIImage+Image.m in Sources */,
+				FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */,
+				FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */,
+				FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */,
+				FD65A6BA20EC747000B4067E /* PickerViewController.m in Sources */,
+				FD65A6C020EC747000B4067E /* ShareViewController.m in Sources */,
+				FD65A6CC20EC747000B4067E /* NSObject+Model.m in Sources */,
+				FD65A6E520EC747E00B4067E /* GestureRecognizerViewController.m in Sources */,
+				FD65A6C120EC747000B4067E /* StateViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A61720EC732400B4067E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65A62020EC732400B4067E /* iOSTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD65A62220EC732400B4067E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65A62B20EC732400B4067E /* iOSTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD65A61D20EC732400B4067E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD65A5FF20EC732100B4067E /* iOSTest */;
+			targetProxy = FD65A61C20EC732400B4067E /* PBXContainerItemProxy */;
+		};
+		FD65A62820EC732400B4067E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD65A5FF20EC732100B4067E /* iOSTest */;
+			targetProxy = FD65A62720EC732400B4067E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD65A61120EC732400B4067E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD65A61220EC732400B4067E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD65A62D20EC732400B4067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD65A62E20EC732400B4067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD65A63020EC732400B4067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Debug;
+		};
+		FD65A63120EC732400B4067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Release;
+		};
+		FD65A63320EC732400B4067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTest.app/iOSTest";
+			};
+			name = Debug;
+		};
+		FD65A63420EC732400B4067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTest.app/iOSTest";
+			};
+			name = Release;
+		};
+		FD65A63620EC732400B4067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSTest;
+			};
+			name = Debug;
+		};
+		FD65A63720EC732400B4067E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD65A5FB20EC732100B4067E /* Build configuration list for PBXProject "iOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A62D20EC732400B4067E /* Debug */,
+				FD65A62E20EC732400B4067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65A62F20EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A63020EC732400B4067E /* Debug */,
+				FD65A63120EC732400B4067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65A63220EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A63320EC732400B4067E /* Debug */,
+				FD65A63420EC732400B4067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65A63520EC732400B4067E /* Build configuration list for PBXNativeTarget "iOSTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A63620EC732400B4067E /* Debug */,
+				FD65A63720EC732400B4067E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD65A60D20EC732100B4067E /* iOSTest.xcdatamodel */,
+			);
+			currentVersion = FD65A60D20EC732100B4067E /* iOSTest.xcdatamodel */;
+			path = iOSTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD65A5F820EC732100B4067E /* Project object */;
+}
