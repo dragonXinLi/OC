@@ -9,6 +9,8 @@
 #import "FloatViewController.h"
 #import "BCMath.h"
 #import "NSString+BCMath.h"
+#import "BCMath+dateTest.h"
+#import "NSDate+string.h"
 @interface FloatViewController ()
 
 @end
@@ -89,13 +91,19 @@
         }
     }
     
-    if(0)
+    if(1)
     {
         BCMath *person = [BCMath new];
-        person.sleep(100).sleep(100).sleep(50);
+//        person.sleep(100).sleep(100).sleep(50);
+//        NSLog(@"%@",person);
+        
+        
+        NSDate *date = [NSDate date];
+//        [date description];
+        NSLog(@"%@",date);
     }
     
-    if(1)
+    if(0)
     {
         
         NSString *a = @"1.225";

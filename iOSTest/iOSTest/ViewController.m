@@ -17,6 +17,14 @@
 #import "TableViewControllerTestCarsh.h"
 #import "FloatViewController.h"
 #import "BitOperationViewController.h"
+#import "CoredataViewController.h"
+#import "RunLoopViewController.h"
+#import "CopyViewController.h"
+#import "ParallelDevelopmentController.h"//并行开发
+#import "NSThreadViewController.h" //NSThread开发
+#import "NSOperationViewController.h"  //NSOperation开发
+#import "NSBlockOperationMViewController.h" //NSBlockOperation开发
+#import "GCDViewController.h" //GCD开发
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -42,6 +50,14 @@
                       @"TableViewControllerTestCarsh",
                       @"FloatViewController",
                       @"BitOperationViewController",
+                      @"CoredataViewController",
+                      @"RunLoopViewController",
+                      @"CopyViewController",
+                      @"ParallelDevelopmentController",
+                      @"NSThreadViewController",
+                      @"NSOperationViewController",
+                      @"NSBlockOperationMViewController",
+                      @"GCDViewController"
                       ];
     /*
      {

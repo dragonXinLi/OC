@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */; };
+		FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */; };
+		FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */; };
+		FD61B1DB20FEDB0D003360A6 /* BCMath+dateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1DA20FEDB0D003360A6 /* BCMath+dateTest.m */; };
+		FD61B1DE20FEDC7E003360A6 /* NSDate+string.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1DD20FEDC7E003360A6 /* NSDate+string.m */; };
+		FD61B1E220FF3A7C003360A6 /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1E120FF3A7C003360A6 /* CopyViewController.m */; };
+		FD61B1E52100169F003360A6 /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1E42100169F003360A6 /* person.m */; };
+		FD61B1E821002CD4003360A6 /* NSStringStrongCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1E721002CD4003360A6 /* NSStringStrongCopy.m */; };
 		FD65A60520EC732100B4067E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60420EC732100B4067E /* AppDelegate.m */; };
 		FD65A60820EC732100B4067E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60720EC732100B4067E /* ViewController.m */; };
 		FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */; };
@@ -57,6 +64,21 @@
 		FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6E220EC747D00B4067E /* NSString+BCMath.m */; };
 		FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */; };
 		FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */; };
+		FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */; };
+		FDCF754E2126B4360081D81B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754D2126B4360081D81B /* NSThreadViewController.m */; };
+		FDCF75512126B45D0081D81B /* LLImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75502126B45D0081D81B /* LLImageData.m */; };
+		FDCF75542126BDBB0081D81B /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75532126BDBB0081D81B /* NSOperationViewController.m */; };
+		FDCF75572126C02F0081D81B /* NSBlockOperationMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75562126C02F0081D81B /* NSBlockOperationMViewController.m */; };
+		FDCF755A2126C8610081D81B /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75592126C8610081D81B /* GCDViewController.m */; };
+		FDEEFD2820ECAD330025DDD5 /* Reminder+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD1D20ECAD2B0025DDD5 /* Reminder+CoreDataClass.m */; };
+		FDEEFD2920ECAD330025DDD5 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD1E20ECAD2C0025DDD5 /* Student+CoreDataProperties.m */; };
+		FDEEFD2B20ECAD330025DDD5 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD2020ECAD2D0025DDD5 /* Student+CoreDataClass.m */; };
+		FDEEFD2D20ECAD330025DDD5 /* Reminder+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD2720ECAD330025DDD5 /* Reminder+CoreDataProperties.m */; };
+		FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD3220ECAFA60025DDD5 /* CoredataViewController.m */; };
+		FDEEFD3620ECAFEB0025DDD5 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD3520ECAFEB0025DDD5 /* CoreDataManager.m */; };
+		FDEEFD5420EDF4270025DDD5 /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD5020EDF4260025DDD5 /* Teacher+CoreDataClass.m */; };
+		FDEEFD5520EDF4270025DDD5 /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD5220EDF4270025DDD5 /* Teacher+CoreDataProperties.m */; };
+		FDEEFD5820EE08340025DDD5 /* DynamicSynthesize.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFD5720EE08340025DDD5 /* DynamicSynthesize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +102,20 @@
 		43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		FD5E7A9420F4D08A0069DD7F /* MOAMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAMemoryCache.h; sourceTree = "<group>"; };
+		FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOAMemoryCache.m; sourceTree = "<group>"; };
+		FD61B1D620FDE8D7003360A6 /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		FD61B1D920FEDB0D003360A6 /* BCMath+dateTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BCMath+dateTest.h"; sourceTree = "<group>"; };
+		FD61B1DA20FEDB0D003360A6 /* BCMath+dateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BCMath+dateTest.m"; sourceTree = "<group>"; };
+		FD61B1DC20FEDC7E003360A6 /* NSDate+string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+string.h"; sourceTree = "<group>"; };
+		FD61B1DD20FEDC7E003360A6 /* NSDate+string.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+string.m"; sourceTree = "<group>"; };
+		FD61B1E020FF3A7C003360A6 /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		FD61B1E120FF3A7C003360A6 /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		FD61B1E32100169F003360A6 /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		FD61B1E42100169F003360A6 /* person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		FD61B1E621002CD4003360A6 /* NSStringStrongCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringStrongCopy.h; sourceTree = "<group>"; };
+		FD61B1E721002CD4003360A6 /* NSStringStrongCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringStrongCopy.m; sourceTree = "<group>"; };
 		FD65A60020EC732100B4067E /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD65A60320EC732100B4067E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD65A60420EC732100B4067E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,6 +214,37 @@
 		FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FDCF75492126A85A0081D81B /* ParallelDevelopmentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallelDevelopmentController.h; sourceTree = "<group>"; };
+		FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallelDevelopmentController.m; sourceTree = "<group>"; };
+		FDCF754C2126B4360081D81B /* NSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		FDCF754D2126B4360081D81B /* NSThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
+		FDCF754F2126B45D0081D81B /* LLImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLImageData.h; sourceTree = "<group>"; };
+		FDCF75502126B45D0081D81B /* LLImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLImageData.m; sourceTree = "<group>"; };
+		FDCF75522126BDBB0081D81B /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		FDCF75532126BDBB0081D81B /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		FDCF75552126C02F0081D81B /* NSBlockOperationMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSBlockOperationMViewController.h; sourceTree = "<group>"; };
+		FDCF75562126C02F0081D81B /* NSBlockOperationMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSBlockOperationMViewController.m; sourceTree = "<group>"; };
+		FDCF75582126C8610081D81B /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		FDCF75592126C8610081D81B /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		FDEEFD1C20ECAD2A0025DDD5 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDEEFD1D20ECAD2B0025DDD5 /* Reminder+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reminder+CoreDataClass.m"; sourceTree = "<group>"; };
+		FDEEFD1E20ECAD2C0025DDD5 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDEEFD2020ECAD2D0025DDD5 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		FDEEFD2120ECAD2E0025DDD5 /* Reminder+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reminder+CoreDataClass.h"; sourceTree = "<group>"; };
+		FDEEFD2220ECAD2E0025DDD5 /* Reminder+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reminder+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDEEFD2620ECAD330025DDD5 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		FDEEFD2720ECAD330025DDD5 /* Reminder+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reminder+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDEEFD3120ECAFA60025DDD5 /* CoredataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoredataViewController.h; sourceTree = "<group>"; };
+		FDEEFD3220ECAFA60025DDD5 /* CoredataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoredataViewController.m; sourceTree = "<group>"; };
+		FDEEFD3420ECAFEB0025DDD5 /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		FDEEFD3520ECAFEB0025DDD5 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		FDEEFD3720EDBE9D0025DDD5 /* iOSTest 20180705.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iOSTest 20180705.xcdatamodel"; sourceTree = "<group>"; };
+		FDEEFD5020EDF4260025DDD5 /* Teacher+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataClass.m"; sourceTree = "<group>"; };
+		FDEEFD5120EDF4260025DDD5 /* Teacher+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDEEFD5220EDF4270025DDD5 /* Teacher+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDEEFD5320EDF4270025DDD5 /* Teacher+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataClass.h"; sourceTree = "<group>"; };
+		FDEEFD5620EE08340025DDD5 /* DynamicSynthesize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicSynthesize.h; sourceTree = "<group>"; };
+		FDEEFD5720EE08340025DDD5 /* DynamicSynthesize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicSynthesize.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +290,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FD5E7A9320F4D05E0069DD7F /* MOACache */ = {
+			isa = PBXGroup;
+			children = (
+				FD5E7A9420F4D08A0069DD7F /* MOAMemoryCache.h */,
+				FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */,
+			);
+			path = MOACache;
+			sourceTree = "<group>";
+		};
+		FD61B1D520FDE8BD003360A6 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				FD61B1D620FDE8D7003360A6 /* RunLoopViewController.h */,
+				FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		FD61B1DF20FF3A6B003360A6 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				FD61B1E020FF3A7C003360A6 /* CopyViewController.h */,
+				FD61B1E120FF3A7C003360A6 /* CopyViewController.m */,
+				FD61B1E32100169F003360A6 /* person.h */,
+				FD61B1E42100169F003360A6 /* person.m */,
+				FD61B1E621002CD4003360A6 /* NSStringStrongCopy.h */,
+				FD61B1E721002CD4003360A6 /* NSStringStrongCopy.m */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
 		FD65A5F720EC732100B4067E = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +350,11 @@
 				FD65A60420EC732100B4067E /* AppDelegate.m */,
 				FD65A60620EC732100B4067E /* ViewController.h */,
 				FD65A60720EC732100B4067E /* ViewController.m */,
+				FDCF75482126A7FA0081D81B /* ParallelDevelopment */,
+				FD61B1DF20FF3A6B003360A6 /* Copy */,
+				FD61B1D520FDE8BD003360A6 /* RunLoop */,
+				FD5E7A9320F4D05E0069DD7F /* MOACache */,
+				FDEEFC9D20ECA4060025DDD5 /* CoreData */,
 				FD65A6ED20EC74AD00B4067E /* common */,
 				FD65A69420EC746F00B4067E /* RAC */,
 				FD65A66B20EC746E00B4067E /* NSArrayTest */,
@@ -267,7 +370,6 @@
 				FD65A61120EC732400B4067E /* LaunchScreen.storyboard */,
 				FD65A61420EC732400B4067E /* Info.plist */,
 				FD65A61520EC732400B4067E /* main.m */,
-				FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */,
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -423,6 +525,8 @@
 			children = (
 				FD65A6DD20EC747D00B4067E /* BCMath.h */,
 				FD65A6DE20EC747D00B4067E /* BCMath.m */,
+				FD61B1D920FEDB0D003360A6 /* BCMath+dateTest.h */,
+				FD61B1DA20FEDB0D003360A6 /* BCMath+dateTest.m */,
 				FD65A6DF20EC747D00B4067E /* FloatViewController.h */,
 				FD65A6E020EC747D00B4067E /* FloatViewController.m */,
 				FD65A6E120EC747D00B4067E /* NSString+BCMath.h */,
@@ -445,9 +549,72 @@
 			children = (
 				FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */,
 				FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */,
+				FD61B1DC20FEDC7E003360A6 /* NSDate+string.h */,
+				FD61B1DD20FEDC7E003360A6 /* NSDate+string.m */,
 			);
 			name = common;
 			path = ../../RN/iOSTest/common;
+			sourceTree = "<group>";
+		};
+		FDCF75482126A7FA0081D81B /* ParallelDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+				FDCF75492126A85A0081D81B /* ParallelDevelopmentController.h */,
+				FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */,
+				FDCF754F2126B45D0081D81B /* LLImageData.h */,
+				FDCF75502126B45D0081D81B /* LLImageData.m */,
+				FDCF754C2126B4360081D81B /* NSThreadViewController.h */,
+				FDCF754D2126B4360081D81B /* NSThreadViewController.m */,
+				FDCF75522126BDBB0081D81B /* NSOperationViewController.h */,
+				FDCF75532126BDBB0081D81B /* NSOperationViewController.m */,
+				FDCF75552126C02F0081D81B /* NSBlockOperationMViewController.h */,
+				FDCF75562126C02F0081D81B /* NSBlockOperationMViewController.m */,
+				FDCF75582126C8610081D81B /* GCDViewController.h */,
+				FDCF75592126C8610081D81B /* GCDViewController.m */,
+			);
+			path = ParallelDevelopment;
+			sourceTree = "<group>";
+		};
+		FDEEFC9D20ECA4060025DDD5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */,
+				FDEEFD3020ECAF1C0025DDD5 /* CoredataBaseClasses */,
+				FDEEFD2E20ECAF180025DDD5 /* CoreDataTest */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FDEEFD2E20ECAF180025DDD5 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				FDEEFD3120ECAFA60025DDD5 /* CoredataViewController.h */,
+				FDEEFD3220ECAFA60025DDD5 /* CoredataViewController.m */,
+				FDEEFD3420ECAFEB0025DDD5 /* CoreDataManager.h */,
+				FDEEFD3520ECAFEB0025DDD5 /* CoreDataManager.m */,
+				FDEEFD5620EE08340025DDD5 /* DynamicSynthesize.h */,
+				FDEEFD5720EE08340025DDD5 /* DynamicSynthesize.m */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		FDEEFD3020ECAF1C0025DDD5 /* CoredataBaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FDEEFD5320EDF4270025DDD5 /* Teacher+CoreDataClass.h */,
+				FDEEFD5020EDF4260025DDD5 /* Teacher+CoreDataClass.m */,
+				FDEEFD5120EDF4260025DDD5 /* Teacher+CoreDataProperties.h */,
+				FDEEFD5220EDF4270025DDD5 /* Teacher+CoreDataProperties.m */,
+				FDEEFD2620ECAD330025DDD5 /* Student+CoreDataClass.h */,
+				FDEEFD2020ECAD2D0025DDD5 /* Student+CoreDataClass.m */,
+				FDEEFD1C20ECAD2A0025DDD5 /* Student+CoreDataProperties.h */,
+				FDEEFD1E20ECAD2C0025DDD5 /* Student+CoreDataProperties.m */,
+				FDEEFD2120ECAD2E0025DDD5 /* Reminder+CoreDataClass.h */,
+				FDEEFD1D20ECAD2B0025DDD5 /* Reminder+CoreDataClass.m */,
+				FDEEFD2220ECAD2E0025DDD5 /* Reminder+CoreDataProperties.h */,
+				FDEEFD2720ECAD330025DDD5 /* Reminder+CoreDataProperties.m */,
+			);
+			path = CoredataBaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,9 +768,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */,
 				FD65A6B320EC747000B4067E /* NSArrayViewController.m in Sources */,
 				FD65A6CE20EC747000B4067E /* RTPerson.m in Sources */,
+				FD61B1DE20FEDC7E003360A6 /* NSDate+string.m in Sources */,
+				FDCF754E2126B4360081D81B /* NSThreadViewController.m in Sources */,
 				FD65A6B520EC747000B4067E /* CustomUIController.m in Sources */,
+				FD61B1E821002CD4003360A6 /* NSStringStrongCopy.m in Sources */,
+				FDCF755A2126C8610081D81B /* GCDViewController.m in Sources */,
 				FD65A6CA20EC747000B4067E /* ResultOne.m in Sources */,
 				FD65A60820EC732100B4067E /* ViewController.m in Sources */,
 				FD65A6B720EC747000B4067E /* FlatListViewController.m in Sources */,
@@ -611,41 +783,58 @@
 				FD65A6C420EC747000B4067E /* blockTest.m in Sources */,
 				FD65A6BC20EC747000B4067E /* RefreshControlViewController.m in Sources */,
 				FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */,
+				FDEEFD2920ECAD330025DDD5 /* Student+CoreDataProperties.m in Sources */,
+				FDEEFD5820EE08340025DDD5 /* DynamicSynthesize.m in Sources */,
 				FD65A6B620EC747000B4067E /* FetchViewController.m in Sources */,
 				FD65A6BE20EC747000B4067E /* RNViewController.m in Sources */,
 				FD65A6E620EC747E00B4067E /* BCMath.m in Sources */,
+				FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */,
 				FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */,
 				FD65A60520EC732100B4067E /* AppDelegate.m in Sources */,
 				FD65A6C220EC747000B4067E /* TextImageViewController.m in Sources */,
+				FDEEFD5520EDF4270025DDD5 /* Teacher+CoreDataProperties.m in Sources */,
 				FD65A6BF20EC747000B4067E /* ScrollViewController.m in Sources */,
 				FD65A6B820EC747000B4067E /* FlexViewController.m in Sources */,
 				FD65A6E420EC747E00B4067E /* GestureRecognizerView.m in Sources */,
+				FDEEFD2820ECAD330025DDD5 /* Reminder+CoreDataClass.m in Sources */,
 				FD65A6D220EC747000B4067E /* UILabel+TextAlignmentAdditions.m in Sources */,
+				FDCF75512126B45D0081D81B /* LLImageData.m in Sources */,
+				FD61B1E52100169F003360A6 /* person.m in Sources */,
 				FD65A6C720EC747000B4067E /* RACBaseViewController.m in Sources */,
 				FD65A6E720EC747E00B4067E /* FloatViewController.m in Sources */,
+				FDEEFD3620ECAFEB0025DDD5 /* CoreDataManager.m in Sources */,
 				FD65A61620EC732400B4067E /* main.m in Sources */,
 				FD65A6CF20EC747000B4067E /* RTSendMessageViewController.m in Sources */,
 				FD65A6B920EC747000B4067E /* InputTextViewController.m in Sources */,
+				FD61B1DB20FEDB0D003360A6 /* BCMath+dateTest.m in Sources */,
 				FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */,
 				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
 				FD65A6CD20EC747000B4067E /* NSObject+Property.m in Sources */,
 				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
 				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
+				FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */,
 				FD65A6CB20EC747000B4067E /* NSObject+Log.m in Sources */,
 				FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */,
 				FD65A6D020EC747000B4067E /* RunTimeViewController.m in Sources */,
 				FD65A6BD20EC747000B4067E /* RNBaseViewController.m in Sources */,
 				FD65A6BB20EC747000B4067E /* PushViewController.m in Sources */,
+				FD61B1E220FF3A7C003360A6 /* CopyViewController.m in Sources */,
 				FD65A6C620EC747000B4067E /* AlertViewController.m in Sources */,
+				FDCF75542126BDBB0081D81B /* NSOperationViewController.m in Sources */,
 				FD65A6D120EC747000B4067E /* UIImage+Image.m in Sources */,
 				FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */,
 				FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */,
+				FDEEFD2B20ECAD330025DDD5 /* Student+CoreDataClass.m in Sources */,
 				FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */,
 				FD65A6BA20EC747000B4067E /* PickerViewController.m in Sources */,
 				FD65A6C020EC747000B4067E /* ShareViewController.m in Sources */,
 				FD65A6CC20EC747000B4067E /* NSObject+Model.m in Sources */,
+				FDEEFD2D20ECAD330025DDD5 /* Reminder+CoreDataProperties.m in Sources */,
+				FDCF75572126C02F0081D81B /* NSBlockOperationMViewController.m in Sources */,
 				FD65A6E520EC747E00B4067E /* GestureRecognizerViewController.m in Sources */,
+				FDEEFD5420EDF4270025DDD5 /* Teacher+CoreDataClass.m in Sources */,
 				FD65A6C120EC747000B4067E /* StateViewController.m in Sources */,
+				FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,7 +1006,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -836,7 +1025,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ll.iOSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -955,9 +1144,10 @@
 		FD65A60C20EC732100B4067E /* iOSTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				FDEEFD3720EDBE9D0025DDD5 /* iOSTest 20180705.xcdatamodel */,
 				FD65A60D20EC732100B4067E /* iOSTest.xcdatamodel */,
 			);
-			currentVersion = FD65A60D20EC732100B4067E /* iOSTest.xcdatamodel */;
+			currentVersion = FDEEFD3720EDBE9D0025DDD5 /* iOSTest 20180705.xcdatamodel */;
 			path = iOSTest.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

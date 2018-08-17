@@ -20,4 +20,14 @@
         return self;
     };
 }
+
+- (NSString *)description
+{
+    
+//    return [NSString stringWithFormat:@"输出本身 %@",self];
+//        return [NSString stringWithFormat:@"<%@:%p>",[self class],self];
+        return [super description];
+}
+
+
 @end
