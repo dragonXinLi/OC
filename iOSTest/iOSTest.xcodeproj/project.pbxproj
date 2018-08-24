@@ -47,14 +47,6 @@
 		FD65A6C820EC747000B4067E /* RACOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69A20EC746F00B4067E /* RACOneController.m */; };
 		FD65A6C920EC747000B4067E /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69C20EC746F00B4067E /* RACViewController.m */; };
 		FD65A6CA20EC747000B4067E /* ResultOne.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A69E20EC746F00B4067E /* ResultOne.m */; };
-		FD65A6CB20EC747000B4067E /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A120EC746F00B4067E /* NSObject+Log.m */; };
-		FD65A6CC20EC747000B4067E /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A320EC746F00B4067E /* NSObject+Model.m */; };
-		FD65A6CD20EC747000B4067E /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A520EC746F00B4067E /* NSObject+Property.m */; };
-		FD65A6CE20EC747000B4067E /* RTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A720EC746F00B4067E /* RTPerson.m */; };
-		FD65A6CF20EC747000B4067E /* RTSendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */; };
-		FD65A6D020EC747000B4067E /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */; };
-		FD65A6D120EC747000B4067E /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AD20EC746F00B4067E /* UIImage+Image.m */; };
-		FD65A6D220EC747000B4067E /* UILabel+TextAlignmentAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */; };
 		FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6B220EC746F00B4067E /* TableViewControllerTestCarsh.m */; };
 		FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6D620EC747D00B4067E /* BitOperationViewController.m */; };
 		FD65A6E420EC747E00B4067E /* GestureRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6D920EC747D00B4067E /* GestureRecognizerView.m */; };
@@ -64,6 +56,8 @@
 		FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6E220EC747D00B4067E /* NSString+BCMath.m */; };
 		FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */; };
 		FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */; };
+		FD843547212AD4BA002CD737 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843546212AD4BA002CD737 /* LockViewController.m */; };
+		FD843569212FDCC1002CD737 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843568212FDCC1002CD737 /* RunTimeViewController.m */; };
 		FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */; };
 		FDCF754E2126B4360081D81B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754D2126B4360081D81B /* NSThreadViewController.m */; };
 		FDCF75512126B45D0081D81B /* LLImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75502126B45D0081D81B /* LLImageData.m */; };
@@ -180,22 +174,6 @@
 		FD65A69C20EC746F00B4067E /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		FD65A69D20EC746F00B4067E /* ResultOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultOne.h; sourceTree = "<group>"; };
 		FD65A69E20EC746F00B4067E /* ResultOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultOne.m; sourceTree = "<group>"; };
-		FD65A6A020EC746F00B4067E /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
-		FD65A6A120EC746F00B4067E /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
-		FD65A6A220EC746F00B4067E /* NSObject+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
-		FD65A6A320EC746F00B4067E /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
-		FD65A6A420EC746F00B4067E /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
-		FD65A6A520EC746F00B4067E /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
-		FD65A6A620EC746F00B4067E /* RTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPerson.h; sourceTree = "<group>"; };
-		FD65A6A720EC746F00B4067E /* RTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPerson.m; sourceTree = "<group>"; };
-		FD65A6A820EC746F00B4067E /* RTSendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSendMessageViewController.h; sourceTree = "<group>"; };
-		FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSendMessageViewController.m; sourceTree = "<group>"; };
-		FD65A6AA20EC746F00B4067E /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
-		FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
-		FD65A6AC20EC746F00B4067E /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		FD65A6AD20EC746F00B4067E /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		FD65A6AE20EC746F00B4067E /* UILabel+TextAlignmentAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlignmentAdditions.h"; sourceTree = "<group>"; };
-		FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlignmentAdditions.m"; sourceTree = "<group>"; };
 		FD65A6B120EC746F00B4067E /* TableViewControllerTestCarsh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerTestCarsh.h; sourceTree = "<group>"; };
 		FD65A6B220EC746F00B4067E /* TableViewControllerTestCarsh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerTestCarsh.m; sourceTree = "<group>"; };
 		FD65A6D520EC747D00B4067E /* BitOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitOperationViewController.h; sourceTree = "<group>"; };
@@ -214,6 +192,10 @@
 		FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FD843545212AD4BA002CD737 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		FD843546212AD4BA002CD737 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		FD843567212FDCC1002CD737 /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		FD843568212FDCC1002CD737 /* RunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		FDCF75492126A85A0081D81B /* ParallelDevelopmentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallelDevelopmentController.h; sourceTree = "<group>"; };
 		FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallelDevelopmentController.m; sourceTree = "<group>"; };
 		FDCF754C2126B4360081D81B /* NSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
@@ -350,6 +332,8 @@
 				FD65A60420EC732100B4067E /* AppDelegate.m */,
 				FD65A60620EC732100B4067E /* ViewController.h */,
 				FD65A60720EC732100B4067E /* ViewController.m */,
+				FD843566212FDCA2002CD737 /* RunTime */,
+				FD843544212AD4A0002CD737 /* Lock */,
 				FDCF75482126A7FA0081D81B /* ParallelDevelopment */,
 				FD61B1DF20FF3A6B003360A6 /* Copy */,
 				FD61B1D520FDE8BD003360A6 /* RunLoop */,
@@ -359,7 +343,6 @@
 				FD65A69420EC746F00B4067E /* RAC */,
 				FD65A66B20EC746E00B4067E /* NSArrayTest */,
 				FD65A66E20EC746E00B4067E /* RNReact */,
-				FD65A69F20EC746F00B4067E /* RunTime */,
 				FD65A68F20EC746E00B4067E /* Test */,
 				FD65A6B020EC746F00B4067E /* UITableViewTest */,
 				FD65A6D420EC747D00B4067E /* BitOperation */,
@@ -468,29 +451,6 @@
 			path = RAC;
 			sourceTree = "<group>";
 		};
-		FD65A69F20EC746F00B4067E /* RunTime */ = {
-			isa = PBXGroup;
-			children = (
-				FD65A6A020EC746F00B4067E /* NSObject+Log.h */,
-				FD65A6A120EC746F00B4067E /* NSObject+Log.m */,
-				FD65A6A220EC746F00B4067E /* NSObject+Model.h */,
-				FD65A6A320EC746F00B4067E /* NSObject+Model.m */,
-				FD65A6A420EC746F00B4067E /* NSObject+Property.h */,
-				FD65A6A520EC746F00B4067E /* NSObject+Property.m */,
-				FD65A6A620EC746F00B4067E /* RTPerson.h */,
-				FD65A6A720EC746F00B4067E /* RTPerson.m */,
-				FD65A6A820EC746F00B4067E /* RTSendMessageViewController.h */,
-				FD65A6A920EC746F00B4067E /* RTSendMessageViewController.m */,
-				FD65A6AA20EC746F00B4067E /* RunTimeViewController.h */,
-				FD65A6AB20EC746F00B4067E /* RunTimeViewController.m */,
-				FD65A6AC20EC746F00B4067E /* UIImage+Image.h */,
-				FD65A6AD20EC746F00B4067E /* UIImage+Image.m */,
-				FD65A6AE20EC746F00B4067E /* UILabel+TextAlignmentAdditions.h */,
-				FD65A6AF20EC746F00B4067E /* UILabel+TextAlignmentAdditions.m */,
-			);
-			path = RunTime;
-			sourceTree = "<group>";
-		};
 		FD65A6B020EC746F00B4067E /* UITableViewTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +514,24 @@
 			);
 			name = common;
 			path = ../../RN/iOSTest/common;
+			sourceTree = "<group>";
+		};
+		FD843544212AD4A0002CD737 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				FD843545212AD4BA002CD737 /* LockViewController.h */,
+				FD843546212AD4BA002CD737 /* LockViewController.m */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		FD843566212FDCA2002CD737 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				FD843567212FDCC1002CD737 /* RunTimeViewController.h */,
+				FD843568212FDCC1002CD737 /* RunTimeViewController.m */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 		FDCF75482126A7FA0081D81B /* ParallelDevelopment */ = {
@@ -770,7 +748,6 @@
 			files = (
 				FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */,
 				FD65A6B320EC747000B4067E /* NSArrayViewController.m in Sources */,
-				FD65A6CE20EC747000B4067E /* RTPerson.m in Sources */,
 				FD61B1DE20FEDC7E003360A6 /* NSDate+string.m in Sources */,
 				FDCF754E2126B4360081D81B /* NSThreadViewController.m in Sources */,
 				FD65A6B520EC747000B4067E /* CustomUIController.m in Sources */,
@@ -787,7 +764,9 @@
 				FDEEFD5820EE08340025DDD5 /* DynamicSynthesize.m in Sources */,
 				FD65A6B620EC747000B4067E /* FetchViewController.m in Sources */,
 				FD65A6BE20EC747000B4067E /* RNViewController.m in Sources */,
+				FD843547212AD4BA002CD737 /* LockViewController.m in Sources */,
 				FD65A6E620EC747E00B4067E /* BCMath.m in Sources */,
+				FD843569212FDCC1002CD737 /* RunTimeViewController.m in Sources */,
 				FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */,
 				FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */,
 				FD65A60520EC732100B4067E /* AppDelegate.m in Sources */,
@@ -797,38 +776,31 @@
 				FD65A6B820EC747000B4067E /* FlexViewController.m in Sources */,
 				FD65A6E420EC747E00B4067E /* GestureRecognizerView.m in Sources */,
 				FDEEFD2820ECAD330025DDD5 /* Reminder+CoreDataClass.m in Sources */,
-				FD65A6D220EC747000B4067E /* UILabel+TextAlignmentAdditions.m in Sources */,
 				FDCF75512126B45D0081D81B /* LLImageData.m in Sources */,
 				FD61B1E52100169F003360A6 /* person.m in Sources */,
 				FD65A6C720EC747000B4067E /* RACBaseViewController.m in Sources */,
 				FD65A6E720EC747E00B4067E /* FloatViewController.m in Sources */,
 				FDEEFD3620ECAFEB0025DDD5 /* CoreDataManager.m in Sources */,
 				FD65A61620EC732400B4067E /* main.m in Sources */,
-				FD65A6CF20EC747000B4067E /* RTSendMessageViewController.m in Sources */,
 				FD65A6B920EC747000B4067E /* InputTextViewController.m in Sources */,
 				FD61B1DB20FEDB0D003360A6 /* BCMath+dateTest.m in Sources */,
 				FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */,
 				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
-				FD65A6CD20EC747000B4067E /* NSObject+Property.m in Sources */,
 				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
 				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
 				FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */,
-				FD65A6CB20EC747000B4067E /* NSObject+Log.m in Sources */,
 				FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */,
-				FD65A6D020EC747000B4067E /* RunTimeViewController.m in Sources */,
 				FD65A6BD20EC747000B4067E /* RNBaseViewController.m in Sources */,
 				FD65A6BB20EC747000B4067E /* PushViewController.m in Sources */,
 				FD61B1E220FF3A7C003360A6 /* CopyViewController.m in Sources */,
 				FD65A6C620EC747000B4067E /* AlertViewController.m in Sources */,
 				FDCF75542126BDBB0081D81B /* NSOperationViewController.m in Sources */,
-				FD65A6D120EC747000B4067E /* UIImage+Image.m in Sources */,
 				FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */,
 				FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */,
 				FDEEFD2B20ECAD330025DDD5 /* Student+CoreDataClass.m in Sources */,
 				FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */,
 				FD65A6BA20EC747000B4067E /* PickerViewController.m in Sources */,
 				FD65A6C020EC747000B4067E /* ShareViewController.m in Sources */,
-				FD65A6CC20EC747000B4067E /* NSObject+Model.m in Sources */,
 				FDEEFD2D20ECAD330025DDD5 /* Reminder+CoreDataProperties.m in Sources */,
 				FDCF75572126C02F0081D81B /* NSBlockOperationMViewController.m in Sources */,
 				FD65A6E520EC747E00B4067E /* GestureRecognizerViewController.m in Sources */,

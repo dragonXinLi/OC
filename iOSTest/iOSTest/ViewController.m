@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "RNViewController.h"
 #import "RACViewController.h"
-#import "RunTimeViewController.h"
 #import "AVPlayerViewController.h"
 #import "TestViewController.h"
 #import "GestureRecognizerViewController.h"
@@ -25,6 +24,9 @@
 #import "NSOperationViewController.h"  //NSOperation开发
 #import "NSBlockOperationMViewController.h" //NSBlockOperation开发
 #import "GCDViewController.h" //GCD开发
+#import "LockViewController.h" //线程锁
+#import "RunTimeViewController.h"//runTime
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -57,7 +59,8 @@
                       @"NSThreadViewController",
                       @"NSOperationViewController",
                       @"NSBlockOperationMViewController",
-                      @"GCDViewController"
+                      @"GCDViewController",
+                      @"LockViewController"
                       ];
     /*
      {

@@ -1,13 +1,13 @@
 //
 //  RunTimeViewController.m
-//  RN
+//  iOSTest
 //
-//  Created by sangfor on 2017/8/1.
-//  Copyright © 2017年 LL. All rights reserved.
+//  Created by lilong on 2018/8/24.
+//  Copyright © 2018年 lilong. All rights reserved.
 //
 
 #import "RunTimeViewController.h"
-#import "RTSendMessageViewController.h"
+
 @interface RunTimeViewController ()
 
 @end
@@ -16,9 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataList = @[
-                      @"RTSendMessageViewController",
-                      ];}
+    // Do any additional setup after loading the view.
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
