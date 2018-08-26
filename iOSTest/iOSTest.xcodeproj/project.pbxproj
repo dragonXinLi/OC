@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE6112132F60200350781 /* RuntimePerson.m */; };
 		BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */; };
 		FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */; };
 		FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */; };
@@ -94,6 +95,8 @@
 
 /* Begin PBXFileReference section */
 		43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACFE6102132F60100350781 /* RuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson.h; sourceTree = "<group>"; };
+		6ACFE6112132F60200350781 /* RuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson.m; sourceTree = "<group>"; };
 		A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FD5E7A9420F4D08A0069DD7F /* MOAMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAMemoryCache.h; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 			children = (
 				FD843567212FDCC1002CD737 /* RunTimeViewController.h */,
 				FD843568212FDCC1002CD737 /* RunTimeViewController.m */,
+				6ACFE6102132F60100350781 /* RuntimePerson.h */,
+				6ACFE6112132F60200350781 /* RuntimePerson.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 				FD61B1DB20FEDB0D003360A6 /* BCMath+dateTest.m in Sources */,
 				FD65A6E320EC747E00B4067E /* BitOperationViewController.m in Sources */,
 				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
+				6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */,
 				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
 				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
 				FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */,
@@ -969,6 +975,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = iOSTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -988,6 +995,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = iOSTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (

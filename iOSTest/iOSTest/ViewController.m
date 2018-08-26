@@ -60,7 +60,8 @@
                       @"NSOperationViewController",
                       @"NSBlockOperationMViewController",
                       @"GCDViewController",
-                      @"LockViewController"
+                      @"LockViewController",
+                      @"RunTimeViewController",
                       ];
     /*
      {
