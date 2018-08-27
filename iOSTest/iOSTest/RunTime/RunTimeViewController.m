@@ -10,7 +10,9 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "RuntimePerson.h"
-
+#import "NSObject+RuntimeLog.h"
+#import "RuntimeStatus.h"
+#import "RunTimeSwizzlePerson.h"
 @interface RunTimeViewController ()
 
 @end
@@ -32,9 +34,22 @@
         [self changeIvarValue];
     }
     
-    if (1) {
+    if (0) {
         BOOL has = [self hasProperty:@"_name"];
     }
+    
+    if (0) {
+        [self archiverObject];
+    }
+    
+    if (0) {
+        [self dictToModel];
+    }
+    
+    if (1) {
+        [self exchangeImp];
+    }
+    
 }
 
 - (void)addClass
@@ -194,19 +209,41 @@
     }
     return flag;
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)archiverObject
+{
+    RuntimePerson *p = [[RuntimePerson alloc] init];
+    [p setValue:@"Kobe" forKey:@"name"];
+    [p setValue:@18 forKey:@"age"];
+    p.weight = 110.f;
+    
+    NSString *filePath = [NSHomeDirectory() stringByAppendingString:@"person.plist"];
+    BOOL success = [NSKeyedArchiver archiveRootObject:p toFile:filePath];
+    
+    //外面取出来是CGFloat weight类型
+    RuntimePerson *p2 = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+    NSAssert(1, nil);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dictToModel
+{
+//    [NSObject resolveDict:@{@"name":@"ll",
+//                                          @"age":@(26),
+//                                          @"weight":@(75.5)
+//                                          }];
+    
+    NSDictionary *dict = @{
+                          @"reposts_count":@(20),
+                          @"pic_urls":@[@{@"name":@"ll",@"age":@(19)},@{@"name":@"ll2",@"age":@(20)}],
+                           @"user":@{@"name":@"ll",@"age":@(18)}
+                          };
+    [RuntimeStatus modelWithDict:dict];
 }
-*/
 
+- (void)exchangeImp
+{
+//    RunTimeSwizzlePerson * p = [[RunTimeSwizzlePerson alloc] init];
+    [RunTimeSwizzlePerson run];
+    [RunTimeSwizzlePerson study];
+}
 @end

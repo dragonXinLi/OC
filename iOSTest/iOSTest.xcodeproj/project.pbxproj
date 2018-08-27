@@ -59,6 +59,12 @@
 		FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */; };
 		FD843547212AD4BA002CD737 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843546212AD4BA002CD737 /* LockViewController.m */; };
 		FD843569212FDCC1002CD737 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843568212FDCC1002CD737 /* RunTimeViewController.m */; };
+		FD92ECDE21339E800012DA3A /* NSObject+RuntimeLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECDD21339E800012DA3A /* NSObject+RuntimeLog.m */; };
+		FD92ECE12133A8310012DA3A /* NSObject+RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECE02133A8310012DA3A /* NSObject+RuntimeModel.m */; };
+		FD92ECE42133DE800012DA3A /* RuntimeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECE32133DE800012DA3A /* RuntimeStatus.m */; };
+		FD92ECE72133DEDB0012DA3A /* RuntimeUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECE62133DEDB0012DA3A /* RuntimeUser.m */; };
+		FD92ECEA2134000D0012DA3A /* RunTimeSwizzlePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECE92134000D0012DA3A /* RunTimeSwizzlePerson.m */; };
+		FD92ECED213423B30012DA3A /* UIImage+RuntimeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECEC213423B30012DA3A /* UIImage+RuntimeCategory.m */; };
 		FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */; };
 		FDCF754E2126B4360081D81B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF754D2126B4360081D81B /* NSThreadViewController.m */; };
 		FDCF75512126B45D0081D81B /* LLImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCF75502126B45D0081D81B /* LLImageData.m */; };
@@ -199,6 +205,18 @@
 		FD843546212AD4BA002CD737 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		FD843567212FDCC1002CD737 /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
 		FD843568212FDCC1002CD737 /* RunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		FD92ECDC21339E800012DA3A /* NSObject+RuntimeLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeLog.h"; sourceTree = "<group>"; };
+		FD92ECDD21339E800012DA3A /* NSObject+RuntimeLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeLog.m"; sourceTree = "<group>"; };
+		FD92ECDF2133A8310012DA3A /* NSObject+RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeModel.h"; sourceTree = "<group>"; };
+		FD92ECE02133A8310012DA3A /* NSObject+RuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeModel.m"; sourceTree = "<group>"; };
+		FD92ECE22133DE800012DA3A /* RuntimeStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeStatus.h; sourceTree = "<group>"; };
+		FD92ECE32133DE800012DA3A /* RuntimeStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStatus.m; sourceTree = "<group>"; };
+		FD92ECE52133DEDB0012DA3A /* RuntimeUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeUser.h; sourceTree = "<group>"; };
+		FD92ECE62133DEDB0012DA3A /* RuntimeUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUser.m; sourceTree = "<group>"; };
+		FD92ECE82134000D0012DA3A /* RunTimeSwizzlePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeSwizzlePerson.h; sourceTree = "<group>"; };
+		FD92ECE92134000D0012DA3A /* RunTimeSwizzlePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeSwizzlePerson.m; sourceTree = "<group>"; };
+		FD92ECEB213423B30012DA3A /* UIImage+RuntimeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RuntimeCategory.h"; sourceTree = "<group>"; };
+		FD92ECEC213423B30012DA3A /* UIImage+RuntimeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RuntimeCategory.m"; sourceTree = "<group>"; };
 		FDCF75492126A85A0081D81B /* ParallelDevelopmentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallelDevelopmentController.h; sourceTree = "<group>"; };
 		FDCF754A2126A85A0081D81B /* ParallelDevelopmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallelDevelopmentController.m; sourceTree = "<group>"; };
 		FDCF754C2126B4360081D81B /* NSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
@@ -535,6 +553,18 @@
 				FD843568212FDCC1002CD737 /* RunTimeViewController.m */,
 				6ACFE6102132F60100350781 /* RuntimePerson.h */,
 				6ACFE6112132F60200350781 /* RuntimePerson.m */,
+				FD92ECDC21339E800012DA3A /* NSObject+RuntimeLog.h */,
+				FD92ECDD21339E800012DA3A /* NSObject+RuntimeLog.m */,
+				FD92ECDF2133A8310012DA3A /* NSObject+RuntimeModel.h */,
+				FD92ECE02133A8310012DA3A /* NSObject+RuntimeModel.m */,
+				FD92ECE22133DE800012DA3A /* RuntimeStatus.h */,
+				FD92ECE32133DE800012DA3A /* RuntimeStatus.m */,
+				FD92ECE52133DEDB0012DA3A /* RuntimeUser.h */,
+				FD92ECE62133DEDB0012DA3A /* RuntimeUser.m */,
+				FD92ECE82134000D0012DA3A /* RunTimeSwizzlePerson.h */,
+				FD92ECE92134000D0012DA3A /* RunTimeSwizzlePerson.m */,
+				FD92ECEB213423B30012DA3A /* UIImage+RuntimeCategory.h */,
+				FD92ECEC213423B30012DA3A /* UIImage+RuntimeCategory.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -764,9 +794,11 @@
 				FD65A6C320EC747000B4067E /* TouchableViewController.m in Sources */,
 				FD65A6C420EC747000B4067E /* blockTest.m in Sources */,
 				FD65A6BC20EC747000B4067E /* RefreshControlViewController.m in Sources */,
+				FD92ECE72133DEDB0012DA3A /* RuntimeUser.m in Sources */,
 				FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */,
 				FDEEFD2920ECAD330025DDD5 /* Student+CoreDataProperties.m in Sources */,
 				FDEEFD5820EE08340025DDD5 /* DynamicSynthesize.m in Sources */,
+				FD92ECEA2134000D0012DA3A /* RunTimeSwizzlePerson.m in Sources */,
 				FD65A6B620EC747000B4067E /* FetchViewController.m in Sources */,
 				FD65A6BE20EC747000B4067E /* RNViewController.m in Sources */,
 				FD843547212AD4BA002CD737 /* LockViewController.m in Sources */,
@@ -775,6 +807,7 @@
 				FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */,
 				FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */,
 				FD65A60520EC732100B4067E /* AppDelegate.m in Sources */,
+				FD92ECED213423B30012DA3A /* UIImage+RuntimeCategory.m in Sources */,
 				FD65A6C220EC747000B4067E /* TextImageViewController.m in Sources */,
 				FDEEFD5520EDF4270025DDD5 /* Teacher+CoreDataProperties.m in Sources */,
 				FD65A6BF20EC747000B4067E /* ScrollViewController.m in Sources */,
@@ -793,6 +826,7 @@
 				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
 				6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */,
 				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
+				FD92ECE12133A8310012DA3A /* NSObject+RuntimeModel.m in Sources */,
 				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
 				FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */,
 				FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */,
@@ -802,6 +836,8 @@
 				FD65A6C620EC747000B4067E /* AlertViewController.m in Sources */,
 				FDCF75542126BDBB0081D81B /* NSOperationViewController.m in Sources */,
 				FD65A6D320EC747000B4067E /* TableViewControllerTestCarsh.m in Sources */,
+				FD92ECE42133DE800012DA3A /* RuntimeStatus.m in Sources */,
+				FD92ECDE21339E800012DA3A /* NSObject+RuntimeLog.m in Sources */,
 				FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */,
 				FDEEFD2B20ECAD330025DDD5 /* Student+CoreDataClass.m in Sources */,
 				FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */,

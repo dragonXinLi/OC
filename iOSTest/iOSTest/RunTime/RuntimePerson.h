@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface RuntimePerson : NSObject
+@interface RuntimePerson : NSObject<NSCopying>
 
 @property (nonatomic , strong) NSString *name;
 @property (nonatomic , strong) NSNumber *age;
