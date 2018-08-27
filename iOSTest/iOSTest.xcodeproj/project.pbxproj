@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE6112132F60200350781 /* RuntimePerson.m */; };
+		6ACFE61521344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE61421344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m */; };
 		BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */; };
 		FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */; };
 		FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */; };
@@ -103,6 +104,8 @@
 		43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACFE6102132F60100350781 /* RuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson.h; sourceTree = "<group>"; };
 		6ACFE6112132F60200350781 /* RuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson.m; sourceTree = "<group>"; };
+		6ACFE61321344B8B00350781 /* RuntimeUser+RuntimeAddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeUser+RuntimeAddProperty.h"; sourceTree = "<group>"; };
+		6ACFE61421344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimeUser+RuntimeAddProperty.m"; sourceTree = "<group>"; };
 		A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FD5E7A9420F4D08A0069DD7F /* MOAMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAMemoryCache.h; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				FD92ECE92134000D0012DA3A /* RunTimeSwizzlePerson.m */,
 				FD92ECEB213423B30012DA3A /* UIImage+RuntimeCategory.h */,
 				FD92ECEC213423B30012DA3A /* UIImage+RuntimeCategory.m */,
+				6ACFE61321344B8B00350781 /* RuntimeUser+RuntimeAddProperty.h */,
+				6ACFE61421344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -848,6 +853,7 @@
 				FD65A6E520EC747E00B4067E /* GestureRecognizerViewController.m in Sources */,
 				FDEEFD5420EDF4270025DDD5 /* Teacher+CoreDataClass.m in Sources */,
 				FD65A6C120EC747000B4067E /* StateViewController.m in Sources */,
+				6ACFE61521344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m in Sources */,
 				FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@
 #import "NSObject+RuntimeLog.h"
 #import "RuntimeStatus.h"
 #import "RunTimeSwizzlePerson.h"
+#import "RuntimeUser.h"
 @interface RunTimeViewController ()
 
 @end
@@ -46,10 +47,13 @@
         [self dictToModel];
     }
     
-    if (1) {
+    if (0) {
         [self exchangeImp];
     }
     
+    if (1) {
+        [self addMethod];
+    }
 }
 
 - (void)addClass
@@ -245,5 +249,13 @@
 //    RunTimeSwizzlePerson * p = [[RunTimeSwizzlePerson alloc] init];
     [RunTimeSwizzlePerson run];
     [RunTimeSwizzlePerson study];
+}
+
+- (void)addMethod
+{
+    RuntimeUser *u = [[RuntimeUser alloc] init];
+    //默认RuntimeUser没有实现eat方法，可以通过performSelector调用，但是会报错
+    //动态添加方法就不会报错
+    [u performSelector:@selector(eat)];
 }
 @end
