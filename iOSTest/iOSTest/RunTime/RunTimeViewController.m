@@ -51,8 +51,12 @@
         [self exchangeImp];
     }
     
-    if (1) {
+    if (0) {
         [self addMethod];
+    }
+    
+    if (1) {
+        [self propertyChange];
     }
 }
 
@@ -106,6 +110,7 @@
     NSMutableDictionary *ivarDict = [NSMutableDictionary dictionary];
     Ivar *ivarList = class_copyIvarList([p class], &ivarCount);
     for (int i = 0; i < ivarCount; i++) {
+        //RuntimePerson的私有成员变量取到直接是privateName,属性是_name
         NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivarList[i])];
         id value = [p valueForKey:ivarName];
         
@@ -127,6 +132,7 @@
     NSMutableDictionary *propertyDict = @{}.mutableCopy;
     objc_property_t *propertyList = class_copyPropertyList([p class], &propertyCount);
     for (int i = 0; i < propertyCount; i++) {
+        //class_copyPropertyList只能取到属性(.h和.m)，取不到成员变量
         NSString *propertyName = [NSString stringWithUTF8String:property_getName(propertyList[i])];
         id value = [p valueForKey:propertyName];
         
@@ -257,5 +263,20 @@
     //默认RuntimeUser没有实现eat方法，可以通过performSelector调用，但是会报错
     //动态添加方法就不会报错
     [u performSelector:@selector(eat)];
+}
+
+- (void)propertyChange
+{
+    RuntimePerson *p = [[RuntimePerson alloc] init];
+    p.age3 = @(15);
+    NSLog(@"%@",p.age3);
+    NSNumber *value = [p valueForKey:@"age3"];
+    [p  testAge3Value];
+    NSAssert(1, nil);
+    
+    //属性被readonly修饰，不能在外界赋值(setter)
+//    p.age4 = @(4);
+//    [p setValue:@(4) forKey:@"age4"];crash,找不到setValue:forUndefinedKey:
+    NSLog(@"age4:%@",p.age4);
 }
 @end

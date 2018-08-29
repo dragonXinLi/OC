@@ -8,6 +8,16 @@
 
 #import "RuntimePerson.h"
 #import <objc/runtime.h>
+
+@interface RuntimePerson()
+{
+    NSString *privateName2;
+}
+
+@property(strong , nonatomic ) NSString * privateName;
+
+@end
+
 @implementation RuntimePerson
 
 //- (void)encodeWithCoder:(NSCoder *)aCoder
@@ -113,5 +123,17 @@ return self;
 //    }
 //    return self;
 //}
+
+
+- (NSNumber *)getAge3
+{
+    //只是绕过了不返回_age3的值，但是_age3的值实际上还是15
+    return @(1);
+}
+
+- (void)testAge3Value
+{
+    NSLog(@"%@",_age3);//15
+}
 
 @end
