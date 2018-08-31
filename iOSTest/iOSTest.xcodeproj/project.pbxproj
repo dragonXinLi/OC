@@ -56,6 +56,8 @@
 		FD65A6E820EC747E00B4067E /* NSString+BCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6E220EC747D00B4067E /* NSString+BCMath.m */; };
 		FD65A6EC20EC748400B4067E /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */; };
 		FD65A6F020EC74AD00B4067E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */; };
+		FD6EA7152138E919001687DB /* BlocklController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6EA7142138E919001687DB /* BlocklController.m */; };
+		FD6EA7182138E94D001687DB /* BlockModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6EA7172138E94D001687DB /* BlockModelTest.m */; };
 		FD843547212AD4BA002CD737 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843546212AD4BA002CD737 /* LockViewController.m */; };
 		FD843569212FDCC1002CD737 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD843568212FDCC1002CD737 /* RunTimeViewController.m */; };
 		FD92ECDE21339E800012DA3A /* NSObject+RuntimeLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92ECDD21339E800012DA3A /* NSObject+RuntimeLog.m */; };
@@ -198,6 +200,10 @@
 		FD65A6EB20EC748300B4067E /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		FD65A6EE20EC74AD00B4067E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		FD65A6EF20EC74AD00B4067E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FD6EA7132138E919001687DB /* BlocklController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlocklController.h; sourceTree = "<group>"; };
+		FD6EA7142138E919001687DB /* BlocklController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocklController.m; sourceTree = "<group>"; };
+		FD6EA7162138E94D001687DB /* BlockModelTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockModelTest.h; sourceTree = "<group>"; };
+		FD6EA7172138E94D001687DB /* BlockModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockModelTest.m; sourceTree = "<group>"; };
 		FD843545212AD4BA002CD737 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
 		FD843546212AD4BA002CD737 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		FD843567212FDCC1002CD737 /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
@@ -350,6 +356,8 @@
 				FD65A60420EC732100B4067E /* AppDelegate.m */,
 				FD65A60620EC732100B4067E /* ViewController.h */,
 				FD65A60720EC732100B4067E /* ViewController.m */,
+				FD6EA7122138E900001687DB /* Block */,
+				FD6EA7112138E8FA001687DB /* New Group */,
 				FD843566212FDCA2002CD737 /* RunTime */,
 				FD843544212AD4A0002CD737 /* Lock */,
 				FDCF75482126A7FA0081D81B /* ParallelDevelopment */,
@@ -528,6 +536,24 @@
 			);
 			name = common;
 			path = ../../RN/iOSTest/common;
+			sourceTree = "<group>";
+		};
+		FD6EA7112138E8FA001687DB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FD6EA7122138E900001687DB /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FD6EA7132138E919001687DB /* BlocklController.h */,
+				FD6EA7142138E919001687DB /* BlocklController.m */,
+				FD6EA7162138E94D001687DB /* BlockModelTest.h */,
+				FD6EA7172138E94D001687DB /* BlockModelTest.m */,
+			);
+			path = Block;
 			sourceTree = "<group>";
 		};
 		FD843544212AD4A0002CD737 /* Lock */ = {
@@ -784,7 +810,9 @@
 				FD61B1E821002CD4003360A6 /* NSStringStrongCopy.m in Sources */,
 				FDCF755A2126C8610081D81B /* GCDViewController.m in Sources */,
 				FD65A6CA20EC747000B4067E /* ResultOne.m in Sources */,
+				FD6EA7152138E919001687DB /* BlocklController.m in Sources */,
 				FD65A60820EC732100B4067E /* ViewController.m in Sources */,
+				FD6EA7182138E94D001687DB /* BlockModelTest.m in Sources */,
 				FD65A6B720EC747000B4067E /* FlatListViewController.m in Sources */,
 				FD65A6C320EC747000B4067E /* TouchableViewController.m in Sources */,
 				FD65A6C420EC747000B4067E /* blockTest.m in Sources */,
