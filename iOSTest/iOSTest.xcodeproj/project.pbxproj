@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE6112132F60200350781 /* RuntimePerson.m */; };
 		6ACFE61521344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE61421344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m */; };
+		6ACFE61E213A8AC100350781 /* HashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE61D213A8AC100350781 /* HashViewController.m */; };
+		6ACFE621213A8AD000350781 /* HashPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE620213A8AD000350781 /* HashPerson.m */; };
+		6ACFE624213A8AE600350781 /* HashSubPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFE623213A8AE600350781 /* HashSubPerson.m */; };
 		BCD1FD436A05EC4061F4C71C /* libPods-iOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C93D1D95D83ED61709A2D3 /* libPods-iOSTest.a */; };
 		FD5E7A9620F4D08A0069DD7F /* MOAMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5E7A9520F4D08A0069DD7F /* MOAMemoryCache.m */; };
 		FD61B1D820FDE8D7003360A6 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61B1D720FDE8D7003360A6 /* RunLoopViewController.m */; };
@@ -106,6 +109,12 @@
 		6ACFE6112132F60200350781 /* RuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson.m; sourceTree = "<group>"; };
 		6ACFE61321344B8B00350781 /* RuntimeUser+RuntimeAddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeUser+RuntimeAddProperty.h"; sourceTree = "<group>"; };
 		6ACFE61421344B8B00350781 /* RuntimeUser+RuntimeAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimeUser+RuntimeAddProperty.m"; sourceTree = "<group>"; };
+		6ACFE61C213A8AC100350781 /* HashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashViewController.h; sourceTree = "<group>"; };
+		6ACFE61D213A8AC100350781 /* HashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashViewController.m; sourceTree = "<group>"; };
+		6ACFE61F213A8AD000350781 /* HashPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashPerson.h; sourceTree = "<group>"; };
+		6ACFE620213A8AD000350781 /* HashPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashPerson.m; sourceTree = "<group>"; };
+		6ACFE622213A8AE600350781 /* HashSubPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashSubPerson.h; sourceTree = "<group>"; };
+		6ACFE623213A8AE600350781 /* HashSubPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashSubPerson.m; sourceTree = "<group>"; };
 		A3D99F394888C48B0706B371 /* Pods-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		B45957FE05BCF073B0641CDB /* Pods-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTest/Pods-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FD5E7A9420F4D08A0069DD7F /* MOAMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAMemoryCache.h; sourceTree = "<group>"; };
@@ -287,6 +296,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6ACFE61B213A8AAD00350781 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFE61C213A8AC100350781 /* HashViewController.h */,
+				6ACFE61D213A8AC100350781 /* HashViewController.m */,
+				6ACFE61F213A8AD000350781 /* HashPerson.h */,
+				6ACFE620213A8AD000350781 /* HashPerson.m */,
+				6ACFE622213A8AE600350781 /* HashSubPerson.h */,
+				6ACFE623213A8AE600350781 /* HashSubPerson.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
 		F28706AAFE62EC108E704503 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,8 +378,8 @@
 				FD65A60420EC732100B4067E /* AppDelegate.m */,
 				FD65A60620EC732100B4067E /* ViewController.h */,
 				FD65A60720EC732100B4067E /* ViewController.m */,
+				6ACFE61B213A8AAD00350781 /* Hash */,
 				FD6EA7122138E900001687DB /* Block */,
-				FD6EA7112138E8FA001687DB /* New Group */,
 				FD843566212FDCA2002CD737 /* RunTime */,
 				FD843544212AD4A0002CD737 /* Lock */,
 				FDCF75482126A7FA0081D81B /* ParallelDevelopment */,
@@ -536,13 +558,6 @@
 			);
 			name = common;
 			path = ../../RN/iOSTest/common;
-			sourceTree = "<group>";
-		};
-		FD6EA7112138E8FA001687DB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FD6EA7122138E900001687DB /* Block */ = {
@@ -828,6 +843,7 @@
 				FD65A6E620EC747E00B4067E /* BCMath.m in Sources */,
 				FD843569212FDCC1002CD737 /* RunTimeViewController.m in Sources */,
 				FDCF754B2126A85A0081D81B /* ParallelDevelopmentController.m in Sources */,
+				6ACFE621213A8AD000350781 /* HashPerson.m in Sources */,
 				FD65A6B420EC747000B4067E /* CSSViewController.m in Sources */,
 				FD65A60520EC732100B4067E /* AppDelegate.m in Sources */,
 				FD92ECED213423B30012DA3A /* UIImage+RuntimeCategory.m in Sources */,
@@ -848,6 +864,7 @@
 				FD65A6C520EC747000B4067E /* TestViewController.m in Sources */,
 				6ACFE6122132F60200350781 /* RuntimePerson.m in Sources */,
 				FD65A6C820EC747000B4067E /* RACOneController.m in Sources */,
+				6ACFE61E213A8AC100350781 /* HashViewController.m in Sources */,
 				FD92ECE12133A8310012DA3A /* NSObject+RuntimeModel.m in Sources */,
 				FD65A6C920EC747000B4067E /* RACViewController.m in Sources */,
 				FDEEFD3320ECAFA60025DDD5 /* CoredataViewController.m in Sources */,
@@ -863,6 +880,7 @@
 				FDEEFD2B20ECAD330025DDD5 /* Student+CoreDataClass.m in Sources */,
 				FD65A60E20EC732100B4067E /* iOSTest.xcdatamodeld in Sources */,
 				FD65A6BA20EC747000B4067E /* PickerViewController.m in Sources */,
+				6ACFE624213A8AE600350781 /* HashSubPerson.m in Sources */,
 				FD65A6C020EC747000B4067E /* ShareViewController.m in Sources */,
 				FDEEFD2D20ECAD330025DDD5 /* Reminder+CoreDataProperties.m in Sources */,
 				FDCF75572126C02F0081D81B /* NSBlockOperationMViewController.m in Sources */,

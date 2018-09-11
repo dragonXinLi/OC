@@ -27,6 +27,7 @@
 #import "LockViewController.h" //线程锁
 #import "RunTimeViewController.h"//runTime
 #import "BlocklController.h" //block
+#import "HashViewController.h"//hash
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -62,7 +63,8 @@
                       @"GCDViewController",
                       @"LockViewController",
                       @"RunTimeViewController",
-                      @"BlocklController"
+                      @"BlocklController",
+                      @"HashViewController"
                       ];
     /*
      {
